@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi Mật Khẩu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        body {
+            /* Hình nền đồng bộ */
+            background-color: #1a1a1a;
+            background-image: url('https://wallpaperaccess.com/full/1155015.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-custom {
+            max-width: 500px;
+            width: 100%;
+            padding: 15px;
+        }
+
+        /* --- Main Box Styling --- */
+        .main-box {
+            background-color: rgba(28, 28, 28, 0.95); 
+            border-radius: 15px; 
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.8); 
+            border: 1px solid rgba(255, 193, 7, 0.3); /* Viền vàng mờ */
+            padding: 40px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hiệu ứng viền sáng trên cùng */
+        .main-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, transparent, #ffc107, transparent);
+        }
+
+        /* Tiêu đề */
+        .styled-heading {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ffcc00;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+            text-transform: uppercase;
+        }
+
+        /* Input Styles */
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-control-custom {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid #444;
+            color: #fff;
+            height: 50px;
+            border-radius: 10px;
+            padding-left: 45px; /* Để chừa chỗ cho icon */
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .form-control-custom:focus {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-color: #ffc107;
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+            color: #fff;
+        }
+        
+        /* Icon trong input */
+        .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+            font-size: 1.2rem;
+            z-index: 2;
+            transition: 0.3s;
+        }
+        
+        .form-control-custom:focus + .input-icon,
+        .form-control-custom:focus ~ .input-icon {
+            color: #ffc107;
+        }
+
+        /* Button Style */
+        .btn-submit {
+            background: linear-gradient(to bottom, #ffc107, #ff9800);
+            border: none;
+            color: #000;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-weight: 900;
+            font-size: 1.1rem;
+            padding: 12px 0;
+            width: 100%;
+            border-radius: 50px;
+            box-shadow: 0 0 15px #ffc107;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px #ffeb3b;
+            color: #000;
+        }
+
+        /* Nút quay lại */
+        .btn-back {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .btn-back:hover {
+            color: #ffc107;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-custom">
+    
+    <div class="main-box">
+        <h1 class="styled-heading">Đổi Mật Khẩu</h1>
+
+        <form onsubmit="return handleChangePassword(event)">
+            
+            <div class="form-group">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" class="form-control form-control-custom" name="username" placeholder="Tên tài khoản" required autofocus>
+            </div>
+
+            <div class="form-group">
+                <i class="fas fa-lock input-icon"></i>
+                <input type="password" class="form-control form-control-custom" name="password" placeholder="Mật khẩu hiện tại" required>
+            </div>
+
+            <div class="form-group">
+                <i class="fas fa-key input-icon"></i>
+                <input type="password" class="form-control form-control-custom" name="newpassword" placeholder="Mật khẩu mới" required>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Xác Nhận Đổi
+            </button>
+
+        </form>
+
+        <a href="/" class="btn-back"><i class="fas fa-arrow-left"></i> Quay lại trang chủ</a>
+    </div>
+
+</div>
+
+<script>
+    function handleChangePassword(e) {
+        e.preventDefault(); // Ngăn form reload
+
+        // Giả lập xử lý
+        Swal.fire({
+            title: 'Đang xử lý...',
+            html: 'Vui lòng chờ...',
+            timer: 1500,
+            timerProgressBar: true,
+            background: '#1c1c1c',
+            color: '#fff',
+            didOpen: () => {
+                Swal.showLoading()
+            }
+        }).then(() => {
+            // Thông báo thành công (Giả lập logic update thành công)
+            Swal.fire({
+                title: 'Thành Công!',
+                text: 'Mật khẩu đã được thay đổi. Vui lòng đăng nhập lại.',
+                icon: 'success',
+                background: '#1c1c1c',
+                color: '#fff',
+                confirmButtonColor: '#ffc107',
+                confirmButtonText: 'Đăng xuất ngay'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Chuyển hướng đến trang đăng xuất (Giả lập)
+                    window.location.href = "/pages/dangxuat.php"; // Hoặc link logout của bạn
+                }
+            });
+        });
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

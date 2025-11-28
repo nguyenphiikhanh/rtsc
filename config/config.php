@@ -1,0 +1,18 @@
+<?php
+
+    global $config;
+	$apikey = 'E0685A4C8A53726C301F346F297D819D'; //API key, lấy từ website thesieutoc.net thay vào trong cặp dấu ''
+	// database Mysql config
+	$local_db = "localhost";
+	$user_db = "root";
+	$pass_db = "";
+	$name_db = "ngocrong";
+	# đừng đụng vào 
+    $config = mysqli_connect($local_db, $user_db, $pass_db, $name_db);
+    if (mysqli_connect_errno()) {
+        echo "Sai hoặc Chưa kết nối Database!";
+        exit();
+    }
+    $config->set_charset("utf8");
+    
+?>

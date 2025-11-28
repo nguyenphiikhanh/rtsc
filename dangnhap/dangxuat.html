@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Xuất - Ngọc Rồng Assassin</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            background-image: url('https://wallpaperaccess.com/full/1155015.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Khung thông báo */
+        .logout-box {
+            background-color: rgba(28, 28, 28, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #ff4757; /* Màu đỏ báo hiệu dừng/thoát */
+            box-shadow: 0 0 30px rgba(255, 71, 87, 0.4);
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .logout-icon {
+            font-size: 4rem;
+            color: #ff4757;
+            margin-bottom: 20px;
+            animation: float 2s infinite ease-in-out;
+        }
+
+        .logout-title {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .logout-text {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        /* Thanh Loading */
+        .progress-container {
+            width: 100%;
+            background-color: #333;
+            border-radius: 10px;
+            height: 6px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .progress-bar-custom {
+            height: 100%;
+            background-color: #ff4757;
+            width: 0%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff4757;
+            animation: loadProgress 2s linear forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes loadProgress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logout-box">
+        <div class="logout-icon">
+            <i class="fas fa-power-off"></i>
+        </div>
+        <div class="logout-title">Đang đăng xuất...</div>
+        <p class="logout-text">Hẹn gặp lại bạn trong lần sau!</p>
+        
+        <div class="progress-container">
+            <div class="progress-bar-custom"></div>
+        </div>
+    </div>
+
+    <script>
+        // Khi trang tải xong
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // 1. Xóa dữ liệu lưu tạm ở trình duyệt (Frontend logout)
+            // (Giả sử bạn có lưu thông tin đăng nhập ở localStorage)
+            localStorage.removeItem('user_login'); 
+            sessionStorage.clear();
+
+            // 2. Đợi 2 giây (2000ms) để chạy hết thanh loading rồi chuyển trang
+            setTimeout(function() {
+                // Chuyển hướng về trang chủ
+                window.location.href = "/"; // Hoặc "index.html"
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>

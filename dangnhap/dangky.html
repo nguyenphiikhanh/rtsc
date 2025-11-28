@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <style>
+        /* Cấu hình cho Body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Ngăn cuộn trang khi video tràn */
+        }
+
+        /* --- CẤU HÌNH VIDEO NỀN --- */
+        #bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100; /* Nằm dưới cùng */
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover; /* Đảm bảo video phủ kín màn hình */
+        }
+
+        /* Lớp phủ màu tối để form dễ đọc hơn trên nền video */
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Màu đen mờ 40% */
+            z-index: -99;
+        }
+
+        /* Khung chứa form đăng ký */
+        .register-box {
+            background-color: rgba(57, 57, 57, 0.85); /* Tăng độ đậm nền box một chút */
+            border-radius: 7px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+            padding-bottom: 0.25rem;
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            z-index: 1; /* Nằm trên video */
+            backdrop-filter: blur(5px); /* Hiệu ứng mờ nền sau box (glassmorphism) */
+        }
+
+        .register-form {
+            margin: auto;
+            padding: 20px;
+        }
+
+        .form-title {
+            padding-top: 3px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px #000;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .custom-input {
+            height: 50px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-top: 0.25rem;
+        }
+
+        .error-text {
+            color: #ff6b6b; /* Màu đỏ sáng hơn cho dễ nhìn trên nền tối */
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+            height: 15px;
+        }
+
+        .btn-register {
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .btn-register:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .captcha-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="/assets/frontend/teaser/videos/g.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video nền.
+    </video>
+    
+    <div class="video-overlay"></div>
+
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10">
+                
+                <div class="register-box">
+                    <form class="text-center register-form" method="post" action="" onsubmit="return validateForm(event)">
+                        
+                        <h1 class="h3 form-title">Đăng Kí</h1>
+
+                        <input type="text" name="username" class="form-control custom-input" placeholder="Tên tài khoản" required autofocus>
+                        <span class="error-text"></span>
+
+                        <input type="password" name="password" class="form-control custom-input" placeholder="Mật khẩu" required>
+                        <span class="error-text"></span>
+
+                        <div class="captcha-container">
+                            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+                        </div>
+
+                        <div class="text-center mt-1">
+                            <button class="btn btn-lg btn-dark btn-block btn-register" type="submit" name="submit">Đăng Kí</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); 
+            
+            const username = document.querySelector('input[name="username"]').value;
+            const password = document.querySelector('input[name="password"]').value;
+
+            if (!/^[a-zA-Z0-9]+$/.test(username)) {
+                Swal.fire({
+                    title: "Thất Bại",
+                    html: "Tên người dùng không hợp lệ! (Chỉ chữ và số)",
+                    icon: "error",
+                    confirmButtonText: "Đóng"
+                });
+                return false;
+            }
+
+            Swal.fire({
+                title: "Thành Công",
+                html: "Đăng ký thành công! (Demo)",
+                icon: "success",
+                confirmButtonText: "Đóng"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // window.location.href = "../pages/dangnhap.php";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
