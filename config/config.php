@@ -6,7 +6,12 @@
 	$local_db = "localhost";
 	$user_db = "root";
 	$pass_db = "";
-	$name_db = "ngocrong";
+	$name_db = "ngocrong_onl";
+
+
+    // home path
+    DEFINE("HOME_PAGE", "home.php");
+
 	# đừng đụng vào 
     $config = mysqli_connect($local_db, $user_db, $pass_db, $name_db);
     if (mysqli_connect_errno()) {

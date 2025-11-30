@@ -1,9 +1,15 @@
 <?php
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../helper/helper.php';
+require_once __DIR__ . '/../middleware/auth.php';
 
 function register(){
     global $config;
+    global $is_authenticated;
+    if($is_authenticated){ // đã login
+        redirectHome();
+        exit();
+    }
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -14,8 +20,7 @@ function register(){
     $account = mysqli_query($config,$sql);
         if(mysqli_num_rows($account) > 0){
             $thongbao = 'Tài khoản đã tồn tại';
-            $basePath = getBaseUrl();
-            $redirect_path = $basePath . 'home.php';
+            $redirect_path = define_url('home.php');
             $script = '
             var thongbao = ' . json_encode($thongbao) . ';
             if (thongbao !== "") {
@@ -48,6 +53,11 @@ function register(){
 
 function login(){
     global $config;
+    global $is_authenticated;
+    if($is_authenticated){ // đã login
+        redirectHome();
+        exit();
+    }
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -65,8 +75,7 @@ function login(){
         $_SESSION['is_authenticated'] = true;
         
         $thongbao = 'Đăng nhập thành công';
-        $basePath = getBaseUrl();
-        $redirect_path = $basePath . '/home.php';
+        $redirect_path = define_url('home.php');
         $script = '
         var thongbao = ' . json_encode($thongbao) . ';
         if (thongbao !== "") {
@@ -78,10 +87,12 @@ function login(){
         echo '<script>' . $script . '</script>';
     } else {
         $thongbao = 'Sai tài khoản hoặc mật khẩu!';
+        $redirect_path = define_url('home.php');
         $script = '
         var thongbao = ' . json_encode($thongbao) . ';
         if (thongbao !== "") {
             alert(thongbao);
+            window.location = "' . $redirect_path . '";
         }
         ';
 
@@ -98,11 +109,17 @@ if(isset($_POST['submit_register'])){
     register();
 }
 
-
 function logout(){
     session_start();
     session_destroy();
-    $basePath = getBaseUrl();
-    $newURL = '../home.php';
-    header('Location: '.$newURL);
+    $redirect_path = define_url('home.php');
+    header('Location: '.$redirect_path);
+}
+
+
+function auth(){
+    global $is_authenticated;
+    if (!$is_authenticated){
+        logout();
+    }
 }

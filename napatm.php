@@ -1,4 +1,9 @@
-<?php ?>
+<?php
+require_once __DIR__ . '/./helper/helper.php';
+require_once __DIR__ . '/./auth/auth.php';
+auth();
+$page_home = define_url('home.php');
+?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -268,7 +273,7 @@
 <div class="container container-custom mt-4">
 
     <div>
-        <a href="/" class="btn-home">
+        <a href="<?= $page_home ?>" class="btn-home">
             <i class="fas fa-arrow-left"></i> Quay lại trang chủ
         </a>
     </div>

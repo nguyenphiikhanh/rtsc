@@ -1,0 +1,148 @@
+<?php ?>
+
+<section class="__section log7day__ __2">
+    <div class="limit__game">
+        <div class="tit__st tCenter">
+            <img src="../assets/frontend/events/phucloinap2025/images/fuck/log1_new.png"  class="hidden__PC" style="width: 60%;max-width: 488px;">
+            <img src="../assets/frontend/events/phucloinap2025/images/fuck/log_2.png" class="hidden__MB" style="width: 90%;max-width: 836px;">
+        </div>
+        <div class="lst__logday fkufamB dFlex aCenter jCenter quaDangNhap">
+            <div class="ea__logday ">
+                <div class="day__log tCenter">Ngày 1</div>
+                <div class="listGift__cG list-img m__inline dFlex mt-2per">
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/1.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/2.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/3.png" alt="">
+                    </div>
+                </div>
+                <div class="tCenter">
+                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                </div>
+            </div>
+            <div class="ea__logday ">
+                <div class="day__log tCenter">Ngày 2</div>
+                <div class="listGift__cG list-img m__inline dFlex mt-2per">
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/2/1.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/2/2.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/2/3.png" alt="">
+                    </div>
+                </div>
+                <div class="tCenter">
+                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                </div>
+            </div>
+            <div class="ea__logday ">
+                <div class="day__log tCenter">Ngày 3</div>
+                <div class="listGift__cG list-img m__inline dFlex mt-2per">
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/3/1.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/3/2.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/3/3.png" alt="">
+                    </div>
+                </div>
+                <div class="tCenter">
+                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                </div>
+            </div>
+            <div class="ea__logday ">
+                <div class="day__log tCenter">Ngày 4</div>
+                <div class="listGift__cG list-img m__inline dFlex mt-2per">
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/4/1.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/4/2.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/4/3.png" alt="">
+                    </div>
+                </div>
+                <div class="tCenter">
+                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                </div>
+            </div>
+            <div class="ea__logday ">
+                <div class="day__log tCenter">Ngày 5</div>
+                <div class="listGift__cG list-img m__inline dFlex mt-2per">
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/5/1.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/5/2.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/5/3.png" alt="">
+                    </div>
+                </div>
+                <div class="tCenter">
+                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                </div>
+            </div>
+            <div class="ea__logday ">
+                <div class="day__log tCenter">Ngày 6</div>
+                <div class="listGift__cG list-img m__inline dFlex mt-2per">
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/6/1.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/6/2.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/6/3.png" alt="">
+                    </div>
+                </div>
+                <div class="tCenter">
+                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                </div>
+            </div>
+            <div class="ea__logday ">
+                <div class="day__log tCenter">Ngày 7</div>
+                <div class="listGift__cG list-img m__inline dFlex mt-2per">
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/7/1.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/7/2.png" alt="">
+                    </div>
+                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/7/3.png" alt="">
+                    </div>
+                </div>
+                <div class="tCenter">
+                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                </div>
+            </div>
+
+            <style>
+                .received {
+                    -webkit-filter: grayscale(1)!important;
+                    filter: grayscale(1)!important;;
+                }
+            </style>
+
+            <script>
+                var nhanQuaDangNhap = function (giftCode) {
+                    $.post('https://rongthansieucap.vn/su-kien/phuc-loi-nap-2025/nhan-qua-dang-nhap?giftCode='+giftCode, response => {
+                        if(response.status == 1) {
+                            loadGiftLoginForUser();
+                        }
+                        customAlert(response.message);
+                    }, 'json');
+                }
+            </script></div>
+    </div>
+</section>

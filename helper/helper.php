@@ -1,17 +1,42 @@
 <?php
-function getBaseUrl() {
-    // output: /myproject/index.php
-    $currentPath = $_SERVER['PHP_SELF'];
+require_once __DIR__ . '/../config/config.php';
+function define_url($path = "") {
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
 
-    // output: Array ( [dirname] => /myproject [basename] => index.php [extension] => php [filename] => index )
-    $pathInfo = pathinfo($currentPath);
+    // Lấy đường dẫn gốc theo DOCUMENT_ROOT
+    $documentRoot = str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT']));
 
-    // output: localhost
-    $hostName = $_SERVER['HTTP_HOST'];
+    // Lấy thư mục project
+    $projectRoot = str_replace('\\', '/', realpath(__DIR__ . '/..'));
 
-    // output: http://
-    $protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https://'?'https://':'http://';
+    // Tính URL path của project
+    $basePath = str_replace($documentRoot, '', $projectRoot);
 
-    // return: http://localhost/myproject/
-    return $protocol.$hostName.$pathInfo['dirname']."/";
+    return $protocol . "://" . $_SERVER['HTTP_HOST'] . $basePath . "/" . ltrim($path, "/");
+}
+
+function redirectHome(){
+    $home_page = define_url(HOME_PAGE);
+    header('Location: '.$home_page);
+}
+
+function load_css($filePaths = [])
+{
+    $html = "";
+    foreach ($filePaths as $filePath) {
+        $html .= '<link rel="stylesheet" href="' . define_url($filePath) . '">' . "\n";
+    }
+
+    return $html;
+}
+
+function load_script($filePaths = [])
+{
+    $html = "";
+    foreach ($filePaths as $filePath) {
+
+        $html .= '<script src="' . define_url($filePath) . '"></script>' . "\n";
+    }
+
+    return $html;
 }
