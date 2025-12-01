@@ -21,22 +21,6 @@ require_once __DIR__ . '/../auth/auth.php';
                         <div class="tCenter mt-3per">
                             <button name="submit" class="btn-log btLog fkufamB tUpper mt-2per c-white bd-black c-pointer btn-tranY">Đăng Nhập</button>
                         </div>
-                        <div class="note m__inline c-black">
-                            <p class="tCenter">
-                                <a href="https://id.acegame.vn/ForgotInfo" class="c-red">Quên mật khẩu?</a> Chưa có tài khoản?
-                                <a href="/dangky.php" target="_blank" class="c-blue">Đăng ký</a>
-                            </p>
-                        </div>
-
-                        <p class="note m__inline tCenter  c-black">Hoặc đăng nhập bằng</p>
-                        <div class="other-login tct dFlex aCenter jCenter tUpper">
-                            <a href="javascript:;" data-href="https://id.acegame.vn/Oauth?partner=google&amp;Returnurl=https%3A%2F%2Frongthansieucap.vn%2Fauth%2Fopenid-oauth" class="btn-openid-login login-gg dFlex aCenter jCenter">
-                                <img src="../assets/frontend/events/phucloinap2025/images/modal/img-gg.png" alt="" />
-                            </a>
-                            <a href="javascript:;" data-href="https://id.acegame.vn/Oauth?partner=facebook&amp;Returnurl=https%3A%2F%2Frongthansieucap.vn%2Fauth%2Fopenid-oauth" class="btn-openid-login login-fb2 dFlex aCenter jCenter">
-                                <img src="../assets/frontend/events/phucloinap2025/images/modal/img-fb.png" alt="" />
-                            </a>
-                        </div>
                     </div>
                 </form>
             </div>
@@ -60,22 +44,6 @@ require_once __DIR__ . '/../auth/auth.php';
 
                         <div class="tCenter mt-3per">
                             <button name="submit_register" class="btn-log btLog fkufamB tUpper mt-2per c-white bd-black c-pointer btn-tranY">Đăng Ký</button>
-                        </div>
-                        <div class="note m__inline c-black">
-                            <p class="tCenter">
-                                <a href="https://id.acegame.vn/ForgotInfo" class="c-red">Quên mật khẩu?</a> Chưa có tài khoản?
-                                <a href="/dangky.php" target="_blank" class="c-blue">Đăng ký</a>
-                            </p>
-                        </div>
-
-                        <p class="note m__inline tCenter  c-black">Hoặc đăng nhập bằng</p>
-                        <div class="other-login tct dFlex aCenter jCenter tUpper">
-                            <a href="javascript:;" data-href="https://id.acegame.vn/Oauth?partner=google&amp;Returnurl=https%3A%2F%2Frongthansieucap.vn%2Fauth%2Fopenid-oauth" class="btn-openid-login login-gg dFlex aCenter jCenter">
-                                <img src="../assets/frontend/events/phucloinap2025/images/modal/img-gg.png" alt="" />
-                            </a>
-                            <a href="javascript:;" data-href="https://id.acegame.vn/Oauth?partner=facebook&amp;Returnurl=https%3A%2F%2Frongthansieucap.vn%2Fauth%2Fopenid-oauth" class="btn-openid-login login-fb2 dFlex aCenter jCenter">
-                                <img src="../assets/frontend/events/phucloinap2025/images/modal/img-fb.png" alt="" />
-                            </a>
                         </div>
                     </div>
                 </form>
