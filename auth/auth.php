@@ -119,6 +119,17 @@ function logout(){
 function auth(){
     global $is_authenticated;
     if (!$is_authenticated){
-        logout();
+        $thongbao = 'Vui lòng đăng nhập để tiếp tục!';
+        $redirect_path = define_url('home.php');
+        $script = '
+            var thongbao = ' . json_encode($thongbao) . ';
+            if (thongbao !== "") {
+                alert(thongbao);
+                window.location = "' . $redirect_path . '";
+            }
+            ';
+
+        echo '<script>' . $script . '</script>';
+//        logout();
     }
 }
