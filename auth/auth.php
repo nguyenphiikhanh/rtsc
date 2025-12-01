@@ -32,7 +32,6 @@ function register(){
             echo '<script>' . $script . '</script>';
         } else {
             $sql = "INSERT INTO account (username, password) VALUES ('$username', '$password')";
-            $thongbao = '';
             $result = mysqli_query($config,$sql);
             if($result){
                 $thongbao = 'Đăng ký thành công!';

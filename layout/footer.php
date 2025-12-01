@@ -31,8 +31,7 @@ require_once __DIR__ . '/../helper/helper.php';
             <p class="tCenter footer-text">EMAIL HỖ TRỢ: DUYNGUYENKEM20400@GMAIL.COM</p>
             <p class="tCenter footer-text">THỜI GIAN: 8:00 - 22:00 CÁC NGÀY (GMT+7)</p>
 
-
-            <img <?php echo define_url("assets/frontend/events/phucloinap2025/images/undo18.png"); ?> width="70" height="101" class="footer-ace-18">
+            <img src="<?= define_url("assets/frontend/events/phucloinap2025/images/undo18.png"); ?>" width="70" height="101" class="footer-ace-18">
         </div>
     </div>
 </div>

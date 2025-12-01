@@ -51,12 +51,12 @@ global $is_authenticated;
                         <?php if($is_authenticated){ ?>
                             <a href="<?php echo $page_logout; ?>" class="">Đăng xuất</a>
                         <?php } else { ?>
-                            <a href="#" class="show__login">Đăng nhập</a>
+                            <a href="javascript:void(0);" class="show__login">Đăng nhập</a>
                         <?php } ?>
                     </li>
                     <?php if(!$is_authenticated){ ?>
                         <li class="">
-                            <a href="#" class="show__register">Đăng ký</a>
+                            <a href="javascript:void(0);" class="show__register">Đăng ký</a>
                         </li>
                     <?php } ?>
                 </ul>
