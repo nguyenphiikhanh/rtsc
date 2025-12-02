@@ -17,10 +17,10 @@ function register(){
 	$password = mysqli_real_escape_string($config, $password);
 
     $sql = "SELECT * FROM account WHERE username = '$username'";
+    $redirect_path = define_url('home.php');
     $account = mysqli_query($config,$sql);
         if(mysqli_num_rows($account) > 0){
             $thongbao = 'Tài khoản đã tồn tại';
-            $redirect_path = define_url('home.php');
             $script = '
             var thongbao = ' . json_encode($thongbao) . ';
             if (thongbao !== "") {
@@ -42,6 +42,7 @@ function register(){
             var thongbao = ' . json_encode($thongbao) . ';
             if (thongbao !== "") {
                 alert(thongbao);
+                window.location = "' . $redirect_path . '";
             }
             ';
 
@@ -64,6 +65,7 @@ function login(){
 	$password = mysqli_real_escape_string($config, $password);
 
     $sql = "SELECT * FROM account WHERE username = '$username' AND password = '$password'";
+    $redirect_path = define_url('home.php');
     $account = mysqli_query($config,$sql);
     if(mysqli_num_rows($account) > 0){
         session_start();
@@ -74,7 +76,6 @@ function login(){
         $_SESSION['is_authenticated'] = true;
         
         $thongbao = 'Đăng nhập thành công';
-        $redirect_path = define_url('home.php');
         $script = '
         var thongbao = ' . json_encode($thongbao) . ';
         if (thongbao !== "") {
