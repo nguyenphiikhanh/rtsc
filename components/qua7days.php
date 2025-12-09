@@ -1,4 +1,9 @@
-<?php ?>
+<?php
+require_once __DIR__ . '/../modules/quadangnhap.php';
+require_once __DIR__ . '/../constants/constants.php';
+$received_data = get_receive_data();
+$gift_data = get_gift_data();
+?>
 
 <section class="__section log7day__ __2">
     <div class="limit__game">
@@ -7,142 +12,40 @@
             <img src="../assets/frontend/events/phucloinap2025/images/fuck/log_2.png" class="hidden__MB" style="width: 90%;max-width: 836px;">
         </div>
         <div class="lst__logday fkufamB dFlex aCenter jCenter quaDangNhap">
+            <?php foreach ($gift_data as $gift) { $gift_items = json_decode($gift['items'], true); ?>
             <div class="ea__logday ">
-                <div class="day__log tCenter">Ngày 1</div>
+                <div class="day__log tCenter">Ngày <?= $gift['day'] ?></div>
                 <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/1.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/2.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/3.png" alt="">
-                    </div>
+                <?php foreach ($gift_items as $gift_item) { ?>
+                        <div class="thumb-img p-r dFlex aCenter jCenter" title="">
+                            <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/1.png" alt="<?= $gift_item['id'].', số lượng: ' . $gift_item['quantity'] ?>">
+                        </div>
+                <?php } ?>
                 </div>
                 <div class="tCenter">
-                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                    <?php if($received_data['day'] == $gift['day']) {
+                        if($received_data['received'] == NOT_RECEIVED){ ?>
+                            <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY not-received" onclick="giftReceive(<?= $gift['day'] ?>)">Nhận quà</span></div>
+                        <?php } else { ?>
+                            <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY received">Đã nhận</div>
+                        <?php } ?>
+                     <?php } else { ?>
+                        <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
+                    <?php } ?>
                 </div>
             </div>
-            <div class="ea__logday ">
-                <div class="day__log tCenter">Ngày 2</div>
-                <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/2/1.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/2/2.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/2/3.png" alt="">
-                    </div>
-                </div>
-                <div class="tCenter">
-                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
-                </div>
-            </div>
-            <div class="ea__logday ">
-                <div class="day__log tCenter">Ngày 3</div>
-                <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/3/1.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/3/2.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/3/3.png" alt="">
-                    </div>
-                </div>
-                <div class="tCenter">
-                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
-                </div>
-            </div>
-            <div class="ea__logday ">
-                <div class="day__log tCenter">Ngày 4</div>
-                <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/4/1.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/4/2.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/4/3.png" alt="">
-                    </div>
-                </div>
-                <div class="tCenter">
-                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
-                </div>
-            </div>
-            <div class="ea__logday ">
-                <div class="day__log tCenter">Ngày 5</div>
-                <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/5/1.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/5/2.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/5/3.png" alt="">
-                    </div>
-                </div>
-                <div class="tCenter">
-                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
-                </div>
-            </div>
-            <div class="ea__logday ">
-                <div class="day__log tCenter">Ngày 6</div>
-                <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/6/1.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/6/2.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/6/3.png" alt="">
-                    </div>
-                </div>
-                <div class="tCenter">
-                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
-                </div>
-            </div>
-            <div class="ea__logday ">
-                <div class="day__log tCenter">Ngày 7</div>
-                <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/7/1.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/7/2.png" alt="">
-                    </div>
-                    <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                        <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/7/3.png" alt="">
-                    </div>
-                </div>
-                <div class="tCenter">
-                    <div class="bt__gGCF_cg dFlex aCenter jCenter cp btn-tranY">Chưa đạt</div>
-                </div>
-            </div>
-
+            <?php } ?>
+            <form action="" method="POST" style="display: none;" id="receive_day_gift">
+                <input type="hidden" name="day" id="day-receive" value="">
+            </form>
             <style>
                 .received {
-                    -webkit-filter: grayscale(1)!important;
-                    filter: grayscale(1)!important;;
+                    color: gray;
+                }
+                .not-received {
+                   color: green;
                 }
             </style>
-
-            <script>
-                var nhanQuaDangNhap = function (giftCode) {
-                    $.post('https://rongthansieucap.vn/su-kien/phuc-loi-nap-2025/nhan-qua-dang-nhap?giftCode='+giftCode, response => {
-                        if(response.status == 1) {
-                            loadGiftLoginForUser();
-                        }
-                        customAlert(response.message);
-                    }, 'json');
-                }
-            </script></div>
+        </div>
     </div>
 </section>

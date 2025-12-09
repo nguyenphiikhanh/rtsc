@@ -71,7 +71,6 @@ function login(){
         session_start();
         
         $_SESSION['logger']['username'] = $username;
-        $_SESSION['logger']['password'] = $password;
         $_SESSION['account'] = $username;
         $_SESSION['is_authenticated'] = true;
         
@@ -99,6 +98,13 @@ function login(){
         echo '<script>' . $script . '</script>';
     }
     exit();
+}
+
+function get_auth_info(){
+    auth();
+    return [
+        'username' => $_SESSION['account'] ?? '',
+    ];
 }
 
 if(isset($_POST['submit'])){
