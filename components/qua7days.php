@@ -16,9 +16,10 @@ $gift_data = get_gift_data();
             <div class="ea__logday ">
                 <div class="day__log tCenter">Ngày <?= $gift['day'] ?></div>
                 <div class="listGift__cG list-img m__inline dFlex mt-2per">
-                <?php foreach ($gift_items as $gift_item) { ?>
-                        <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                            <img src="../assets/frontend/events/phucloinap2025/images/omg/nap7ngay/1/1.png" alt="<?= $gift_item['id'].', số lượng: ' . $gift_item['quantity'] ?>">
+                <?php foreach ($gift_items as $index => $gift_item) { ?>
+                        <div class="thumb-img p-r dFlex aCenter jCenter p-relative" title="">
+                            <img src="<?= "../assets/frontend/quadangnhap/day{$gift['day']}/".($index + 1).".png" ?>" alt="<?= ($index + 1).', số lượng: ' . $gift_item['quantity'] ?>">
+                            <small class="quantity__img dFlex aCenter jCenter p-absolute" style="bottom: 0; right: 1px;color: yellow">x<?= $gift_item['quantity'] ?></small>
                         </div>
                 <?php } ?>
                 </div>
@@ -44,6 +45,12 @@ $gift_data = get_gift_data();
                 }
                 .not-received {
                    color: green;
+                }
+                .p-absolute {
+                    position: absolute;
+                }
+                .p-relative{
+                    position: relative;
                 }
             </style>
         </div>

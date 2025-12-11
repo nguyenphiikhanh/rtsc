@@ -145,14 +145,14 @@ global $is_authenticated;
 <section class="__section cardGame__ __3">
     <div class="limit__game">
 
-        <div class="tit__st tCenter">
-            <img src="../assets/frontend/events/phucloinap2025/images/fuck/f1.png" style="width: 90%;max-width: 589px;">
-        </div>
+<!--        <div class="tit__st tCenter">-->
+<!--            <img src="../assets/frontend/events/phucloinap2025/images/fuck/f1.png" style="width: 90%;max-width: 589px;">-->
+<!--        </div>-->
 
-        <div class="tCenter fkufamB c-black num_allTLGg__">
-            Lưu ý: chỉ tính các mốc tại trang <a href="https://pay.acegame.vn/" target="_blank">https://pay.acegame.vn/</a>
-        </div>
-        <?php include_once __DIR__ . '/../components/quamocnap.php'; ?>
+<!--        <div class="tCenter fkufamB c-black num_allTLGg__">-->
+<!--            Lưu ý: chỉ tính các mốc tại trang <a href="https://pay.acegame.vn/" target="_blank">https://pay.acegame.vn/</a>-->
+<!--        </div>-->
+<!--        --><?php //include_once __DIR__ . '/../components/quamocnap.php'; ?>
 
         <div class="tit__st tCenter">
             <img src="../assets/frontend/events/phucloinap2025/images/fuck/f2.png" style="width: 90%;max-width: 705px;">
