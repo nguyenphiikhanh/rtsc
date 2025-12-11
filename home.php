@@ -453,53 +453,7 @@ require_once __DIR__ . '/./helper/helper.php';
     }
 </style>
 
-<div class="sidebar_right hidden__mobile mo" style="    top: 35%;">
-    <div class="sidebar_right-content tCenter">
-        <img src="assets/frontend/home/v1/images/sibarRight/qr.png" alt="" class="icon-right"/>
-
-        <div class="tCenter t-lineok">
-            <img src="assets/frontend/home/v1/images/sibarRight/line.png" alt="" class="line"/>
-        </div>
-
-        <a target="_blank" href="https://apps.apple.com/vn/app/id6446673495?l=vi" class="link-dlgame img-hv p-r">
-            <img src="assets/frontend/home/v1/images/sibarRight/ios.png" alt="" class="img-bt"/>
-            <img src="assets/frontend/home/v1/images/sibarRight/ios-hv.png" alt="" class="img-hv p-a in-img-hv"/>
-        </a>
-
-        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.rtsc.ultracombo"
-           class="link-dlgame linkdks-android img-hv p-r">
-            <img src="assets/frontend/home/v1/images/sibarRight/android.png" alt="" class="img-bt"/>
-            <img src="assets/frontend/home/v1/images/sibarRight/android-hv.png" alt="" class="img-hv p-a in-img-hv"/>
-        </a>
-
-        <div class="clickGet m__inline">
-            <a target="_blank" href="./news/phuc-loi-nap-2025.php"
-               class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
-                Done
-            </a>
-        </div>
-
-        <div class="go-top">
-            <img src="assets/frontend/home/v1/images/sibarRight/top.png" alt=""/>
-        </div>
-    </div>
-    <span class="ctFixRight dFlex aCenter jCenter ctFixRight-mo">
-      <img src="assets/frontend/home/v1/images/sibarRight/img-arrow.png" class="imgCtr"/>
-    </span>
-
-    <a target="_blank" href="./news/phuc-loi-nap-2025.php">
-        <img src="assets/frontend/home/v1/images/bn__gift_now.png" class="gift__site__pc">
-    </a>
-    <style>
-        .gift__site__pc {
-            position: absolute;
-            bottom: -202px;
-            left: 0;
-        }
-    </style>
-</div>
-</div>
-
+<?php require_once __DIR__ . '/./components/sidebar-right.php'; ?>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
