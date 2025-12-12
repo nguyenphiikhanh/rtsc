@@ -2,12 +2,13 @@
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../constants/constants.php';
 require_once __DIR__ . '/../auth/auth.php';
+require_once __DIR__ . '/../helper/helper.php';
 function get_receive_data(){
     global $config;
 
     $userinfo = get_auth_info();
     $username = $userinfo['username'];
-    $sql = "SELECT id, username, create_time, ban FROM account WHERE username = $username";
+    $sql = "SELECT id, username, create_time, ban FROM account WHERE username = '$username'";
     $results = $config->query($sql);
 
     if($results->num_rows > 0){
@@ -57,66 +58,179 @@ function get_gift_data(){
     return $gift_data;
 }
 
-function receive($day){
+function receive($day) {
     global $config;
+
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     $userinfo = get_auth_info();
     $username = $userinfo['username'];
     $thongbao = '';
-    try{
-        $sql = "SELECT account.id, ban, account.username, player.name
-                FROM account INNER JOIN player ON account.id = player.account_id 
-                WHERE account.username = '$username'";
-        $results = $config->query($sql);
-        if($results->num_rows > 0){
-            $account = $results->fetch_assoc();
-            $account_id = $account['id'];
-            $is_banned = $account['ban'];
-            if($is_banned) {
-                $thongbao = 'Tài khoản của bạn đã bị khóa, không thể nhận quà!';
-            } else{
-                $start = date("Y-m-d 00:00:00");
-                $end   = date("Y-m-d 23:59:59");
-                $receiveSql =  "SELECT * FROM qua_dang_nhap_history WHERE account_id = $account_id AND date_received BETWEEN '$start' AND '$end'";
-                $receive_results = $config->query($receiveSql);
-                if($receive_results->num_rows == 0){
-                    $now_str = date("Y-m-d H:i:s");
-                    $insertSql = "INSERT INTO qua_dang_nhap_history (account_id, date_received, day) VALUES ($account_id, '$now_str', $day)";
-                    mysqli_query($config,$insertSql);
-                    $thongbao = 'Nhận quà thành công, vui lòng kiểm tra trong game!';
-                }
-                else{ // đã nhận quà
-                    $thongbao = 'Tham lam vừa thôi, đmm!';
-                }
+
+    try {
+        $config->begin_transaction();
+
+        /* =========================
+         * 1. LẤY ACCOUNT + PLAYER
+         * ========================= */
+        $stmt = $config->prepare("
+            SELECT 
+                account.id AS account_id,
+                account.ban,
+                player.id AS player_id
+            FROM account
+            INNER JOIN player ON account.id = player.account_id
+            WHERE account.username = ?
+            LIMIT 1
+        ");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows === 0) {
+            throw new Exception('Vui lòng tạo nhân vật trong game để nhận quà!');
+        }
+
+        $account = $result->fetch_assoc();
+
+        if ($account['ban']) {
+            throw new Exception('Tài khoản của bạn đã bị khóa!');
+        }
+
+        $account_id = (int)$account['account_id'];
+        $player_id  = (int)$account['player_id'];
+
+        /* =========================
+         * 2. INSERT HISTORY (ANTI DUP)
+         * ========================= */
+        $stmt = $config->prepare("
+            INSERT INTO qua_dang_nhap_history (account_id, date_received, day)
+            VALUES (?, NOW(), ?)
+        ");
+        $stmt->bind_param("ii", $account_id, $day);
+        $stmt->execute();
+        // Nếu đã nhận → UNIQUE KEY sẽ throw exception
+
+        /* =========================
+         * 3. LẤY QUÀ
+         * ========================= */
+        $stmt = $config->prepare("SELECT items FROM qua_dang_nhap WHERE day = ?");
+        $stmt->bind_param("i", $day);
+        $stmt->execute();
+        $giftResult = $stmt->get_result();
+
+        if ($giftResult->num_rows === 0) {
+            throw new Exception('Không tìm thấy quà cho ngày này!');
+        }
+
+        $giftData = json_decode($giftResult->fetch_assoc()['items'], true);
+
+        /* =========================
+         * 4. LẤY HÀNH TRANG
+         * ========================= */
+        $stmt = $config->prepare("SELECT items_bag FROM player WHERE id = ?");
+        $stmt->bind_param("i", $player_id);
+        $stmt->execute();
+        $bagResult = $stmt->get_result();
+        $bagItems = json_decode($bagResult->fetch_assoc()['items_bag'], true);
+
+        if (!is_array($bagItems)) {
+            throw new Exception('Dữ liệu hành trang lỗi!');
+        }
+
+        $emptySlots = [];
+        foreach ($bagItems as $i => $slot) {
+            if ($slot['temp_id'] == NULL_TEMP_ID) {
+                $emptySlots[] = $i;
             }
         }
-        else{
-            $thongbao = 'Vui lòng tạo nhân vật trong game để nhận quà!';
+
+        /* =========================
+         * 5. LẤY ITEM TEMPLATE
+         * ========================= */
+        $giftItemIds = array_column($giftData, 'id');
+        $in = implode(',', array_fill(0, count($giftItemIds), '?'));
+        $types = str_repeat('i', count($giftItemIds));
+
+        $stmt = $config->prepare("
+            SELECT id, is_up_to_up 
+            FROM item_template 
+            WHERE id IN ($in)
+        ");
+        $stmt->bind_param($types, ...$giftItemIds);
+        $stmt->execute();
+        $tempResult = $stmt->get_result();
+
+        $templates = [];
+        while ($row = $tempResult->fetch_assoc()) {
+            $templates[$row['id']] = $row;
         }
-        $script = ' var thongbao = ' . json_encode($thongbao) . ';
-            if (thongbao !== "") {
-                alert(thongbao);
-                window.location.href = window.location.pathname;
-            }
-            ';
 
-        echo '<script>' . $script . '</script>';
-        exit();
-    }
-    catch (Exception $e){
-        die('Lỗi hệ thống, vui lòng thử lại sau!'. $e->getMessage());
-        $thongbao = 'Lỗi hệ thống, vui lòng thử lại sau!';
-        $script = ' var thongbao = ' . json_encode($thongbao) . ';
-            if (thongbao !== "") {
-                alert(thongbao);
-                window.location.href = window.location.pathname;
-            }
-            ';
+        /* =========================
+         * 6. XỬ LÝ NHẬN QUÀ
+         * ========================= */
+        $nowMs = (int)(microtime(true) * 1000);
 
-        echo '<script>' . $script . '</script>';
-        exit();
+        foreach ($giftData as $gift) {
+            $options = [];
+            foreach ($gift['options'] ?? [] as $opt) {
+                $options[] = [$opt['id'], $opt['param']];
+            }
+
+            $foundStack = false;
+
+            if (!empty($templates[$gift['id']]['is_up_to_up'])) {
+                foreach ($bagItems as &$slot) {
+                    if (
+                        $slot['temp_id'] == $gift['id'] &&
+                        normalizeOptions($slot['option']) === normalizeOptions($options)
+                    ) {
+                        $slot['quantity'] += $gift['quantity'];
+                        $slot['create_time'] = $nowMs;
+                        $foundStack = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!$foundStack) {
+                if (empty($emptySlots)) {
+                    throw new Exception('Hành trang không đủ chỗ trống!');
+                }
+
+                $slotIndex = array_shift($emptySlots);
+                $bagItems[$slotIndex] = [
+                    'temp_id' => $gift['id'],
+                    'quantity' => $gift['quantity'],
+                    'create_time' => $nowMs,
+                    'option' => $options
+                ];
+            }
+        }
+
+        /* =========================
+         * 7. UPDATE HÀNH TRANG (1 LẦN)
+         * ========================= */
+        $bagJson = json_encode($bagItems, JSON_UNESCAPED_UNICODE);
+        $stmt = $config->prepare("UPDATE player SET items_bag = ? WHERE id = ?");
+        $stmt->bind_param("si", $bagJson, $player_id);
+        $stmt->execute();
+
+        $config->commit();
+        $thongbao = 'Nhận quà thành công! Vui lòng kiểm tra trong game.';
+
+    } catch (Exception $e) {
+        $config->rollback();
+        $thongbao = $e->getMessage();
     }
+
+    echo "<script>
+        alert(" . json_encode($thongbao) . ");
+        window.location.href = window.location.pathname;
+    </script>";
+    exit;
 }
+
 
 if(isset($_POST['day'])){
     $day = intval($_POST['day']);

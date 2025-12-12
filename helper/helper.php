@@ -40,3 +40,15 @@ function load_script($filePaths = [])
 
     return $html;
 }
+
+function normalizeOptions($options) {
+    // Ép về array (phòng trường hợp stdClass)
+    $options = json_decode(json_encode($options), true);
+
+    // Sắp xếp theo optionId
+    usort($options, function ($a, $b) {
+        return $a[0] <=> $b[0];
+    });
+
+    return $options;
+}

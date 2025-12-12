@@ -60,7 +60,6 @@ global $is_authenticated;
                     </div>
                     <div class="txt-name-game c-white">
                         <div class="name-game fkufamB tUpper">Rồng thần siêu cấp</div>
-                        <!-- <div class="txt-des">Game Mobile tam quốc</div> -->
                     </div>
                 </div>
             </div>
@@ -68,7 +67,7 @@ global $is_authenticated;
             <div class="navbar-content tCenter">
                 <ul id="menu" class="fkufam">
                     <li>
-                        <a target="_blank" href="../home.php" class="">
+                        <a href="<?= define_url("home.php") ?>" class="">
                             <img src="../assets/frontend/events/phucloinap2025/images/icons/home.png" class="hidden__MB">
                             <span class="hidden__PC">Trang chủ</span>
                         </a>
