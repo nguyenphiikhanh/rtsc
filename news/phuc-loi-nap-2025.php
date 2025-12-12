@@ -145,21 +145,8 @@ global $is_authenticated;
 <section class="__section cardGame__ __3">
     <div class="limit__game">
 
-<!--        <div class="tit__st tCenter">-->
-<!--            <img src="../assets/frontend/events/phucloinap2025/images/fuck/f1.png" style="width: 90%;max-width: 589px;">-->
-<!--        </div>-->
+<!--        --><?php //include_once __DIR__ . '/../components/quatichluy.php'; ?>
 
-<!--        <div class="tCenter fkufamB c-black num_allTLGg__">-->
-<!--            Lưu ý: chỉ tính các mốc tại trang <a href="https://pay.acegame.vn/" target="_blank">https://pay.acegame.vn/</a>-->
-<!--        </div>-->
-<!--        --><?php //include_once __DIR__ . '/../components/quamocnap.php'; ?>
-
-        <div class="tit__st tCenter">
-            <img src="../assets/frontend/events/phucloinap2025/images/fuck/f2.png" style="width: 90%;max-width: 705px;">
-        </div>
-        <?php include_once __DIR__ . '/../components/quatichluy.php'; ?>
-
-        <div class="note_end__ tCenter c-black"><i>(Hệ thống sẽ làm mới mỗi 15 phút, vui lòng kiểm tra lại sau nếu chưa nhận được quà.)</i></div>
         <style>
             .note_end__ {
                 /*margin-top: -4%;*/
@@ -253,22 +240,16 @@ global $is_authenticated;
         <div class="tCenter t-lineok">
             <img src="../assets/frontend/events/phucloinap2025/images/sibarRight/line.png" alt="" class="line">
         </div>
-        <div class="tCenter fkufamB c-black t-dks">
-            Tải game ngay tại
+
+        <div class="clickGet m__inline">
+            <a target="#" href="<?= define_url("news/tin-tuc/top-nap-the.php") ?>" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
+                Top Nạp
+            </a>
         </div>
 
-        <a href="https://apps.apple.com/vn/app/id6446673495?l=vi" class="link-dlgame img-hv p-r">
-            <img src="../assets/frontend/events/phucloinap2025/images/sibarRight/ios.png" alt="" class="img-bt">
-            <img src="../assets/frontend/events/phucloinap2025/images/sibarRight/ios-hv.png" alt="" class="img-hv p-a in-img-hv">
-        </a>
-
-        <a href="https://play.google.com/store/apps/details?id=com.rtsc.ultracombo" class="link-dlgame linkdks-android img-hv p-r">
-            <img src="../assets/frontend/events/phucloinap2025/images/sibarRight/android.png" alt="" class="img-bt">
-            <img src="../assets/frontend/events/phucloinap2025/images/sibarRight/android-hv.png" alt="" class="img-hv p-a in-img-hv">
-        </a>
         <div class="clickGet m__inline">
-            <a target="_blank" href="https://pay.acegame.vn/game/db186" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
-                Nạp thẻ
+            <a target="#" href="https://pay.acegame.vn/game/db186" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
+                Top Sự Kiện
             </a>
         </div>
 
@@ -874,17 +855,6 @@ require_once __DIR__ . '/../components/auth-modal.php';
     $('.show__login').click(function () {
         $('#modal__login2').show();
     });
-
-
-    // Start Login wit Face/google
-    var popupOpenIdLoginSuccess = function () {
-        if(window.opener) {
-                        window.opener.location.href = 'phuc-loi-nap-2025.html';
-                        window.close();
-        } else {
-                        window.location.href = 'phuc-loi-nap-2025.html';
-                    }
-    };
 
     $('.btn-openid-login').on('click', function (e) {
         e.preventDefault();

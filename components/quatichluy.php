@@ -1,5 +1,9 @@
 <?php ?>
 
+<div class="tit__st tCenter">
+    <img src="../assets/frontend/events/phucloinap2025/images/fuck/f2.png" style="width: 90%;max-width: 705px;">
+</div>
+
 <div class="main-qua-dat-moc">
     <div class="tCenter fkufamB c-black num_allTLGg__">
         Tổng Tích Lũy Nạp của Chiến Binh: <span>0</span>
@@ -287,3 +291,5 @@
         </div>
     </div>
 </div>
+
+<div class="note_end__ tCenter c-black"><i>(Hệ thống sẽ làm mới mỗi 15 phút, vui lòng kiểm tra lại sau nếu chưa nhận được quà.)</i></div>
