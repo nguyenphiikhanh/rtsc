@@ -297,13 +297,11 @@
                 <a href="../policy.html" title="Điều Khoản" class="bs" target="_blank">Điều Khoản</a>
             </p>
             <p class="tCenter footer-text">CHƠI QUÁ 180 PHÚT MỘT NGÀY SẼ ẢNH HƯỞNG XẤU ĐẾN SỨC KHỎE</p>
-            <p class="tCenter footer-text">CÔNG TY CỔ PHẦN ACEGAME</p>
-            <p class="tCenter footer-text">NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG: LÊ VĂN HIẾU</p>
-            <p class="tCenter footer-text">ĐỊA CHỈ: TẦNG 14, TÒA NHÀ HM TOWN, 412 NGUYỄN THỊ MINH KHAI, PHƯỜNG 05, QUẬN 03, TP HỒ CHÍ MINH</p>
-            <p class="tCenter footer-text">HOTLINE: 1900955519</p>
-            <p class="tCenter footer-text">EMAIL HỖ TRỢ: INFO@ACEGAME.VN</p>
+            <p class="tCenter footer-text">NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG: NGUYỄN QUỐC DUY</p>
+            <p class="tCenter footer-text">HOTLINE: 0325238490</p>
+            <p class="tCenter footer-text">EMAIL HỖ TRỢ: DUYNGUYENKEM20400@GMAIL.COM</p>
             <p class="tCenter footer-text">THỜI GIAN: 8:00 - 22:00 CÁC NGÀY (GMT+7)</p>
-            <p class="tCenter footer-text">GIẤY PHÉP NỘI DUNG SỐ: 506/QĐ-BTTTT DO BỘ THÔNG TIN VÀ TRUYỀN THÔNG CẤP NGÀY 31/03/2023</p>
+
 
 
             <!-- <img src="/assets/frontend/events/giaiphongmiennam2025/images/undo18.png" width="70" height="101" class="footer-ace-18"> -->

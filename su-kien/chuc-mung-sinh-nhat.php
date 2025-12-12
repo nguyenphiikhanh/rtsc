@@ -448,16 +448,12 @@
         |
         <a href="#" title="Điều Khoản" class="bs" target="_blank">Điều Khoản</a>
       </p>
-      <p class="rs">Chơi Game hơn 180 phút sẽ ảnh hưởng đến sức khỏe</p>
-      <p class="rs">CÔNG TY CỔ PHẦN ACEGAME</p>
-      <p class="rs">NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG: LÊ VĂN HIẾU</p>
-      <p class="rs">ĐỊA CHỈ: TẦNG 14, TÒA NHÀ HM TOWN, 412 NGUYỄN THỊ MINH KHAI, PHƯỜNG 05, QUẬN 03, TP HỒ CHÍ MINH</p>
+             <p class="tCenter footer-text">CHƠI QUÁ 180 PHÚT MỘT NGÀY SẼ ẢNH HƯỞNG XẤU ĐẾN SỨC KHỎE</p>
+            <p class="tCenter footer-text">NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG: NGUYỄN QUỐC DUY</p>
+            <p class="tCenter footer-text">HOTLINE: 0325238490</p>
+            <p class="tCenter footer-text">EMAIL HỖ TRỢ: DUYNGUYENKEM20400@GMAIL.COM</p>
+            <p class="tCenter footer-text">THỜI GIAN: 8:00 - 22:00 CÁC NGÀY (GMT+7)</p>
 
-      <p class="rs" itemprop="hotline">Email hỗ trợ: <a href="mailto:INFO@ACEGAME.VN"
-          style="color: #fff">INFO@ACEGAME.VN</a>
-      </p>
-      <p class="rs">Thời gian: 08h00 - 22h00 các ngày (GMT+7)</p>
-      <p class="rs">GIẤY PHÉP NỘI DUNG SỐ: 506/QĐ-BTTTT DO BỘ THÔNG TIN VÀ TRUYỀN THÔNG CẤP NGÀY 31/03/2023</p>
 
       <img src="../assets/frontend/events/sinhnhat2025/images/footer/nono.png" class="footer__game-18">
     </div>

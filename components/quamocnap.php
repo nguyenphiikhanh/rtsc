@@ -16,19 +16,19 @@
 
                             <div class="listGift__cG list-img m__inline dFlex aCenter jCenter mt-2per">
                                 <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/1.png"
+                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/5.png"
                                          alt="">
                                 </div>
                                 <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/2.png"
+                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/6.png"
                                          alt="">
                                 </div>
                                 <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/3.png"
+                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/7.png"
                                          alt="">
                                 </div>
                                 <div class="thumb-img p-r dFlex aCenter jCenter" title="">
-                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/4.png"
+                                    <img src="../assets/frontend/events/phucloinap2025/images/omg/napdungmoc/100k/8.png"
                                          alt="">
                                 </div>
                             </div>

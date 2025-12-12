@@ -6,7 +6,7 @@
 	$local_db = "localhost";
 	$user_db = "root";
 	$pass_db = "";
-	$name_db = "ngocrong_onl";
+	$name_db = "ngocrong";
 
 
     // home path
