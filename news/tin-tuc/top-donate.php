@@ -125,16 +125,23 @@ $data_top_nap = __get_top_nap();
         <div class="limit__game">
             <ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
                 <li class="current"><a href="<?= define_url("home.php") ?>">Trang chủ</a></li>
-                <li><span>Top Nạp Thẻ</span></li>
+                <li><span>Top Donate</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
                 <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold"></span>Top Nạp Thẻ</div>
-<!--                    <div class="date-open-right hidden-mobile">29/04/2025</div>-->
+                    <div class="title-left"><span class="f-tahomabold"></span>Top Donate</div>
                 </div>
 
-                <div class="text-detail detail-post">
-                    <h2 dir="ltr" style="text-align:center"><big><strong>Top Nạp Thẻ</strong></big></h2>
+                <div class="text-detail detail-post bg-top-nap">
+                    <div class="tCenter" style="margin:0 0 18px;">
+                        <h2 class="title-inline" aria-level="2" role="heading" style="margin:0;">
+                            <div class="clickGet m__inline">
+                                <span class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
+                                    Top Donate
+                                </a>
+                            </div>
+                        </h2>
+                    </div>
 
                     <?php if(count($data_top_nap)){ ?>
                         <table align="center">
@@ -147,7 +154,7 @@ $data_top_nap = __get_top_nap();
                                     <p dir="ltr" style="text-align:center"><strong>Người chơi</strong></p>
                                 </td>
                                 <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Tổng nạp</strong></p>
+                                    <p dir="ltr" style="text-align:center"><strong>Tổng Donate</strong></p>
                                 </td>
                                 <td>
                                     <p dir="ltr" style="text-align:center"><strong>Phúc lợi</strong></p>
@@ -156,26 +163,23 @@ $data_top_nap = __get_top_nap();
                             <?php foreach ($data_top_nap as $index => $data) { ?>
                                 <tr>
                                     <td>
-                                        <p dir="ltr" style="text-align:center"><?= $index + 1 ?></p>
+                                        <p dir="ltr" style="text-align:center; color: white"><?= $index + 1 ?></p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:center"><?= htmlspecialchars($data['name']) ?></p>
+                                        <p dir="ltr" style="text-align:center;color: white"><?= htmlspecialchars($data['name']) ?></p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:center"><?= number_format($data['tongnap'], 0, ',', '.'); ?> tỷ vnđ</p>
+                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['tongnap'], 0, ',', '.'); ?> tỷ vnđ</p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:left">- Mạnh top <?= $index + 1 ?> server, trong thiên hạ không có đối thủ.</p>
-                                        <p dir="ltr" style="text-align:left">- Được búng vào dái thằng ad <?= 100 - $index*10 ?> phát.</p>
-                                        <p dir="ltr" style="text-align:left">- Được búng vào dái thằng ad <?= 100 - $index*10 ?> phát.</p>
-                                        <p dir="ltr" style="text-align:left">- Được búng vào dái thằng ad <?= 100 - $index*10 ?> phát(quan trọng nhắc lại 3 lần :v).</p>
+                                        <p dir="ltr" style="text-align:left;color: white">- Mạnh top <?= $index + 1 ?> server, trong thiên hạ không có đối thủ.</p>
                                     </td>
                                 </tr>
                             <?php } ?>
                             </tbody>
                         </table>
                     <?php } else {
-                        echo "<p>Chưa có dữ liệu nạp thẻ.</p>";
+                        echo "<p>Chưa có dữ liệu Donate.</p>";
                     } ?>
                 </div>
 
@@ -188,6 +192,13 @@ $data_top_nap = __get_top_nap();
 <?php include_once __DIR__ . '/../../layout/footer.php'; ?>
 <!--end footer-->
 <style>
+    .bg-top-nap{
+        /*background: url("../../assets/frontend/events/flashsalecuoituan2023/images/full__big.jpg");*/
+        background: url("../../assets/frontend/home/v1/images/bigFT.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
 
     .footer-ace {
         width: 100%;

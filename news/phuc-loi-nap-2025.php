@@ -241,8 +241,8 @@ global $is_authenticated;
         </div>
 
         <div class="clickGet m__inline">
-            <a target="#" href="<?= define_url("news/tin-tuc/top-nap-the.php") ?>" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
-                Top Nạp
+            <a target="#" href="<?= define_url("news/tin-tuc/top-donate.php") ?>" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
+                Top Donate
             </a>
         </div>
 
