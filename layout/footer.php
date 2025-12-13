@@ -1,17 +1,21 @@
 <?php
 require_once __DIR__ . '/../helper/helper.php';
+require_once __DIR__ . '/../config/config.php';
+global $logo;
+global $fanpage;
+global $zalo_box_url;
 ?>
 
 <div class="footer-ace f-tahoma footer__game __6 tUpper p-r">
     <div class="link-other dFlex aCenter jCenter">
-        <a href="https://zalo.me/g/oeifth254" title="" class=" " target="_blank">
-            <img src="assets/frontend/teaser/images/footer_game/img-fp.png" alt="">
+        <a href="<?= $fanpage ?>" title="" class=" " target="_blank">
+            <img src="<?= define_url("assets/frontend/teaser/images/footer_game/img-fp.png")?>" alt="">
         </a>
-        <a href="https://www.facebook.com/profile.php?id=61582689654261" title="" class=" " target="_blank">
-            <img src="assets/frontend/teaser/images/footer_game/img-gr.png" alt="">
+        <a href="<?= $zalo_box_url ?>" title="" class=" " target="_blank">
+            <img src="<?= define_url("assets/frontend/teaser/images/footer_game/img-gr.png")?>" alt="">
         </a>
-        <a href="https://www.facebook.com/nguyen.quoc.duy.515067" title="" class=" " target="_blank">
-            <img src="assets/frontend/teaser/images/footer_game/img-yt.png" alt="">
+        <a href="<?= $fanpage ?>" title="" class=" " target="_blank">
+            <img src="<?= define_url("assets/frontend/teaser/images/footer_game/img-yt.png")?>" alt="">
         </a>
     </div>
     <div class="max_rank">
@@ -36,3 +40,84 @@ require_once __DIR__ . '/../helper/helper.php';
         </div>
     </div>
 </div>
+
+<style>
+
+    .footer-ace {
+        width: 100%;
+        padding: 40px 0 30px;
+        text-align: center;
+        color: #fff;
+        background: #181818;
+        font-family: Tahoma, Arial, Helvetica, sans-serift;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer-link-privacy {
+        margin-bottom: 10px;
+    }
+
+    .footer-link-privacy a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-link-privacy a:hover {
+        color: #ffa000;
+    }
+
+    .footer-ace p {
+        margin-bottom: 6px;
+    }
+
+    .footer-ace-inner {
+        width: 100%;
+        max-width: 1000px;
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto
+    }
+
+    .faq-tink {
+        position: absolute;
+        display: block;
+        text-indent: -999em;
+        background: url(<?= $logo ?>) 0 0 no-repeat;
+        background-size: contain;
+        width: 250px;
+        height: 130px;
+        left: 0;
+        top: -10px;
+    }
+
+    .footer-ace-18 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 160px;
+        object-fit: contain;
+        object-position: top center;
+    }
+
+    /*media */
+    @media (max-width: 768px) {
+        .faq-tink {
+            position: inherit;
+            top: 0;
+            margin: 0 auto 10px;
+        }
+
+        .footer-ace-18 {
+            display: block;
+            position: relative;
+            left: 50%;
+            margin-top: 10px;
+            /* margin-left: -30px; */
+            transform: translateX(-50%);
+            margin-left: 0;
+        }
+    }
+</style>

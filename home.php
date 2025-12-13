@@ -24,7 +24,7 @@ require_once __DIR__ . '/./helper/helper.php';
     <meta property="og:description"
           content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..."/>
 
-    <meta property="og:site_name" content=" Trang Chủ - Nro Ghost"/>
+    <meta property="og:site_name" content="Trang Chủ - Nro Ghost"/>
     <meta property="og:image" content="assets/frontend/teaser/images/thumb.jpg"/>
     <meta property="og:image:alt"
           content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..."/>
@@ -65,85 +65,7 @@ require_once __DIR__ . '/./helper/helper.php';
 <!--    header-->
 <?php require_once __DIR__ . '/./layout/header.php'; ?>
 <!--end header-->
-<section class="__section game--brand__show __1">
-    <div class="bg_video">
-        <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
-               playsinline="">
-            <source src="assets/frontend/teaser/videos/g.mp4" type="video/mp4"/>
-        </video>
-    </div>
-    <div class="limit__game">
-        <div class="main--game__show">
-            <!-- <div class="logo t-center">
-            <a href="#">
-              <img src="/assets/frontend/home/v1/rtsc.png" alt="">
-            </a>
-          </div> -->
-            <div class="text--brand t-center m-auto p-relative" data-aos="fade-down" data-aos-duration="700"
-                 data-aos-delay="100">
-                <a href="https://www.youtube.com/" data-fancybox="" style="display: none">
-                    <img class="icon-play" src="assets/frontend/home/v1/images/icon-play.png" alt=""/>
-                </a>
-                <img src="assets/frontend/home/v1/images/textgame.png" alt="" class="textgame__game"/>
-            </div>
-        </div>
-
-        <div class="box--download jCenter">
-            <!-- <div class="icon-game t-center" data-aos="fade-down" data-aos-duration="700" data-aos-delay="400">
-            <img src="/assets/frontend/home/v1/icon-game.png" alt="">
-          </div> -->
-
-            <div class="list-link-dl">
-                <!-- tai game apple -->
-                <a target="_blank" href="https://apps.apple.com/vn/app/id6446673495?l=vi" class="item-link link-apple">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/btn-dl/btn-dl.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/btn-dl/btn-dl-hv.png" alt=""/>
-                </a>
-
-                <!-- tai game android https://play.google.com/store/apps/details?id=com.rongthansieucap.gg -->
-
-                <a href="https://play.google.com/store/apps/details?id=com.rtsc.ultracombo"
-                   class="item-link link-android">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/btn-dl/btn-dl-android.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/btn-dl/btn-dl-android-hv.png" alt=""/>
-                </a>
-                <!-- tai game apk -->
-                <a target="_blank" href="https://cdn.acegame.vn/RongThan.apk" class="item-link link-android">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/btn-dl/btn-dl-apk.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/btn-dl/btn-dl-apk-hv.png" alt=""/>
-                </a>
-
-                <!-- tai game nap the -->
-                <a target="_blank" href="https://pay.acegame.vn/game/db186" class="item-link link-card">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/btn-dl/btn-card.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/btn-dl/btn-card-hv.png" alt=""/>
-                </a>
-
-                <!-- tai game fanpage -->
-                <a target="_blank" href="https://www.facebook.com/rongthansieucap" class="item-link link-fb">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/btn-dl/btn-fb.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/btn-dl/btn-fb-hv.png" alt=""/>
-                </a>
-            </div>
-
-
-        </div>
-
-        <div class="tCenter hidden__PC">
-            <a target="_blank" href="./news/phuc-loi-nap-2025.php">
-                <img src="assets/frontend/home/v1/images/bn__gift_now.png" class="gift__site">
-            </a>
-        </div>
-
-        <style>
-            .gift__site {
-                width: 23vw;
-                max-width: 170px;
-            }
-        </style>
-
-    </div>
-</section>
+<?php require_once __DIR__ . '/./components/banner.php'; ?>
 
 <div class="box--content">
     <section class="__section box__new __2 clearfix">
@@ -154,9 +76,6 @@ require_once __DIR__ . '/./helper/helper.php';
             <div class="main--box__new" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
                 <div class="list-slide box-border p-r">
                     <div class="listSlide__new">
-                        <a target="_blank" href="news/tin-tuc/chinh-thuc-ra-mat_33.php">
-                            <img src="./uploads/momo1.png" alt="Slide tin tức">
-                        </a>
                         <a target="_blank" href="news/tin-tuc/chinh-thuc-ra-mat_33.php">
                             <img src="./uploads/01.jpg" alt="Slide tin tức">
                         </a>
@@ -320,33 +239,7 @@ require_once __DIR__ . '/./helper/helper.php';
         </div>
     </section>
 
-    <div class="box-link">
-        <div class="container">
-            <div class="main-box-link">
-                <!-- link group  -->
-                <a href="https://zalo.me/g/oeifth254" class="item-box-link" data-aos="fade-up" data-aos-duration="700"
-                   data-aos-delay="400">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/box-link/img-gr.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/box-link/img-gr-hv.png" alt=""/>
-                </a>
-
-                <!-- link fb -->
-                <a href="https://www.facebook.com/profile.php?id=61582689654261" class="item-box-link hidden-mobile"
-                   data-aos="fade-up" data-aos-duration="700"
-                   data-aos-delay="600">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/box-link/img-fb.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/box-link/img-fb-hv.png" alt=""/>
-                </a>
-
-                <!-- link gc -->
-                <a target="_blank" href="./news/huong-dan-nhap-giftcode_34.php" class="item-box-link" data-aos="fade-up"
-                   data-aos-duration="700" data-aos-delay="800">
-                    <img class="img-ac" src="assets/frontend/home/v1/images/box-link/img-gc.png" alt=""/>
-                    <img class="img-hv" src="assets/frontend/home/v1/images/box-link/img-gc-hv.png" alt=""/>
-                </a>
-            </div>
-        </div>
-    </div>
+    <?php require_once __DIR__ . '/./components/boxlink.php'; ?>
 </div>
 
 <section class="__section box_game ftg__sl __3">
@@ -376,86 +269,6 @@ require_once __DIR__ . '/./helper/helper.php';
 <!--end footer-->
 </div>
 </div>
-<style>
-
-    .footer-ace {
-        width: 100%;
-        padding: 40px 0 30px;
-        text-align: center;
-        color: #fff;
-        background: #181818;
-        font-family: Tahoma, Arial, Helvetica, sans-serift;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .footer-link-privacy {
-        margin-bottom: 10px;
-    }
-
-    .footer-link-privacy a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .footer-link-privacy a:hover {
-        color: #ffa000;
-    }
-
-    .footer-ace p {
-        margin-bottom: 6px;
-    }
-
-    .footer-ace-inner {
-        width: 100%;
-        max-width: 1000px;
-        color: #fff;
-        font-size: 13px;
-        text-align: center;
-        position: relative;
-        margin: 0 auto
-    }
-
-    .faq-tink {
-        position: absolute;
-        display: block;
-        text-indent: -999em;
-        background: url(assets/frontend/home/v1/images/) 0 0 no-repeat;
-        background-size: contain;
-        width: 110px;
-        height: 55px;
-        left: 0;
-        top: -10px;
-    }
-
-    .footer-ace-18 {
-        position: absolute;
-        right: 0;
-        top: 0;
-        max-width: 160px;
-        object-fit: contain;
-        object-position: top center;
-    }
-
-    /*media */
-    @media (max-width: 768px) {
-        .faq-tink {
-            position: inherit;
-            top: 0;
-            margin: 0 auto 10px;
-        }
-
-        .footer-ace-18 {
-            display: block;
-            position: relative;
-            left: 50%;
-            margin-top: 10px;
-            /* margin-left: -30px; */
-            transform: translateX(-50%);
-            margin-left: 0;
-        }
-    }
-</style>
 
 <?php require_once __DIR__ . '/./components/sidebar-right.php'; ?>
 

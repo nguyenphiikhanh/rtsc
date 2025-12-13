@@ -66,41 +66,7 @@ $data_top_events = __get_top_event();
         </div>
 
         <div class="box--download jCenter">
-
-            <div class="list-link-dl">
-                <!-- tai game apple -->
-                <a target="_blank" href="https://apps.apple.com/vn/app/id6446673495?l=vi" class="item-link link-apple">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-hv.png" alt="" />
-                </a>
-
-                <!-- tai game android https://play.google.com/store/apps/details?id=com.rongthansieucap.gg -->
-
-                <a  href="https://play.google.com/store/apps/details?id=com.rtsc.ultracombo" class="item-link link-android">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-android.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-android-hv.png" alt="" />
-                </a>
-                <!-- tai game apk -->
-                <a target="_blank" href="https://cdn.acegame.vn/RongThan.apk" class="item-link link-android">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-apk.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-apk-hv.png" alt="" />
-                </a>
-
-                <!-- tai game nap the -->
-                <a target="_blank" href="https://pay.acegame.vn/game/db186" class="item-link link-card">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-card.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-card-hv.png" alt="" />
-                </a>
-
-                <!-- tai game fanpage -->
-                <a target="_blank" href="https://www.facebook.com/rongthansieucap" class="item-link link-fb">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-fb.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-fb-hv.png" alt="" />
-                </a>
-            </div>
-
-
-
+            <?php require_once __DIR__ . '/./components/download.php'; ?>
         </div>
 
         <div class="tCenter hidden__PC">
@@ -138,7 +104,7 @@ $data_top_events = __get_top_event();
                             <div class="clickGet m__inline">
                                 <span class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
                                     Top Sự Kiện
-                                    </a>
+                                    </span>
                             </div>
                         </h2>
                     </div>
@@ -198,78 +164,6 @@ $data_top_events = __get_top_event();
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-    }
-
-    .footer-ace {
-        width: 100%;
-        padding: 40px 0 30px;
-        text-align: center;
-        color: #fff;
-        background: #181818;
-        font-family: Tahoma, Arial, Helvetica, sans-serift;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    .footer-link-privacy {
-        margin-bottom: 10px;
-    }
-    .footer-link-privacy a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .footer-link-privacy a:hover {
-        color: #ffa000;
-    }
-    .footer-ace p {
-        margin-bottom: 6px;
-    }
-    .footer-ace-inner {
-        width: 100%;
-        max-width: 1000px;
-        color: #fff;
-        font-size: 13px;
-        text-align: center;
-        position: relative;
-        margin: 0 auto
-    }
-
-    .faq-tink {
-        position: absolute;
-        display: block;
-        text-indent: -999em;
-        background: url(../../assets/frontend/home/v1/images/logoNew) 0 0 no-repeat;
-        background-size: contain;
-        width: 110px;
-        height: 55px;
-        left: 0;
-        top: -10px;
-    }
-
-    .footer-ace-18 {
-        position: absolute;
-        right: 0;
-        top: 0;
-        max-width: 160px;
-        object-fit: contain;
-        object-position: top center;
-    }
-
-    /*media */
-    @media (max-width: 768px) {
-        .faq-tink {
-            position: inherit;
-            top: 0;
-            margin: 0 auto 10px;
-        }
-        .footer-ace-18 {
-            display: block;
-            position: relative;
-            left: 50%;
-            margin-top: 10px;
-            /* margin-left: -30px; */
-            transform: translateX(-50%);
-            margin-left: 0;
-        }
     }
 </style>
 

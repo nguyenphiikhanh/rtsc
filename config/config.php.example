@@ -8,7 +8,6 @@
 	$pass_db = "";
 	$name_db = "ngocrong";
 
-
     // home path
     DEFINE("HOME_PAGE", "home.php");
 
@@ -20,4 +19,25 @@
     }
     $config->set_charset("utf8");
 
+    //Website name
+    $webname = "Ngọc Rồng Online";
+
+    //Được vận hành bởi:
+    $team = "Admin";
+
+    $zalo_box_url = "https://zalo.me/g/gljiji830"; // link box zalo
+
+    // link facebook
+    $fanpage = "https://www.facebook.com/nguyenphiikhanh";
+
+    //link download
+    $jar_link = "https://drive.google.com/file/d/1G8pRJnZ_v38OZZNy20ANDeDTwqPy7XXg/view?usp=drive_link";
+    $pc_link = "https://drive.google.com/file/d/1PpqpeXna5zHF_DFDITBuB8plgtLKIOTV/view?usp=sharing";
+    $adr_link = "https://drive.google.com/file/d/1N8p9Cfch244YHYEBnSGw8Eyt-GtoRnlF/view?usp=sharing";
+    $ios_link = "https://testflight.apple.com/join/4S3CprXd";
+
+    // config banner & logo
+    $banner_video = define_url("assets/frontend/app/videos/nroghost_video.mp4");
+    $banner_img = define_url("assets/frontend/app/imgs/nroghost_banner.png");
+    $logo = define_url("assets/frontend/app/imgs/logo.png");
 ?>

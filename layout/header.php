@@ -1,31 +1,63 @@
 <?php
 require_once __DIR__ . '/../middleware/auth.php';
 require_once __DIR__ . '/../helper/helper.php';
+require_once __DIR__ . '/../config/config.php';
 $page_home = define_url('home.php');
 $page_tintuc = define_url('news/tin-tuc.php');
 $page_sukien = define_url('news/su-kien.php');
 $page_huongdan = define_url('news/huong-dan.php');
-
 $page_logout = define_url('auth/logout.php');
 global $is_authenticated;
+global $banner_img;
+global $webname;
+global $fanpage;
+global $logo;
 ?>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "tahoma";
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 300;
+        color: #ffffff;
+        background-color: #f6f4ea;
+        min-height: 100vh;
+        overflow-x: hidden !important;
+        background: url(<?= $banner_img?>) #f6f4ea;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: auto
+    }
+
+    @media only screen and (max-width:1023px) {
+        body {
+            background: url(<?= $banner_img?>) #f6f4ea;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center top
+        }
+    }
+</style>
 
 <section class="__section main_head __zero">
     <input id="toggle-menu__header-page" type="checkbox" style="display: none" />
     <!-- <div Thay logo ở phía dưới </div> -->
     <div class="navbar">
         <div class="limit__game">
-            <a href="#" class="hidden__mobile">
-                <img src="assets/frontend/home/v1/images/" alt="" class="logo-top" />
+            <a href="<?= $page_home ?>" class="hidden__mobile">
+                <img src="<?= $logo ?>" alt="" class="logo-top" style="max-height:180px; max-width: 300px; object-fit:cover;"/>
             </a>
             <div class="left-header hidden__PC">
                 <div class="icon-name-game dFlex">
                     <div class="icon-game">
-                        <img src="assets/frontend/home/v1/images/bannergame.png" alt="" />
+                        <a href="<?= $page_home ?>">
+                            <img src="<?= $logo ?>" alt="" />
+                        </a>
                     </div>
                     <div class="txt-name-game c-white">
-                        <div class="name-game f-sVN-Avengeance">rồng thần siêu cấp</div>
-                        <!-- <div class="txt-des">Game Mobile tam quốc</div> -->
+                        <div class="name-game f-sVN-Avengeance"><?= $webname ?></div>
                     </div>
                 </div>
             </div>
@@ -33,19 +65,19 @@ global $is_authenticated;
             <div class="navbar-content tCenter">
                 <ul id="menu" class="f-Roboto-Regular">
                     <li>
-                        <a href="<?php echo $page_home; ?>" class="">Trang chủ</a>
+                        <a href="<?= $page_home; ?>" class="">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="<?php echo $page_tintuc; ?>" class="">Tin tức</a>
+                        <a href="<?= $page_tintuc; ?>" class="">Tin tức</a>
                     </li>
                     <li>
-                        <a href="<?php echo $page_sukien; ?>" class="">Sự kiện</a>
+                        <a href="<?= $page_sukien; ?>" class="">Sự kiện</a>
                     </li>
                     <li>
-                        <a href="<?php echo $page_huongdan; ?>" class="">Hướng dẫn</a>
+                        <a href="<?= $page_huongdan; ?>" class="">Hướng dẫn</a>
                     </li>
                     <li class="">
-                        <a target="_blank" href="https://www.facebook.com/rongthansieucap" class="">Fanpage</a>
+                        <a target="_blank" href="<?= $fanpage; ?>" class="">Fanpage</a>
                     </li>
                     <li class="">
                         <?php if($is_authenticated){ ?>

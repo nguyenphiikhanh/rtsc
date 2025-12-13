@@ -76,46 +76,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
 
-        <div class="box--download jCenter">
-          <!-- <div class="icon-game t-center" data-aos="fade-down" data-aos-duration="700" data-aos-delay="400">
-          <img src="/assets/frontend/home/v1/icon-game.png" alt="">
-        </div> -->
-
-          <div class="list-link-dl">
-            <!-- tai game apple -->
-                        <a target="_blank" href="https://apps.apple.com/vn/app/id6446673495?l=vi" class="item-link link-apple">
-              <img class="img-ac" src="../assets/frontend/home/v1/images/btn-dl/btn-dl.png" alt="" />
-              <img class="img-hv" src="../assets/frontend/home/v1/images/btn-dl/btn-dl-hv.png" alt="" />
-            </a>
-
-            <!-- tai game android https://play.google.com/store/apps/details?id=com.rongthansieucap.gg -->
-
-            <a  href="https://play.google.com/store/apps/details?id=com.rtsc.ultracombo" class="item-link link-android">
-              <img class="img-ac" src="../assets/frontend/home/v1/images/btn-dl/btn-dl-android.png" alt="" />
-              <img class="img-hv" src="../assets/frontend/home/v1/images/btn-dl/btn-dl-android-hv.png" alt="" />
-            </a>
-            <!-- tai game apk -->
-            <a target="_blank" href="https://cdn.acegame.vn/RongThan.apk" class="item-link link-android">
-              <img class="img-ac" src="../assets/frontend/home/v1/images/btn-dl/btn-dl-apk.png" alt="" />
-              <img class="img-hv" src="../assets/frontend/home/v1/images/btn-dl/btn-dl-apk-hv.png" alt="" />
-            </a>
-
-            <!-- tai game nap the -->
-            <a target="_blank" href="https://pay.acegame.vn/game/db186" class="item-link link-card">
-              <img class="img-ac" src="../assets/frontend/home/v1/images/btn-dl/btn-card.png" alt="" />
-              <img class="img-hv" src="../assets/frontend/home/v1/images/btn-dl/btn-card-hv.png" alt="" />
-            </a>
-
-            <!-- tai game fanpage -->
-            <a target="_blank" href="https://www.facebook.com/rongthansieucap" class="item-link link-fb">
-              <img class="img-ac" src="../assets/frontend/home/v1/images/btn-dl/btn-fb.png" alt="" />
-              <img class="img-hv" src="../assets/frontend/home/v1/images/btn-dl/btn-fb-hv.png" alt="" />
-            </a>
+          <div class="box--download jCenter">
+              <?php require_once __DIR__ . '/../components/download.php'; ?>
           </div>
-
-          
-
-        </div>
 
         <div class="tCenter hidden__PC">
           <a target="_blank" href="../news/phuc-loi-nap-2025.php">
@@ -154,7 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div class="list-new-page">
               
-                              <div class="item-new clearfix item-tranYTop">
+            <div class="item-new clearfix item-tranYTop">
                  
                   <a cat="tin-tuc" code="trung-thu-2025.php" href="tin-tuc/trung-thu-2025_89.php" class="a100">
                     <div class="thumb f-left">

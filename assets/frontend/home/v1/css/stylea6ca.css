@@ -530,31 +530,6 @@ html {
     overflow-x: hidden
 }
 
-body {
-    margin: 0;
-    font-family: "tahoma";
-    font-size: 15px;
-    line-height: 1.5;
-    font-weight: 300;
-    color: #ffffff;
-    background-color: #f6f4ea;
-    min-height: 100vh;
-    overflow-x: hidden !important;
-    background: url(../images/fullBg.jpg) #f6f4ea;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: auto
-}
-
-@media only screen and (max-width:1023px) {
-    body {
-        background: url(../images/smBg.jpg) #f6f4ea;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center top
-    }
-}
-
 .limit__game {
     position: relative;
     width: 100%;
