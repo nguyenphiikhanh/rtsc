@@ -182,10 +182,15 @@ require_once __DIR__ . '/./helper/helper.php';
                     <div class="tab-new clearfix f-utm_facebook">
 
                         <div class="tab-link custom-border current" data-tab="tab-tin-tuc" data-more="viewtin-tuc">
-                            <span>Tin tức</span></div>
-                        <div class="tab-link custom-border " data-tab="tab-su-kien" data-more="viewsu-kien"><span>Sự kiện</span>
+<!--                            <span>Tin tức</span></div>-->
+                            <span>Quang Lồn</span></div>
+                        <div class="tab-link custom-border " data-tab="tab-su-kien" data-more="viewsu-kien">
+<!--                            <span>Sự kiện</span>-->
+                            <span>Quang Lồn</span>
                         </div>
-                        <div class="tab-link custom-border " data-tab="tab-huong-dan" data-more="viewhuong-dan"><span>Hướng dẫn</span>
+                        <div class="tab-link custom-border " data-tab="tab-huong-dan" data-more="viewhuong-dan">
+<!--                            <span>Hướng dẫn</span>-->
+                            <span>Quang Lồn</span>
                         </div>
                     </div>
 
