@@ -241,13 +241,13 @@ global $is_authenticated;
         </div>
 
         <div class="clickGet m__inline">
-            <a target="#" href="<?= define_url("news/tin-tuc/top-donate.php") ?>" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
+            <a href="<?= define_url("news/tin-tuc/top-donate.php") ?>" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
                 Top Donate
             </a>
         </div>
 
         <div class="clickGet m__inline">
-            <a target="#" href="https://pay.acegame.vn/game/db186" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
+            <a href="<?= define_url("news/tin-tuc/top-su-kien.php") ?>" class="a100 fkufamB c-black tCenter tUpper dFlex aCenter jCenter">
                 Top Sự Kiện
             </a>
         </div>

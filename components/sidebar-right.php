@@ -18,7 +18,7 @@ require_once __DIR__ . '/../helper/helper.php';
         </div>
 
         <div class="clickGet m__inline">
-            <a href="#"
+            <a href="<?= define_url("news/tin-tuc/top-su-kien.php") ?>"
                class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
                 Top Sự Kiện
             </a>
