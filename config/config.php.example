@@ -39,7 +39,8 @@
     $ios_link = "https://testflight.apple.com/join/4S3CprXd";
 
     // config banner & logo
-    $banner_video = define_url("assets/frontend/app/videos/nroghost_video.mp4");
-    $banner_img = define_url("assets/frontend/app/imgs/nroghost_banner.png");
+    $banner_video = define_url("assets/frontend/app/videos/nroghost_video.mp4"); // trên máy tính
+    $banner_img = define_url("assets/frontend/app/imgs/nroghost_banner.png"); // trên máy tính
+    $sm_banner_img = define_url("assets/frontend/app/imgs/bgSm.jpg"); // trên điện thoại
     $logo = define_url("assets/frontend/app/imgs/logo.png");
 ?>

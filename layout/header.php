@@ -9,6 +9,7 @@ $page_huongdan = define_url('news/huong-dan.php');
 $page_logout = define_url('auth/logout.php');
 global $is_authenticated;
 global $banner_img;
+global $sm_banner_img;
 global $webname;
 global $fanpage;
 global $logo;
@@ -33,10 +34,11 @@ global $logo;
 
     @media only screen and (max-width:1023px) {
         body {
-            background: url(<?= $banner_img?>) #f6f4ea;
+            background: url(<?= $sm_banner_img ?>) #f6f4ea;
+            object-fit: cover;
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: center top
+            background-position: center top;
         }
     }
 </style>

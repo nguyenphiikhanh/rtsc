@@ -1,7 +1,13 @@
 <?php
 require_once __DIR__ . '/../middleware/auth.php';
+require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../helper/helper.php';
 global $is_authenticated;
+global $logo;
+global $fanpage;
+global $banner_img;
+global $webname;
+global $zalo_box_url;
 ?>
 
 <!DOCTYPE html>
@@ -49,17 +55,14 @@ global $is_authenticated;
 
     <div class="navbar">
         <div class="limit__game">
-            <!-- <a href="/home" class=" hidden__mobile">
-                <img src="/assets/frontend/events/phucloinap2025/images/rtsc.png" alt="" class="logo-top">
-            </a> -->
             <div class="left-header hidden__PC">
 
                 <div class="icon-name-game dFlex ">
                     <div class="icon-game">
-                        <img src="../assets/frontend/events/phucloinap2025/images/bannergame.png" alt="">
+                        <img src="<?= $logo ?>" alt="">
                     </div>
                     <div class="txt-name-game c-white">
-                        <div class="name-game fkufamB tUpper">Rồng thần siêu cấp</div>
+                        <div class="name-game fkufamB tUpper"><?= $webname ?></div>
                     </div>
                 </div>
             </div>
@@ -73,13 +76,13 @@ global $is_authenticated;
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.facebook.com/rongthansieucap" class="">
+                        <a target="_blank" href="<?= $fanpage ?>" class="">
                             <img src="../assets/frontend/events/phucloinap2025/images/icons/fb.png" class="hidden__MB">
                             <span class="hidden__PC">Fanpage</span>
                         </a>
                     </li>
                     <li class="">
-                        <a target="_blank" href="https://www.facebook.com/groups/958640695290292" class="">
+                        <a target="_blank" href="<?= $zalo_box_url ?>" class="">
                             <img src="../assets/frontend/events/phucloinap2025/images/icons/gr.png" class="hidden__MB">
                             <span class="hidden__PC">Group</span>
                         </a>
@@ -87,12 +90,7 @@ global $is_authenticated;
 
                 </ul>
             </div>
-            <div class="link-download tCenter hidden__PC btDLG ac">
 
-                <a href="https://rongthansieucap.onelink.me/WqrK/taigame" class="a100 c-black fatf_dragonball">
-                    Tải Game
-                </a>
-            </div>
             <div class="icon-hamburger  hidden__PC">
                 <label for="toggle-menu__header-page" id="menu__header-page">
                     <div class="inner-menu__header-page"></div>
@@ -112,8 +110,7 @@ global $is_authenticated;
 
             <div class="logo__ifGG">
                 <div class="t__logoGG hidden__MB dFlex aCenter jCenter">
-                    <img src="../assets/frontend/events/phucloinap2025/images/rtsc.png" alt="">
-                    <img src="../assets/frontend/events/phucloinap2025/images/cbsc.png" alt="">
+                    <img src="<?= $logo ?>" alt="" style="max-height:180px; max-width: 300px; object-fit:cover;">
                 </div>
 
                 <div style="<?php echo $is_authenticated ? 'opacity: 0;' : '' ?>">
@@ -158,76 +155,6 @@ global $is_authenticated;
 <!--    footer-->
 <?php include_once __DIR__ . '/../layout/footer.php'; ?>
 <!--end footer-->
-
-<style>
-
-    .footer-ace {
-        width: 100%;
-        padding: 40px 0 30px;
-        text-align: center;
-        color: #fff;
-        background: #000000;
-        font-family: Tahoma, Arial, Helvetica, sans-serift;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    .footer-link-privacy {
-        margin-bottom: 10px;
-    }
-    .footer-link-privacy a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .footer-link-privacy a:hover {
-        color: #ffa000;
-    }
-    .footer-ace p {
-        margin-bottom: 6px;
-    }
-    .footer-ace-inner {
-        width: 100%;
-        max-width: 1000px;
-        color: #fff;
-        font-size: 13px;
-        text-align: center;
-        position: relative;
-        margin: 0 auto
-    }
-
-    .faq-tink {
-        position: absolute;
-        display: block;
-        text-indent: -999em;
-        /* background: url(https://rongthan.vn/bundles/web/logoace.png) 0 0 no-repeat;
-        background-size: contain; */
-        width: 110px;
-        height: 55px;
-        left: 0;
-        top: -10px;
-    }
-
-    .footer-ace-18 {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    /*media */
-    @media (max-width: 768px) {
-        .faq-tink {
-            position: inherit;
-            top: 0;
-            margin: 0 auto 10px;
-        }
-        .footer-ace-18 {
-            display: block;
-            position: relative;
-            left: 50%;
-            margin-top: 10px;
-            margin-left: -30px;
-        }
-    }
-</style>
 
 <div class="sidebar_right hidden__mobile mo">
 
