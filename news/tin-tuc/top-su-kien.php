@@ -169,7 +169,7 @@ $data_top_events = __get_top_event();
                                         <p dir="ltr" style="text-align:center;color: white"><?= htmlspecialchars($data['name']) ?></p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['su_kien_new'], 0, ',', '.'); ?> Điểm</p>
+                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['su_kien_new'] ?? 0) ?> <sup>Điểm</sup></p>
                                     </td>
                                     <td>
                                         <p dir="ltr" style="text-align:left;color: white">- Mạnh top <?= $index + 1 ?> server, trong thiên hạ không có đối thủ.</p>
