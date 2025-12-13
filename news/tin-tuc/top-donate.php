@@ -47,78 +47,7 @@ $data_top_nap = __get_top_nap();
 <!--    header-->
 <?php require_once __DIR__ . '/../../layout/header.php'; ?>
 <!--end header-->
-<section class="__section game--brand__show __1">
-    <div class="bg_video">
-        <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
-               playsinline="">
-            <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
-        </video>
-    </div>
-    <div class="limit__game">
-        <div class="main--game__show">
-            <div class="text--brand t-center m-auto p-relative" data-aos="fade-down" data-aos-duration="700"
-                 data-aos-delay="100">
-                <a href="https://www.youtube.com/" data-fancybox="" style="display: none">
-                    <img class="icon-play" src="../../assets/frontend/home/v1/images/icon-play.png" alt="" />
-                </a>
-                <img src="../../assets/frontend/home/v1/images/textgame.png" alt="" class="textgame__game" />
-            </div>
-        </div>
-
-        <div class="box--download jCenter">
-
-            <div class="list-link-dl">
-                <!-- tai game apple -->
-                <a target="_blank" href="https://apps.apple.com/vn/app/id6446673495?l=vi" class="item-link link-apple">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-hv.png" alt="" />
-                </a>
-
-                <!-- tai game android https://play.google.com/store/apps/details?id=com.rongthansieucap.gg -->
-
-                <a  href="https://play.google.com/store/apps/details?id=com.rtsc.ultracombo" class="item-link link-android">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-android.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-android-hv.png" alt="" />
-                </a>
-                <!-- tai game apk -->
-                <a target="_blank" href="https://cdn.acegame.vn/RongThan.apk" class="item-link link-android">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-apk.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-dl-apk-hv.png" alt="" />
-                </a>
-
-                <!-- tai game nap the -->
-                <a target="_blank" href="https://pay.acegame.vn/game/db186" class="item-link link-card">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-card.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-card-hv.png" alt="" />
-                </a>
-
-                <!-- tai game fanpage -->
-                <a target="_blank" href="https://www.facebook.com/rongthansieucap" class="item-link link-fb">
-                    <img class="img-ac" src="../../assets/frontend/home/v1/images/btn-dl/btn-fb.png" alt="" />
-                    <img class="img-hv" src="../../assets/frontend/home/v1/images/btn-dl/btn-fb-hv.png" alt="" />
-                </a>
-            </div>
-
-
-
-        </div>
-
-        <div class="tCenter hidden__PC">
-            <a target="_blank" href="../../su-kien/phuc-loi-nap-2025.php">
-                <img src="../../assets/frontend/home/v1/images/bn__gift_now.png" class="gift__site">
-            </a>
-        </div>
-
-        <style>
-            .gift__site {
-                width: 23vw;
-                max-width: 170px;
-            }
-        </style>
-
-    </div>
-</section>
-
+<?php require_once __DIR__ . '/../../components/banner.php'; ?>
 
 <div class="box--content">
     <div class="main__news">
@@ -138,7 +67,7 @@ $data_top_nap = __get_top_nap();
                             <div class="clickGet m__inline">
                                 <span class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
                                     Top Donate
-                                </a>
+                                </span>
                             </div>
                         </h2>
                     </div>
