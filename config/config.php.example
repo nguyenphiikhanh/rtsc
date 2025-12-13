@@ -1,4 +1,6 @@
 <?php
+    require_once __DIR__ . '/../helper/helper.php';
+
     date_default_timezone_set('Asia/Ho_Chi_Minh');
     global $config;
 	$apikey = 'E0685A4C8A53726C301F346F297D819D'; //API key, lấy từ website thesieutoc.net thay vào trong cặp dấu ''
