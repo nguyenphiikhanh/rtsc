@@ -1,0 +1,3 @@
+<?php
+declare(strict_types=1);
+define('ADMIN_SECRET_HASH', '$2y$14$REed0yxUw7J53sHIpV.ZD..26GPzb78.SOY74nNsKHyJlzWKuhxdC');
