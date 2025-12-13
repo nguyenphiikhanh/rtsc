@@ -147,6 +147,7 @@ require_once __DIR__ . '/../config/config.php';
 
 // ================== ADMIN SECRET (Gate) ==================
 require_once __DIR__ . '/./config.php'; // chứa: define('ADMIN_SECRET_HASH','<hash>');
+global $config;
 $secretHash = getenv('ADMIN_SECRET_HASH');
 if (!$secretHash && defined('ADMIN_SECRET_HASH')) $secretHash = ADMIN_SECRET_HASH;
 if (!$secretHash || !is_string($secretHash)) {
@@ -321,7 +322,7 @@ header('Referrer-Policy: no-referrer');
 $linkadmin = 'admin.php';
 
 // ===== Gift: base icon path (đổi cho đúng alias tĩnh của bạn) =====
-$ICON_BASE_URL = './public/public-assets/icon/';
+$ICON_BASE_URL = define_url("admin/public/public-assets/icon/");
 
 // ---- Feed dữ liệu UI: Player/Items/Options/Types ----
 $playersList = [];
