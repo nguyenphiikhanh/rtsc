@@ -15,10 +15,7 @@ function __get_top_event()
     $data = [];
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            $data[] = [
-                'name' => $row['name'],
-                'tongnap' => $row['tongnap']
-            ];;
+            $data[] = $row;
         }
     }
     return $data;
