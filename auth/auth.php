@@ -68,11 +68,12 @@ function login(){
     $redirect_path = define_url('home.php');
     $account = mysqli_query($config,$sql);
     if(mysqli_num_rows($account) > 0){
+        $account_info = $account->fetch_assoc();
         session_start();
 
         $_SESSION['is_authenticated'] = true;
         $_SESSION['logger']['username'] = $username;
-        $_SESSION['logger']['user_id'] = $username;
+        $_SESSION['logger']['user_id'] = $account_info['id'];
 
         $thongbao = 'Đăng nhập thành công';
         $script = '
