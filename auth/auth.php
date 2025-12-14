@@ -69,11 +69,11 @@ function login(){
     $account = mysqli_query($config,$sql);
     if(mysqli_num_rows($account) > 0){
         session_start();
-        
-        $_SESSION['logger']['username'] = $username;
-        $_SESSION['account'] = $username;
+
         $_SESSION['is_authenticated'] = true;
-        
+        $_SESSION['logger']['username'] = $username;
+        $_SESSION['logger']['user_id'] = $username;
+
         $thongbao = 'Đăng nhập thành công';
         $script = '
         var thongbao = ' . json_encode($thongbao) . ';
@@ -103,7 +103,8 @@ function login(){
 function get_auth_info(){
     auth();
     return [
-        'username' => $_SESSION['account'] ?? '',
+        'username' => $_SESSION['logger']['username'] ?? '',
+        'user_id' => $_SESSION['logger']['user_id'] ?? '',
     ];
 }
 

@@ -26,7 +26,7 @@ global $fanpage;
     </a>
 
     <!-- Nap -->
-    <a target="_blank" href="<?= define_url('napatm.php') ?>" class="item-link link-card">
+    <a href="<?= define_url('napatm.php') ?>" class="item-link link-card">
         <img class="img-ac" src="<?= define_url("assets/frontend/home/v1/images/btn-dl/btn-card.png") ?>" alt=""/>
         <img class="img-hv" src="<?= define_url("assets/frontend/home/v1/images/btn-dl/btn-card-hv.png") ?>" alt=""/>
     </a>

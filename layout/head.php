@@ -2,13 +2,13 @@
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../helper/helper.php';
 require_once __DIR__ . '/../constants/constants.php';
+require_once __DIR__ . '/../constants/seo.php';
 global $webname;
 global $banner_img;
 function page_title($title_label = 'Trang Chủ') {
     return $title_label;
 }
 ?>
-
 
 <head>
     <meta charset="UTF-8">
