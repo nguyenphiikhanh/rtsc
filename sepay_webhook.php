@@ -12,6 +12,7 @@
 
 require_once __DIR__ . '/./config/config.php';
 global $config;
+global $bank_description;
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -46,11 +47,11 @@ if (strtolower($transferType) !== 'in') {
     exit;
 }
 
-// Tách accountId từ description hoặc content: "assassin{ID}"
+// Tách accountId từ description hoặc content: "description{ID}"
 $accountId = null;
-if (preg_match('/assassin(\d+)/i', $description, $m)) {
+if (preg_match("/$bank_description(\d+)/i", $description, $m)) {
     $accountId = (int)$m[1];
-} elseif (preg_match('/assassin(\d+)/i', $content, $m)) {
+} elseif (preg_match("/$bank_description(\d+)/i", $content, $m)) {
     $accountId = (int)$m[1];
 }
 
