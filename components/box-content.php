@@ -2,7 +2,6 @@
 require_once __DIR__ . '/../helper/helper.php';
 ?>
 
-
 <div class="box--content">
     <section class="__section box__new __2 clearfix">
         <div class="tit-frame tCenter">
@@ -15,16 +14,16 @@ require_once __DIR__ . '/../helper/helper.php';
                         <a href="<?= define_url("home.php")?>">
                             <img src="<?= define_url("uploads/01.jpg") ?>" alt="Slide tin tức">
                         </a>
-                        <a target="self" href="./home.php">
+                        <a target="self" href="<?= define_url("home.php")?>">
                             <img src="<?= define_url("uploads/02.jpg") ?>" alt="Slide tin tức">
                         </a>
-                        <a target="self" href="./home.php">
+                        <a target="self" href="<?= define_url("home.php")?>">
                             <img src="<?= define_url("uploads/04.jpg") ?>" alt="Slide tin tức">
                         </a>
-                        <a target="self" href="./home.php">
+                        <a target="self" href="<?= define_url("home.php")?>">
                             <img src="<?= define_url("uploads/05.jpg") ?>" alt="Slide tin tức">
                         </a>
-                        <a target="self" href="./home.php">
+                        <a target="self" href="<?= define_url("home.php")?>">
                             <img src="<?= define_url("uploads/03.jpg") ?>" alt="Slide tin tức">
                         </a>
                     </div>

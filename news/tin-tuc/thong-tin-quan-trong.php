@@ -1,31 +1,70 @@
 <?php
-require_once __DIR__ . '/./middleware/auth.php';
-require_once __DIR__ . '/./helper/helper.php';
+require_once __DIR__ . '/../../helper/helper.php';
 ?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
+
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <?php
-$title_label = 'Trang chủ';
-require_once __DIR__ . '/./layout/head.php';
+$title_label = 'Thông tin quan trọng sever';
+require_once __DIR__ . '/../../layout/head.php';
 ?>
 
-<body>
+<body class="body-news">
 
 <!--    header-->
-<?php require_once __DIR__ . '/./layout/header.php'; ?>
+<?php require_once __DIR__ . '/../../layout/header.php'; ?>
 <!--end header-->
-<?php require_once __DIR__ . '/./components/banner.php'; ?>
+<?php require_once __DIR__ . '/../../components/banner.php'; ?>
 
-<?php require_once __DIR__ . '/./components/box-content.php'; ?>
+<div class="box--content">
+    <div class="main__news">
+        <div class="limit__game">
+            <ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+                <li class="current"><a href="<?= define_url("home.php") ?>">Trang chủ</a></li>
+                <li><span>Thông Tin Quang Trọng</span></li>
+            </ul>
+            <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
+                <div class="title-main-new">
+                    <div class="title-left"><span class="f-tahomabold"></span> Thông Tin Quang Trọng</div>
+                    <div class="date-open-right  hidden-mobile">14/12/2025</div>
+                </div>
 
-<?php require_once __DIR__ . '/./components/tinhnang-carousel.php'; ?>
+                <div class="text-detail detail-post">
+                    <h2 dir="ltr" style="text-align:center"><big><strong>- Sever cày chay 100%</strong></big></h2>
+
+                    <p dir="ltr">&nbsp;</p>
+
+                    <p dir="ltr"><strong>◈ - Sever cày chay 100%,người nạp chỉ đi nhanh hơn - Admin không bán bất kì thứ
+                            gì - cày được tất cả</strong></p>
+
+                    <p dir="ltr"><strong>◈ - Vật Phẩm Phụ Kiện</strong></p>
+
+                    <p dir="ltr"><strong>◈ - Tất cả vật phẩm cần thiết đều có thể mua trực tiếp tại NPC Santa</strong>.
+                    </p>
+
+                    <p dir="ltr"><strong>◈ - Sever đã fix gần như toàn bộ trick lỏ và bug lỏ</strong><br/>
+                        <strong>◈ - Tiền tệ duy nhất là thỏi vàng và coin</strong></p>
+
+                    <p dir="ltr"><strong>◈ - Sever ưu tiên tính năng bang hội nên cần có bang để có thể đi nhanh
+                            hơn</strong><br/>
+
+                    <p dir="ltr"><strong>◈ - Sever có chuyển sinh đổi hành tinh - chuyển sinh càng cao chỉ số càng
+                            khủng</strong><br/>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--    footer-->
-<?php include_once __DIR__ . '/./layout/footer.php'; ?>
+<?php include_once __DIR__ . '/../../layout/footer.php'; ?>
 <!--end footer-->
 
-<?php require_once __DIR__ . '/./components/sidebar-right.php'; ?>
+<?php require_once __DIR__ . '/../../components/sidebar-right.php'; ?>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -36,11 +75,11 @@ require_once __DIR__ . '/./layout/head.php';
 </body>
 
 
-<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.min.js")?>"></script>
-<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/ScrollMagic.min.js")?>"></script>
-<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/aos.js")?>"></script>
-<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/slick.min.js")?>"></script>
-<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.fancybox.min.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.min.js") ?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/ScrollMagic.min.js") ?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/aos.js") ?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/slick.min.js") ?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.fancybox.min.js") ?>"></script>
 <script>
     function goBack() {
         window.history.back();
@@ -138,25 +177,6 @@ require_once __DIR__ . '/./layout/head.php';
             $("#" + tab_view).addClass("current");
         });
     });
-
-    function validateForm(event) {
-        // Ngăn form gửi đi để demo hiển thị SweetAlert
-        event.preventDefault();
-
-        // Lấy giá trị input
-        const username = $('#username_register').val();
-        // const password = document.querySelector('input[name="password"]').value;
-
-        // Demo logic kiểm tra đơn giản
-        if (!/^[a-zA-Z0-9]+$/.test(username)) {
-            alert('Tên người dùng không hợp lệ! (Chỉ chữ và số)');
-            return false;
-        }
-
-        // gửi form đi
-        event.target.submit();
-    }
-
 </script>
 <?php echo load_script([
     'assets/js/modal-helper.js'

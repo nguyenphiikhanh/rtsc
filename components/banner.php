@@ -22,9 +22,9 @@ global $banner_video;
             <div class="text--brand t-center m-auto p-relative" data-aos="fade-down" data-aos-duration="700"
                  data-aos-delay="100">
                 <a href="https://www.youtube.com/" data-fancybox="" style="display: none">
-                    <img class="icon-play" src="assets/frontend/home/v1/images/icon-play.png" alt=""/>
+                    <img class="icon-play" src="<?= define_url("assets/frontend/home/v1/images/icon-play.png") ?>" alt=""/>
                 </a>
-                <img src="assets/frontend/home/v1/images/textgame.png" alt="" class="textgame__game hidden-mobile"/>
+                <img src="<?= define_url("assets/frontend/home/v1/images/textgame.png")?>" alt="" class="textgame__game hidden-mobile"/>
             </div>
         </div>
 

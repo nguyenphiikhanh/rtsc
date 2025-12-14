@@ -1,68 +1,68 @@
-<?php require_once __DIR__ . '/../helper/helper.php'; ?>
+<?php
+require_once __DIR__ . '/../../helper/helper.php';
+?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <?php
-$title_label = 'Sự kiện';
-require_once __DIR__ . '/../layout/head.php';
+$title_label = 'Tổng Hợp Về Trang Bị';
+require_once __DIR__ . '/../../layout/head.php';
 ?>
 
 <body class="body-news">
 
 <!--    header-->
-<?php require_once __DIR__ . '/../layout/header.php'; ?>
+<?php require_once __DIR__ . '/../../layout/header.php'; ?>
 <!--end header-->
-<?php require_once __DIR__ . '/../components/banner.php'; ?>
+<?php require_once __DIR__ . '/../../components/banner.php'; ?>
 
 <div class="box--content">
     <div class="main__news">
         <div class="limit__game">
             <ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
-                <li class="current"><a href="<?= define_url("home.php") ?>">Trang chủ</a></li>
-                <li class=""><span></span></li>
-                <li class=""><span></span></li>
-                <li class="current"><span>Sự kiện</span></li>
-                <li class=""><span></span></li>
-                <li class=""><span></span></li>
+                <li class="current"><a href="../../home.php">Trang chủ</a></li>
+                <li><span>Tích Lũy Nạp 19/11 - 21/11</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
                 <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold">[Sự Kiện]</span></div>
+                    <div class="title-left"><span class="f-tahomabold"></span> Tích Lũy Nạp 19/11 - 21/11</div>
+                    <div class="date-open-right  hidden-mobile">18/11/2025</div>
                 </div>
 
-                <div class="list-new-page">
+                <div class="text-detail detail-post">
 
-                    <div class="item-new clearfix item-tranYTop">
+                    <h3 dir="ltr"><strong>SỰ KIỆN THU THẬP BÁNH TẾT:</strong></h3>
 
-                        <a href="<?= define_url("news/su-kien/chuc-mung-nam-moi-2026.php")?>" class="a100">
-                            <div class="thumb f-left">
-                                <img src="<?= define_url("assets/frontend/home/v1/images/img-su-kien.png")?>" alt="thumb">
-                            </div>
-                            <div class="full-text f-left">
-                                <div class="title-new-date clearfix">
-                                    <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> CHÚC MỪNG
-                                        NĂM MỚI 2026</h2>
-                                    <div class="date-open f-right hidden-mobile">14/12</div>
-                                </div>
-                                <div class="des-text"></div>
-                            </div>
-                        </a>
-                    </div>
+                    <p><span style="color:#FF0000"><strong>◈ - Mỗi lần nạp mệnh giá 50.000đ sẽ nhận được 1 Gifcode (1.000 nghìn các loại vật phẩm quy đổi sự kiện)</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - (Khi Mở Hộp Sẽ Được Tính Điểm 10Đ/1 Hộp)</strong></span>
+
+                    <h3 dir="ltr"><strong>Cách Thức Tham Gia Sự Kiện:</strong></h3>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Đánh quái tại các map (Cánh Đồng Tuyết - Dòng Sông Băng - Rừng Băng)</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Thu thập 4 loại vật phẩm (Thịt heo / Thúng nếp / Thúng đậu xanh / Lá dong )</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Thu thập Bánh tét / Bánh chưng ở các boss (Sơn Tinh / Thuỷ Tinh / Mị Nương / Khủng Long 1 Đến Khủng Long 7 )</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Quy Đổi Tại Đảo Kame ( Nồi Bánh )</strong></span>
+
+                    <h3 dir="ltr"><strong>CÁC PHẦN QUÀ CỰC KÌ HẤP DẪN ĐANG CHỜ BẠN Ở SỰ KIỆN TẾT</strong></h3>
 
 
                 </div>
+
             </div>
         </div>
     </div>
 </div>
-</div>
 
 <!--    footer-->
-<?php include_once __DIR__ . '/../layout/footer.php'; ?>
+<?php include_once __DIR__ . '/../../layout/footer.php'; ?>
 <!--end footer-->
 
-<?php require_once __DIR__ . '/../components/sidebar-right.php'; ?>
+<?php require_once __DIR__ . '/../../components/sidebar-right.php'; ?>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -176,9 +176,7 @@ require_once __DIR__ . '/../layout/head.php';
         });
     });
 </script>
-
 <?php echo load_script([
     'assets/js/modal-helper.js'
 ]) ?>
-
 </html>

@@ -21,26 +21,28 @@
     }
     $config->set_charset("utf8");
 
-    //Website name
-    $webname = "Ngọc Rồng Online";
+    /*CONFIG DÀNH CHO WEBSITE*/
 
-    //Được vận hành bởi:
-    $team = "Admin";
-
-    $zalo_box_url = "https://zalo.me/g/gljiji830"; // link box zalo
+    $zalo_box_url = "https://zalo.me/g/oeifth254"; // link box zalo
 
     // link facebook
-    $fanpage = "https://www.facebook.com/nguyenphiikhanh";
+    $fanpage = "https://www.facebook.com/profile.php?id=61582689654261";
 
     //link download
-    $jar_link = "https://drive.google.com/file/d/1G8pRJnZ_v38OZZNy20ANDeDTwqPy7XXg/view?usp=drive_link";
-    $pc_link = "https://drive.google.com/file/d/1PpqpeXna5zHF_DFDITBuB8plgtLKIOTV/view?usp=sharing";
-    $adr_link = "https://drive.google.com/file/d/1N8p9Cfch244YHYEBnSGw8Eyt-GtoRnlF/view?usp=sharing";
-    $ios_link = "https://testflight.apple.com/join/4S3CprXd";
+    $jar_link = "https://drive.google.com/file/d/1vhBZTjgrTm9VQdT2SiisG0970e9G48s-/view?usp=sharing";
+    $pc_link = "https://drive.google.com/file/d/1-o8moXCinErjd3jh31lqGHYYA4u7Rjly/view?usp=sharing";
+    $adr_link = "https://drive.google.com/file/d/1fcO1qXC1btEZ9tyxE9tSc2_-WReVJwxN/view?usp=sharing";
+    $ios_link = "https://drive.google.com/file/d/1Uqt54tsk6kq_NucQsW_-DFsVHnfWVTya/view?usp=sharing";
 
     // config banner & logo
     $banner_video = define_url("assets/frontend/app/videos/nroghost.mp4"); // trên máy tính
     $banner_img = define_url("assets/frontend/app/imgs/bg2.png"); // trên máy tính
     $sm_banner_img = define_url("assets/frontend/app/imgs/bgg1.png"); // trên điện thoại
     $logo = define_url("assets/frontend/app/imgs/logo.png");
+
+    // Phần này dành cho SEO
+    $webname = "Ngọc Rồng Ghost";
+
+    //Được vận hành bởi:
+    $team = "Admin";
 ?>

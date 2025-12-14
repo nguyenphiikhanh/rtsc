@@ -1,68 +1,70 @@
-<?php require_once __DIR__ . '/../helper/helper.php'; ?>
+<?php
+require_once __DIR__ . '/../../helper/helper.php';
+?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <?php
-$title_label = 'Sự kiện';
-require_once __DIR__ . '/../layout/head.php';
+$title_label = '[UPDATE] Thông tin chi tiết sever';
+require_once __DIR__ . '/../../layout/head.php';
 ?>
 
 <body class="body-news">
 
 <!--    header-->
-<?php require_once __DIR__ . '/../layout/header.php'; ?>
+<?php require_once __DIR__ . '/../../layout/header.php'; ?>
 <!--end header-->
-<?php require_once __DIR__ . '/../components/banner.php'; ?>
+<?php require_once __DIR__ . '/../../components/banner.php'; ?>
 
 <div class="box--content">
     <div class="main__news">
         <div class="limit__game">
             <ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
-                <li class="current"><a href="<?= define_url("home.php") ?>">Trang chủ</a></li>
-                <li class=""><span></span></li>
-                <li class=""><span></span></li>
-                <li class="current"><span>Sự kiện</span></li>
-                <li class=""><span></span></li>
-                <li class=""><span></span></li>
+                <li class="current"><a href="../../home.php">Trang chủ</a></li>
+                <li><span>[UPDATE] Thông tin chi tiết sever</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
                 <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold">[Sự Kiện]</span></div>
+                    <div class="title-left"><span class="f-tahomabold"></span> [UPDATE] Thông tin chi tiết sever</div>
+                    <div class="date-open-right  hidden-mobile">14/12/2025</div>
                 </div>
 
-                <div class="list-new-page">
+                <div class="text-detail detail-post">
+                    <h3 dir="ltr" style="text-align:center"><strong>Thông tin chi tiết sever</strong></h3>
 
-                    <div class="item-new clearfix item-tranYTop">
+                    <h3 dir="ltr" style="text-align:center"><strong>Tất cả đệ tử sever đều có thể săn được</strong></h3>
 
-                        <a href="<?= define_url("news/su-kien/chuc-mung-nam-moi-2026.php")?>" class="a100">
-                            <div class="thumb f-left">
-                                <img src="<?= define_url("assets/frontend/home/v1/images/img-su-kien.png")?>" alt="thumb">
-                            </div>
-                            <div class="full-text f-left">
-                                <div class="title-new-date clearfix">
-                                    <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> CHÚC MỪNG
-                                        NĂM MỚI 2026</h2>
-                                    <div class="date-open f-right hidden-mobile">14/12</div>
-                                </div>
-                                <div class="des-text"></div>
-                            </div>
-                        </a>
-                    </div>
+
+                    <p>
+                        <span style="color:#FF0000"><strong>◈ - Đệ tử Mabu : Săn Boss Super Broly nhận trứng Đệ tử Mabu</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Đệ tử Berus : Giết Boss Whis (Săn Đệ) tại Tương lai nhận Đệ tử Berus</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Đệ tử Zeno : Giết Boss Zeno tại Cold nhận Hồn Zeno và đọc Thông tin Hồn Zeno để biết thêm chi tiết</strong></span>
+
+                    <p>
+                        <span style="color:#FF0000"><strong>◈ - Đệ tử Ngộ Không : Giết Boss Ngộ Không tại ngũ hành sơn</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Đệ tử itachi : Giết Boss itachi (Cần rất đông thành viên bang mới ăn được)</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Đệ tử Kaido : Giết Boss Kaido (Cần rất đông thành viên bang mới ăn được)</strong></span>
+
+                    <p><span style="color:#FF0000"><strong>◈ - Đệ tử Đệ VIP - Tiên Hắc Ám : Giết Boss Tiên Hắc Ám (Cần rất đông thành viên bang mới ăn được)</strong></span>
 
 
                 </div>
+
             </div>
         </div>
     </div>
 </div>
-</div>
 
 <!--    footer-->
-<?php include_once __DIR__ . '/../layout/footer.php'; ?>
+<?php include_once __DIR__ . '/../../layout/footer.php'; ?>
 <!--end footer-->
 
-<?php require_once __DIR__ . '/../components/sidebar-right.php'; ?>
+<?php require_once __DIR__ . '/../../components/sidebar-right.php'; ?>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -176,9 +178,7 @@ require_once __DIR__ . '/../layout/head.php';
         });
     });
 </script>
-
 <?php echo load_script([
     'assets/js/modal-helper.js'
 ]) ?>
-
 </html>
