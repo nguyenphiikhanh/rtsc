@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../helper/helper.php';
+require_once __DIR__ . '/../constants/constants.php';
 global $webname;
 global $banner_img;
 function page_title($title_label = 'Trang Chủ') {
@@ -13,25 +14,25 @@ function page_title($title_label = 'Trang Chủ') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?= page_title($title_label ?? 'Trang chủ') ?> - <?= $webname ?></title>
+    <title><?= page_title($title_label ?? 'Trang chủ') ?> - <?= SEO_WEB_NAME ?></title>
     <link rel="shortcut icon" type="ico" href="<?= define_url("favicon.ico")?>"/>
 
     <meta name="description"
-          content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..."/>
+          content="<?=SEO_WEB_DESCRIPTION?>"/>
     <meta name="keywords"
-          content="Dragon ball, game dragon ball, songoku, vegeta, quy lão tiên sinh, game dragon ball mobile, game chiến thuật"/>
+          content="<?=SEO_WEB_KEYWORDS?>"/>
 
     <meta property="fb:app_id" content=""/>
     <meta property="og:locale" content="vi_VN"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="<?= page_title($title_label ?? 'Trang chủ') ?> - <?= $webname ?>"/>
+    <meta property="og:title" content="<?= page_title($title_label ?? 'Trang chủ') ?> - <?= SEO_WEB_NAME ?>"/>
     <meta property="og:description"
-          content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..."/>
+          content="<?=SEO_WEB_OG_DESCRIPTION?>"/>
 
-    <meta property="og:site_name" content="<?= page_title($title_label ?? 'Trang chủ') ?> - <?= $webname ?>"/>
+    <meta property="og:site_name" content="<?= page_title($title_label ?? 'Trang chủ') ?> - <?= SEO_WEB_NAME ?>"/>
     <meta property="og:image" content="<?= $banner_img ?>"/>
     <meta property="og:image:alt"
-          content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..."/>
+          content="<?=SEO_WEB_DESCRIPTION?>"/>
 
     <?php
     echo load_css([

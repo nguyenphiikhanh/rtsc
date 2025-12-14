@@ -1,14 +1,12 @@
 <?php
     require_once __DIR__ . '/../helper/helper.php';
-
     date_default_timezone_set('Asia/Ho_Chi_Minh');
     global $config;
-	$apikey = 'E0685A4C8A53726C301F346F297D819D'; //API key, lấy từ website thesieutoc.net thay vào trong cặp dấu ''
 	// database Mysql config
 	$local_db = "localhost";
 	$user_db = "root";
 	$pass_db = "";
-	$name_db = "ngocrong";
+	$name_db = "ngocrong_onl";
 
     // home path
     DEFINE("HOME_PAGE", "home.php");
@@ -21,9 +19,12 @@
     }
     $config->set_charset("utf8");
 
+
+
     /*CONFIG DÀNH CHO WEBSITE*/
 
-    $zalo_box_url = "https://zalo.me/g/oeifth254"; // link box zalo
+    // link box zalo
+    $zalo_box_url = "https://zalo.me/g/oeifth254";
 
     // link facebook
     $fanpage = "https://www.facebook.com/profile.php?id=61582689654261";
@@ -40,7 +41,7 @@
     $sm_banner_img = define_url("assets/frontend/app/imgs/bgg1.png"); // trên điện thoại
     $logo = define_url("assets/frontend/app/imgs/logo.png");
 
-    // Phần này dành cho SEO
+    /*PHẦN NÀY DÀNH CHO SEO*/
     $webname = "Ngọc Rồng Ghost";
 
     //Được vận hành bởi:

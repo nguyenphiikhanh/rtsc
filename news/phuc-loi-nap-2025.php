@@ -43,9 +43,9 @@ global $zalo_box_url;
         })(window,document,'script','dataLayer','GTM-PRJRSS5');</script>
     <!-- End Google Tag Manager -->
 
-    <link rel="stylesheet" href="../assets/frontend/events/phucloinap2025/css/lib.css"/>
-    <link rel="stylesheet" href="../assets/frontend/events/phucloinap2025/css/style.css"/>
-    <script src="../module/auth.js"></script>
+    <link rel="stylesheet" href="<?= define_url("assets/frontend/events/phucloinap2025/css/lib.css")?>"/>
+    <link rel="stylesheet" href="<?= define_url("assets/frontend/events/phucloinap2025/css/style.css")?>"/>
+    <script src="<?= define_url("module/auth.js")?>"></script>
 </head>
 
 <body class="__bodys page wpage page__ev">
