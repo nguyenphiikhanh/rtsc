@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
           playsinline="">
-          <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
+          <source src="../../assets/frontend/app/videos/nroghost.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="limit__game">
@@ -191,73 +191,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 
 					<div class="text-detail detail-post">
-						<p>Trong thời gian từ <strong>19/11 - 21/11</strong>, nạp t&iacute;ch lũy v&agrave;o game th&ocirc;ng qua trang <a href="https://pay.acegame.vn/game/db186?fbclid=IwZXh0bgNhZW0CMTAAAR3IBg5LN9axFBwOEE1S_s4vR1xax8IotLmzH0n2SZvGBuIEKHPJT9qQRvA_aem_7YSeIeIFkGaNVOY5g5w9jQ" rel="nofollow noreferrer" tabindex="0" target="_blank">https://pay.acegame.vn/game/db186</a> hoặc thanh to&aacute;n trực tiếp qua CHPlay v&agrave; Appstore (KH&Ocirc;NG T&Iacute;NH D&Ugrave;NG V&Eacute; MUA G&Oacute;I TRONG GAME), đạt mốc n&agrave;o sẽ nhận th&ecirc;m qu&agrave; mốc ấy như sau:</p>
+				
+<h3 dir="ltr"><strong>SỰ KIỆN THU THẬP BÁNH TẾT:</strong></h3>
 
-<p><img alt="?" src="../../../static.xx.fbcdn.net/images/emoji.php/v9/tac/1/16/1f4cc.png" />1. T&iacute;ch Lũy Nạp 100.000 nhận:</p>
+<p><span style="color:#FF0000"><strong>◈ - Mỗi lần nạp mệnh giá 50.000đ sẽ nhận được 1 Gifcode (1.000 nghìn các loại vật phẩm quy đổi sự kiện)</strong></span>
 
-<p>- V&agrave;ng x1,000,000</p>
+<p><span style="color:#FF0000"><strong>◈ - (Khi Mở Hộp Sẽ Được Tính Điểm 10Đ/1 Hộp)</strong></span>
 
-<p>- Ch&igrave;a Kh&oacute;a Rương Trang Bị x10</p>
+<h3 dir="ltr"><strong>Cách Thức Tham Gia Sự Kiện:</strong></h3>
 
-<p>- Rương Chiến Binh Triệu Hồi-15 (Ngẫu) x1</p>
+<p><span style="color:#FF0000"><strong>◈ - Đánh quái tại các map (Cánh Đồng Tuyết - Dòng Sông Băng - Rừng Băng)</strong></span>
 
-<p>- Thuốc Thực Phẩm-IV x30</p>
+<p><span style="color:#FF0000"><strong>◈ - Thu thập 4 loại vật phẩm (Thịt heo / Thúng nếp / Thúng đậu xanh / Lá dong )</strong></span>
 
-<p><img alt="?" src="../../../static.xx.fbcdn.net/images/emoji.php/v9/tac/1/16/1f4cc.png" />2. T&iacute;ch Lũy Nạp 2.000.000 nhận:</p>
+<p><span style="color:#FF0000"><strong>◈ - Thu thập Bánh tét / Bánh chưng ở các boss (Sơn Tinh / Thuỷ Tinh / Mị Nương / Khủng Long 1 Đến Khủng Long 7 )</strong></span>
 
-<p>- V&agrave;ng x3,000,000</p>
+<p><span style="color:#FF0000"><strong>◈ - Quy Đổi Tại Đảo Kame ( Nồi Bánh )</strong></span>
 
-<p>- <strong>Rương CB Triệu Hồi-15 (Chọn)</strong> x1</p>
+<h3 dir="ltr"><strong>CÁC PHẦN QUÀ CỰC KÌ HẤP DẪN ĐANG CHỜ BẠN Ở SỰ KIỆN TẾT</strong></h3>
 
-<p>- Ch&igrave;a Kh&oacute;a Rương Trang Bị x30</p>
 
-<p>- Thước Kẻ x80</p>
 
-<p><img alt="?" src="../../../static.xx.fbcdn.net/images/emoji.php/v9/tac/1/16/1f4cc.png" />3. T&iacute;ch Lũy Nạp 6.000.000 nhận</p>
-
-<p>- V&agrave;ngx 5,000,000</p>
-
-<p>- Rương Chọn Rune Truyền Thuyết x1</p>
-
-<p>- <strong>Rương CB Ước Nguyện-15 (Chọn)</strong> x1</p>
-
-<p>- Thước Kẻ x100</p>
-
-<p><img alt="?" src="../../../static.xx.fbcdn.net/images/emoji.php/v9/tac/1/16/1f4cc.png" />4. T&iacute;ch Lũy Nạp 10.000.000 nhận:</p>
-
-<p>- V&agrave;ng x10,000,000</p>
-
-<p>- Rương chọn mảnh Granola hoặc Future Gohan hoặc Son Goku SSGSS&amp;Vegeta x150</p>
-
-<p>- Rương Văn Chương Ch&iacute; T&ocirc;n x1</p>
-
-<p>- Thước Kẻ x120</p>
-
-<p><img alt="?" src="../../../static.xx.fbcdn.net/images/emoji.php/v9/tac/1/16/1f4cc.png" />5. T&iacute;ch Lũy Nạp 20.000.000 nhận:</p>
-
-<p>- V&agrave;ng x15,000,000</p>
-
-<p>- Rương chọn Hồn Vũ Kh&iacute; Granola hoặc Future Gohan hoặc Son Goku SSGSS&amp;Vegeta x1</p>
-
-<p>- Rương Văn Chương Ch&iacute; T&ocirc;n x2</p>
-
-<p>- Thước Kẻ x200</p>
-
-<p><img alt="?" src="../../../static.xx.fbcdn.net/images/emoji.php/v9/tac/1/16/1f4cc.png" />6. T&iacute;ch Lũy Nạp 30.000.000 nhận:</p>
-
-<p>- V&agrave;ng x20,000,000</p>
-
-<p>-&nbsp;<strong>L&otilde;i Huy Hiệu Linh Hồn x1</strong></p>
-
-<p>- Rương Chi&ecirc;u Thức Bạc (Chọn) x5</p>
-
-<p>- Thước Kẻ x300</p>
-
-<p><img alt="?" src="../../../static.xx.fbcdn.net/images/emoji.php/v9/t45/1/16/1f6a8.png" />&nbsp;Ch&uacute; &yacute;:</p>
-
-<p>- <strong>Rương CB Triệu Hồi-15 (Chọn)</strong> Mở rương chọn nhận: [Mảnh]*150 trong số c&aacute;c chiến binh: Broly (DBS), Vados, Moro, Vegeta (Perfect), Evil Bardock, Towa, Super Mira,Son GoKu (Ultra)<br />
-- <strong>Rương CB Ước Nguyện-15 (Chọn)</strong> Mở rương chọn nhận: [Mảnh]*150 trong số c&aacute;c chiến binh: &nbsp;Vegito SSGSS, Gogeta SSGSS, Gogeta SS4, Broly SS4, Vegeta (Ultra Ego), Super Saiyan ROSE3, Vegito SS4, Bardock SS4<br />
-- Qu&agrave; sẽ gửi về nh&acirc;n vật v&agrave;o chiều ng&agrave;y <strong>22/11</strong></p>
 
 					</div>
 
@@ -343,10 +297,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: absolute;
       display: block;
       text-indent: -999em;
-      background: url(../../assets/frontend/home/v1/images/logoNew) 0 0 no-repeat;
+      background: url(../../assets/frontend/app/imgs/logo.png) 0 0 no-repeat;
       background-size: contain;
-      width: 110px;
-      height: 55px;
+      width: 500px;
+      height: 80px;
       left: 0;
       top: -10px;
   }

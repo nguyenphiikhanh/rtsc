@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
           playsinline="">
-          <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
+          <source src="../../assets/frontend/app/videos/nroghost.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="limit__game">
@@ -182,451 +182,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="limit__game">
 				<ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
 					<li class="current"><a href="../../home.php">Trang chủ</a></li>
-										<li><span>Đặc Quyền VIP</span></li>
+										<li><span>HỖ TRỢ NHIỆM VỤ</span></li>
 				</ul>
 				<div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
 					<div class="title-main-new">
-						<div class="title-left"><span class="f-tahomabold"></span> Đặc Quyền VIP</div>
-						<div class="date-open-right  hidden-mobile">28/09/2023</div>
+						<div class="title-left"><span class="f-tahomabold"></span>HỖ TRỢ NHIỆM VỤ</div>
+						<div class="date-open-right  hidden-mobile">14/12/2025</div>
 					</div>
 
 					<div class="text-detail detail-post">
-						<p><strong>◈&nbsp;</strong><strong>ĐẶC QUYỀN VIP</strong></p>
+						<p><strong>◈&nbsp;</strong><strong>HỖ TRỢ NHIỆM VỤ</strong></p>
 
-<p><strong>C&aacute;c Chiến Binh th&acirc;n mến,</strong></p>
+<p><strong>Tính năng hỗ trợ nhiệm vụ</strong></p>
 
-<p>Bulma xin th&ocirc;ng b&aacute;o nội dung Đặc Quyền VIP m&agrave; c&aacute;c chiến binh c&oacute; thể nhận được khi tham gia Rồng Thần Si&ecirc;u Cấp</p>
+<p><span style="color:#FF0000"><strong>◈ -  Gặp NPC taih Đảo kame ấn vào ô Skip Nhiệm Vụ</strong></span>
 
-<p>Khi thanh to&aacute;n&nbsp;trực tiếp hoặc sử dụng V&eacute; Nạp để mua c&aacute;c g&oacute;i qu&agrave; trong game sẽ nhận được EXP VIP tương đương:</p>
+<p><strong>Để có thể bỏ qua các nhiệm vụ như:</strong></p>
 
-<table align="center" border="1" cellpadding="0" cellspacing="0" style="width:330px">
-	<tbody>
-		<tr>
-			<td>Mệnh Gi&aacute; VND</td>
-			<td>Mệnh Gi&aacute; V&eacute; Nạp</td>
-			<td>EXP VIP nhận được</td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">29,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">1</span></td>
-			<td style="text-align:center"><span style="color:#000000">60</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">49,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">2</span></td>
-			<td style="text-align:center"><span style="color:#000000">120</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">79,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">3</span></td>
-			<td style="text-align:center"><span style="color:#000000">180</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">99,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">4</span></td>
-			<td style="text-align:center"><span style="color:#000000">240</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">129,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">5</span></td>
-			<td style="text-align:center"><span style="color:#000000">300</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">199,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">7</span></td>
-			<td style="text-align:center"><span style="color:#000000">420</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">249,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">10</span></td>
-			<td style="text-align:center"><span style="color:#000000">680</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">349,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">15</span></td>
-			<td style="text-align:center"><span style="color:#000000">860</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">399,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">18</span></td>
-			<td style="text-align:center"><span style="color:#000000">980</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">449,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">20</span></td>
-			<td style="text-align:center"><span style="color:#000000">1100</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">499,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">22</span></td>
-			<td style="text-align:center"><span style="color:#000000">1280</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">699,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">30</span></td>
-			<td style="text-align:center"><span style="color:#000000">1580</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">799,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">35</span></td>
-			<td style="text-align:center"><span style="color:#000000">1980</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">999,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">45</span></td>
-			<td style="text-align:center"><span style="color:#000000">2680</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">1,299,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">50</span></td>
-			<td style="text-align:center"><span style="color:#000000">3280</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">1,999,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">80</span></td>
-			<td style="text-align:center"><span style="color:#000000">4600</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">2,499,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">100</span></td>
-			<td style="text-align:center"><span style="color:#000000">6480</span></td>
-		</tr>
-	</tbody>
-</table>
 
-<p>Chi tiết Đặc Quyền VIP:</p>
+<p><span style="color:#FF0000"><strong>◈ - Kết bạn với người Trái đất</strong></span>
 
-<table align="center" border="1" cellpadding="0" cellspacing="0" dir="ltr" style="width:1000px">
-	<tbody>
-		<tr>
-			<td style="text-align:center">Cấp VIP</td>
-			<td style="text-align:center">EXP VIP</td>
-			<td style="text-align:center">Tương đương VND</td>
-			<td style="text-align:center">Đặc Quyền VIP</td>
-			<td style="text-align:center">Qu&agrave; Miễn Ph&iacute;</td>
-			<td style="text-align:center">Qu&agrave; Ưu Đ&atilde;i</td>
-			<td style="text-align:center">Gi&aacute; giảm 90%</td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">1</span></td>
-			<td style="text-align:center"><span style="color:#000000">45</span></td>
-			<td style="text-align:center"><span style="color:#000000">15.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 3 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 5 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 1 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Tinh Ph&aacute;ch Huy Chương Saiyan*1<br />
-			Nước Th&aacute;nh (IV)*10<br />
-			V&agrave;ng *50,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Son Goku SSGSS*1<br />
-			Rương Vật Liệu Tăng T&iacute;m (C&ocirc;ng)*1</span><br />
-			<span style="color:#000000">Bento *10<br />
-			V&agrave;ng *100,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">0 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">2</span></td>
-			<td style="text-align:center"><span style="color:#000000">300</span></td>
-			<td style="text-align:center"><span style="color:#000000">100.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">K&iacute;ch hoạt Ph&uacute;c Lợi Thẻ Th&aacute;ng</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 4 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 7 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 2 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">V&eacute; Triệu Hồi Đ&aacute; Rồng*5<br />
-			Nước Th&aacute;nh (IV)*10<br />
-			V&agrave;ng *50,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh Son Goku SSGSS*50</span><br />
-			<span style="color:#000000">Tinh Ph&aacute;ch S&aacute;ch V&ocirc; Cực*1<br />
-			Bento *15<br />
-			V&agrave;ng *150,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">180 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">3</span></td>
-			<td style="text-align:center"><span style="color:#000000">1.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">333.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">K&iacute;ch hoạt mở quyền hạn r&uacute;t Hộp Hồn<br />
-			Th&iacute; Luyện Cực Hạn được bỏ qua<br />
-			Thời gian hồi Điểm Skill giảm c&ograve;n 1 ph&uacute;t/điểm</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 5 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 9 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 2 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Đ&aacute; Rồng Thần *200<br />
-			Nước Th&aacute;nh (IV)*20<br />
-			V&agrave;ng *50,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh Vạn Năng Thường *20</span><br />
-			<span style="color:#000000">Đ&aacute; Thức Tỉnh*10<br />
-			Bento*20<br />
-			V&agrave;ng*200,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">280 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">4</span></td>
-			<td style="text-align:center"><span style="color:#000000">2.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">K&iacute;ch hoạt Ph&uacute;c Lợi Thẻ VIP</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 6 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 12 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 2 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Rương Điểm Thi&ecirc;n Ph&uacute;*5<br />
-			Nước Th&aacute;nh (IV)*20<br />
-			V&agrave;ng *100,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh Son Goku SSGSS*100</span><br />
-			<span style="color:#000000">Tinh Hoa Chiến Hồn*100<br />
-			Bento *30<br />
-			V&agrave;ng *250,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">380 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">5</span></td>
-			<td style="text-align:center"><span style="color:#000000">5.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">1.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mở nhiệm Vụ Ng&agrave;y: Ta L&agrave; Đại Gia! (Ho&agrave;n trả Đ&aacute; Rồng Si&ecirc;u Lợi)<br />
-			Đấu Trường được Bỏ Qua</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 7 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 16 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 3 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">V&eacute; Triệu Hồi Rồng Thần *5<br />
-			Nước Th&aacute;nh (IV)*30<br />
-			V&agrave;ng*100,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Hồn Bao Tay Thần Saiyan*1</span><br />
-			<span style="color:#000000">Hộp Đ&aacute; Tăng Phẩm*100<br />
-			Bento*40<br />
-			V&agrave;ng*300,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">480 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">6</span></td>
-			<td style="text-align:center"><span style="color:#000000">10.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">3.333.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Chiến đội cấp 55 c&oacute; thể bỏ qua nhanh Th&iacute; Luyện cực Hạn tối đa 48 Ải<br />
-			Mở C&agrave;n Qu&eacute;t 50 lần<br />
-			Đấu Trường chiến bại t&iacute;ch điểm +2</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 8 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 20 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 3 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Tinh Ph&aacute;ch Huy Chương Cực &Aacute;c*1<br />
-			Nước Th&aacute;nh (IV)*40<br />
-			V&agrave;ng*100,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Broly*1</span><br />
-			<span style="color:#B22222">Rương Vật Liệu Tăng T&iacute;m (Kỹ)*1</span><br />
-			<span style="color:#000000">Bento*50<br />
-			V&agrave;ng*400000</span></td>
-			<td style="text-align:center"><span style="color:#000000">680 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">7</span></td>
-			<td style="text-align:center"><span style="color:#000000">15.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">5.000.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Th&iacute; Luyện Cực Hạn t&iacute;ch điểm tăng 10%</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 9 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 25 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 3 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Mảnh Broly*20<br />
-			Nước Th&aacute;nh (IV)*50<br />
-			V&agrave;ng*100,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh Broly*100</span><br />
-			<span style="color:#000000">Tinh Ph&aacute;ch S&aacute;ch T&agrave; Năng*1<br />
-			Bento*50<br />
-			V&agrave;ng*500,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">880 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">8</span></td>
-			<td style="text-align:center"><span style="color:#000000">20.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">6.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mở Nhiệm Vụ Ng&agrave;y: Ch&igrave;a Kh&oacute;a Thần Kỳ (mỗi ng&agrave;y nhận th&ecirc;m Ch&igrave;a Kh&oacute;a Trang Bị)<br />
-			Đấu Trường CD giảm đến -3 ph&uacute;t</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 10 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 30 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 3 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Tinh Hoa Chiến Hồn-III*10<br />
-			Nước Th&aacute;nh (IV)*50<br />
-			V&agrave;ng*150,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Hồn D&acirc;y Si&ecirc;u Sức Mạnh*1</span><br />
-			<span style="color:#000000">Đ&aacute; Thức Tỉnh*15<br />
-			Bento*50<br />
-			V&agrave;ng*600,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">980 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">9</span></td>
-			<td style="text-align:center"><span style="color:#000000">30.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">10.000.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">K&iacute;ch hoạt th&ecirc;m 1 lượt Triệu Hồi Đ&aacute; Rồng Miễn Ph&iacute;<br />
-			Thời gian hồi Điểm Skill giảm c&ograve;n 5 gi&acirc;y/điểm</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 11 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 35 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 3 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">V&eacute; Triệu Hồi Rồng Thần*10<br />
-			Si&ecirc;u Nước Th&aacute;nh (I)*20<br />
-			V&agrave;ng*150,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh Broly*150<br />
-			Thời Trang Broly SS3*1</span><br />
-			<span style="color:#000000">Bento*50<br />
-			V&agrave;ng*700,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">1280 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">10</span></td>
-			<td style="text-align:center"><span style="color:#000000">50.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">16.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Chiến đội cấp 55 c&oacute; thể bỏ qua nhanh Th&iacute; Luyện cực Hạn tối đa 50 Ải<br />
-			Mở Nhiệm Vụ Ng&agrave;y: k&iacute;ch ph&aacute;t tiềm lực (tặng Điểm Thi&ecirc;n Ph&uacute;)</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 12 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 40 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 4 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Tinh Hoa Chi&ecirc;u Thức*3000<br />
-			Si&ecirc;u Nước Th&aacute;nh (I)*20<br />
-			V&agrave;ng*150,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Vạn Năng Thường*40</span><br />
-			<span style="color:#000000">Rương Chi&ecirc;u Thức Cuối*2<br />
-			Bento*50<br />
-			V&agrave;ng*700,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">1680 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">11</span></td>
-			<td style="text-align:center"><span style="color:#000000">100.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">33.333.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Th&iacute; Luyện V&agrave;ng CD giảm c&ograve;n 1 ph&uacute;t</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 13 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 50 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 4 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Tinh Hoa Chi&ecirc;u Thức*5000<br />
-			Si&ecirc;u Nước Th&aacute;nh (I)*20<br />
-			V&agrave;ng*150,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">V&eacute; Triệu Hồi Rồng Thần *30</span><br />
-			<span style="color:#000000">Rương Chi&ecirc;u Thức Cuối*4<br />
-			Bento*50<br />
-			V&agrave;ng*700,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">2480 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">12</span></td>
-			<td style="text-align:center"><span style="color:#000000">200.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">66.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Th&iacute; Luyện Cực Hạn t&iacute;ch điểm tăng 15%</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 14 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 60 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 4 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Tinh Hoa Chi&ecirc;u Thức*5000<br />
-			Si&ecirc;u Nước Th&aacute;nh (I)*30<br />
-			V&agrave;ng*300,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Vạn Năng Thường*80</span><br />
-			<span style="color:#000000">Rương Chọn Rune Truyền Thuyết-I*1<br />
-			Thuốc Thực Phẩm-IV*50<br />
-			V&agrave;ng*1,000,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">3280 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">13</span></td>
-			<td style="text-align:center"><span style="color:#000000">300.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">100.000.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mở Nhiệm Vụ Ng&agrave;y: tặng Mảnh Vạn Năng (mỗi ng&agrave;y tặng Mảnh Vạn Năng)<br />
-			Đấu Trường CD giảm đến -4 ph&uacute;t</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 15 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 80 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 4 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Đ&aacute; Đột Ph&aacute;*5<br />
-			Si&ecirc;u Nước Th&aacute;nh (I)*50<br />
-			V&agrave;ng*400,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">V&eacute; Triệu Hồi Rồng Thần*50</span><br />
-			<span style="color:#000000">Hộp Chọn Huy Hiệu 5 Sao-I*1<br />
-			Thuốc Thực Phẩm-IV*70<br />
-			V&agrave;ng*1,000,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">3800 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">14</span></td>
-			<td style="text-align:center"><span style="color:#000000">500.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">166.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Th&iacute; Luyện Cực Hạn t&iacute;ch điểm tăng 20%</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 16 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 100 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 5 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">T&iacute;ch Ph&aacute;ch Huy Chương Saiyan*1<br />
-			Tinh Ph&aacute;ch S&aacute;ch V&ocirc; Cực*1<br />
-			V&agrave;ng*500,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Son Goku (Ultra)*1</span><br />
-			<span style="color:#000000">Hồn Nguy&ecirc;n Kh&iacute; V&ocirc; Cực*1<br />
-			Qu&agrave; Trang Bị Cam Lớn*1<br />
-			Qu&agrave; Tăng Phẩm Cam Lớn*1</span></td>
-			<td style="text-align:center"><span style="color:#000000">4800 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">15</span></td>
-			<td style="text-align:center"><span style="color:#000000">800.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">266.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Th&iacute; Luyện Cực Hạn t&iacute;ch điểm tăng 30%</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 17 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 160 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 5 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Đ&aacute; Rồng*8888<br />
-			Si&ecirc;u Nước Th&aacute;nh (III)*50<br />
-			V&agrave;ng*600,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh Son Goku (Ultra)*150</span><br />
-			<span style="color:#000000">Đ&aacute; Thức Tỉnh*30<br />
-			Thuốc Thực Phẩm-IV*100<br />
-			V&agrave;ng*2,000,000</span></td>
-			<td style="text-align:center"><span style="color:#000000">5800 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">16</span></td>
-			<td style="text-align:center"><span style="color:#000000">1.400.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">466.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 18 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 250 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 6 lần</span></td>
-			<td style="text-align:center">
-			<p><span style="color:#000000">Vạn Năng Thường*100<br />
-			Si&ecirc;u Nước Th&aacute;nh (III)*30<br />
-			V&agrave;ng*700,000</span></p>
-			</td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh Son Goku (Ultra)*150</span><br />
-			<span style="color:#000000">Rương Vật Liệu Tăng Cam (C&ocirc;ng)*1<br />
-			Tinh Hoa Huy Hiệu*20,000<br />
-			Huy Hiệu 5 Sao-Gold Frieza*1</span></td>
-			<td style="text-align:center"><span style="color:#000000">8000 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">17</span></td>
-			<td style="text-align:center"><span style="color:#000000">2.000.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">666.667.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 19 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 250 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 6 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Qu&agrave; Trang Bị Cam Lớn*1<br />
-			Si&ecirc;u Nước Th&aacute;nh (III)*50<br />
-			V&agrave;ng*800,000</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Mảnh VK Vạn Năng-15*30</span><br />
-			<span style="color:#000000">Mảnh Rương Hồn Vũ Kh&iacute;-15 (Chọn)*150<br />
-			Tinh Hoa Huy Hiệu*20,000<br />
-			Huy Hiệu 5 Sao-Chronoa(Kai)*2</span></td>
-			<td style="text-align:center"><span style="color:#000000">10000 Đ&aacute; Rồng</span></td>
-		</tr>
-		<tr>
-			<td style="text-align:center"><span style="color:#000000">18</span></td>
-			<td style="text-align:center"><span style="color:#000000">3.000.000</span></td>
-			<td style="text-align:center"><span style="color:#000000">1.000.000.000 đ</span></td>
-			<td style="text-align:center"><span style="color:#B22222">Th&iacute; Luyện Cực Hạn t&iacute;ch điểm tăng 50%</span><br />
-			<span style="color:#000000">Mỗi ng&agrave;y mua Thể Lực 20 lần<br />
-			Mỗi ng&agrave;y Chi&ecirc;u T&agrave;i 160 lần<br />
-			Mỗi ng&agrave;y c&agrave;i lại mỗi PB Tinh Anh 8 lần</span></td>
-			<td style="text-align:center"><span style="color:#000000">Qu&agrave; Trang Bị Cam Lớn*1<br />
-			Si&ecirc;u Nước Th&aacute;nh (III)*100<br />
-			V&agrave;ng*800,000</span></td>
-			<td style="text-align:center">
-			<p><span style="color:#B22222">Mảnh Vạn Năng Cao Cấp*200</span><br />
-			<span style="color:#000000">L&otilde;i Huy Hiệu Linh Hồn*1<br />
-			Tinh Hoa Huy Hiệu*50,000<br />
-			Huy Hiệu 6 Sao-Beerus*2</span></p>
-			</td>
-			<td style="text-align:center"><span style="color:#000000">12800 Đ&aacute; Rồng</span></td>
-		</tr>
-	</tbody>
-</table>
+<p><span style="color:#FF0000"><strong>◈ - Kết bạn với người Namex</strong></span>
 
-<p>&nbsp;</p>
+<p><span style="color:#FF0000"><strong>◈ - Kết bạn với người Xayda</strong></span>
+
+<p><span style="color:#FF0000"><strong>◈ - Gia nhập bang có 3 thành viên</strong></span>
+
+<p><span style="color:#FF0000"><strong>◈ - nhiệm vụ heo rừng - bulon có thể tự tạo pt và đánh 1 mình</strong></span>
+
 
 					</div>
 
@@ -713,10 +296,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: absolute;
       display: block;
       text-indent: -999em;
-      background: url(../../assets/frontend/home/v1/images/logoNew) 0 0 no-repeat;
+      background: url(../../assets/frontend/app/imgs/logo.png) 0 0 no-repeat;
       background-size: contain;
-      width: 110px;
-      height: 55px;
+      width: 500px;
+      height: 80px;
       left: 0;
       top: -10px;
   }

@@ -98,7 +98,7 @@ $data_top_nap = __get_top_nap();
                                         <p dir="ltr" style="text-align:center;color: white"><?= htmlspecialchars($data['name']) ?></p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['tongnap'], 0, ',', '.'); ?> tỷ vnđ</p>
+                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['tongnap'], 0, ',', '.'); ?> vnđ</p>
                                     </td>
                                     <td>
                                         <p dir="ltr" style="text-align:left;color: white">- Mạnh top <?= $index + 1 ?> server, trong thiên hạ không có đối thủ.</p>

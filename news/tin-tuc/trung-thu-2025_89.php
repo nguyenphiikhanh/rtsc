@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
           playsinline="">
-          <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
+          <source src="../../assets/frontend/app/videos/nroghost.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="limit__game">
@@ -182,165 +182,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="limit__game">
 				<ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
 					<li class="current"><a href="../../home.php">Trang chủ</a></li>
-										<li><span>Quà Tri Ân VIP Trung Thu 2025</span></li>
+										<li><span>Thông Tin Quang Trọng</span></li>
 				</ul>
 				<div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
 					<div class="title-main-new">
-						<div class="title-left"><span class="f-tahomabold"></span> Quà Tri Ân VIP Trung Thu 2025</div>
-						<div class="date-open-right  hidden-mobile">02/10/2025</div>
+						<div class="title-left"><span class="f-tahomabold"></span> Thông Tin Quang Trọng </div>
+						<div class="date-open-right  hidden-mobile">14/12/2025</div>
 					</div>
 
 					<div class="text-detail detail-post">
-						<h2 dir="ltr" style="text-align:center"><big><strong>Qu&agrave; Tri &Acirc;n VIP Trung Thu 06/10/2025</strong></big></h2>
+						<h2 dir="ltr" style="text-align:center"><big><strong>- Sever cày chay 100%,</strong></big></h2>
 
 <p dir="ltr">&nbsp;</p>
 
-<p dir="ltr"><strong>Nh&acirc;n dịp Trung Thu 06/10/2025 sắp tới, BQT của Rồng Thần Si&ecirc;u Cấp xin gửi lời cảm ơn đến qu&yacute; Chiến Binh đ&atilde; ủng hộ dự &aacute;n trong thời gian qua v&agrave; xin gửi đến qu&yacute; Chiến Binh VIP một phần qu&agrave; Tri &Acirc;n.</strong></p>
+<p dir="ltr"><strong>◈ - Sever cày chay 100%,người nạp chỉ đi nhanh hơn - Admin không bán bất kì thứ gì - cày được tất cả</strong></p>
 
-<p dir="ltr"><strong>◈ Điều kiện v&agrave; thời gian:</strong></p>
+<p dir="ltr"><strong>◈ - Vật Phẩm Phụ Kiện</strong></p>
 
-<p dir="ltr">- Phần qu&agrave; được trao tặng cho tất cả Chiến Binh đ&atilde; đạt Vip từ mốc Vip 9 trở l&ecirc;n, t&iacute;nh từ ng&agrave;y <strong>30/05/2023 đến hết 05/10/2025</strong>.</p>
+<p dir="ltr">  <strong>◈ - Tất cả vật phẩm cần thiết đều có thể mua trực tiếp tại NPC Santa</strong>.</p>
 
-<p dir="ltr">- Thời gian trao qu&agrave;: <strong>16h</strong> ng&agrave;y <strong>06/10/2025</strong>.<br />
-- C&aacute;ch thức nhận: qu&agrave; sẽ được gửi trực tiếp v&agrave;o Thư của nh&acirc;n vật đạt đủ điều kiện.</p>
+<p dir="ltr"><strong>◈ - Sever đã fix gần như toàn bộ trick lỏ và bug lỏ</strong><br />
+ <strong>◈ - Tiền tệ duy nhất là thỏi vàng và coin</strong></p>
 
-<p dir="ltr"><strong>◈ G&oacute;i qu&agrave;:</strong></p>
+<p dir="ltr"><strong>◈ - Sever ưu tiên tính năng bang hội nên cần có bang để có thể đi nhanh hơn</strong><br />
 
-<table align="center">
-	<tbody>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center"><strong>G&oacute;i Qu&agrave;</strong></p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center"><strong>Vật Phẩm Thưởng</strong></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center">Qu&agrave; Vip 9</p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center">V&agrave;ng x2,000,000</p>
+<p dir="ltr"><strong>◈ - Sever có chuyển sinh đổi hành tinh - chuyển sinh càng cao chỉ số càng khủng</strong><br />
 
-			<p dir="ltr" style="text-align:center">Thuốc Thực Phẩm-IV x50</p>
 
-			<p dir="ltr" style="text-align:center">Rương Rune (Truyền Thuyết Ngẫu Nhi&ecirc;n) x1</p>
-
-			<p dir="ltr" style="text-align:center">Mảnh Vạn Năng Cao Cấp x10</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center">Qu&agrave; VIP Đồng</p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center">V&agrave;ng x3,000,000</p>
-
-			<p dir="ltr" style="text-align:center">Thuốc Thực Phẩm-IV x70</p>
-
-			<p dir="ltr" style="text-align:center">Rương Rune (Truyền Thuyết) x1</p>
-
-			<p dir="ltr" style="text-align:center">Mảnh Vạn Năng Cao Cấp x20</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center">Qu&agrave; VIP Bạc</p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center">V&agrave;ng x5,000,000</p>
-
-			<p dir="ltr" style="text-align:center">Thuốc Thực Phẩm-IV x90</p>
-
-			<p dir="ltr" style="text-align:center">Rương t&ugrave;y chọn Tử Chiến (Truyền Thuyết) x1</p>
-
-			<p dir="ltr" style="text-align:center">Mảnh Vạn Năng Cao Cấp x30</p>
-
-			<p dir="ltr" style="text-align:center">Hộp Huy Hiệu 5 Sao-V x1</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center">Qu&agrave; VIP V&agrave;ng</p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center">V&agrave;ng x7,000,000</p>
-
-			<p dir="ltr" style="text-align:center">Thuốc Thực Phẩm-IV x120</p>
-
-			<p dir="ltr" style="text-align:center">Rương t&ugrave;y chọn Tử Chiến (Truyền Thuyết) x1</p>
-
-			<p dir="ltr" style="text-align:center">Mảnh Vạn Năng Cao Cấp x45</p>
-
-			<p dir="ltr" style="text-align:center">Hộp Huy Hiệu 5 Sao-V x2</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center">Qu&agrave; VIP Bạch Kim</p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center">V&agrave;ng x10,000,000</p>
-
-			<p dir="ltr" style="text-align:center">Thuốc Thực Phẩm-IV x150</p>
-
-			<p dir="ltr" style="text-align:center">Rương t&ugrave;y chọn Tử Chiến (Truyền Thuyết) x2</p>
-
-			<p dir="ltr" style="text-align:center">Mảnh Vạn Năng Cao Cấp x60</p>
-
-			<p dir="ltr" style="text-align:center">Hộp Chọn Huy Hiệu 6 Sao-II x1</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center">Qu&agrave; VIP Kim Cương</p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center">V&agrave;ng x15,000,000</p>
-
-			<p dir="ltr" style="text-align:center">Thuốc Thực Phẩm-IV x200</p>
-
-			<p dir="ltr" style="text-align:center">Rương T&ugrave;y Chọn Rune Truyền Thuyết 3 Vị Tr&iacute;</p>
-
-			<p dir="ltr" style="text-align:center">Mảnh Vạn Năng Cao Cấp x80</p>
-
-			<p dir="ltr" style="text-align:center">Hộp Chọn Huy Hiệu 6 Sao-II x1</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p dir="ltr" style="text-align:center">Qu&agrave; VIP Ruby</p>
-			</td>
-			<td>
-			<p dir="ltr" style="text-align:center">V&agrave;ng x20,000,000</p>
-
-			<p dir="ltr" style="text-align:center">Thuốc Thực Phẩm-IV x300</p>
-
-			<p dir="ltr" style="text-align:center">Rương T&ugrave;y Chọn Rune Truyền Thuyết 3 Vị Tr&iacute; x2</p>
-
-			<p dir="ltr" style="text-align:center">Mảnh Vạn Năng Cao Cấp x100</p>
-
-			<p dir="ltr" style="text-align:center">Hộp Chọn Huy Hiệu 6 Sao-II&nbsp;x1</p>
-
-			<p dir="ltr" style="text-align:center">Hộp Chọn Huy Hiệu 6 Sao-E&nbsp;x1</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<p dir="ltr"><strong>◈ Ch&uacute; th&iacute;ch vật phẩm:</strong><br />
-- <strong>Rương Rune (Truyền Thuyết Ngẫu Nhi&ecirc;n)</strong>: Mở nhận Rune Truyền Thuyết ngẫu nhi&ecirc;n.</p>
-
-<p dir="ltr">-&nbsp;<strong>Hộp Huy Hiệu 5 Sao-V</strong>: Mở rương nhận 1 trong số: Grand Supreme Kai [Huy Hiệu Linh Hồn]*1, Magetta Hợp Thể [Huy Hiệu Linh Hồn]*1, Kẻ Mặt Đen [Huy Hiệu Linh Hồn]*1.<br />
-- <strong>Rương T&ugrave;y Chọn Rune Truyền Thuyết 3 Vị Tr&iacute;</strong>: Mở rương được chọn 3 vi&ecirc;n c&ugrave;ng 1 loại, sau đ&oacute; mỗi vi&ecirc;n sẽ được t&ugrave;y chọn vị tr&iacute;.<br />
-- <strong>Hộp Chọn Huy Hiệu 6 Sao-II</strong>: Mở rương nhận 1 trong số: Broly [Huy Hiệu Linh Hồn]*1, Gold Coora [Huy Hiệu Linh Hồn]*1, Magetta Hợp Thể [Huy Hiệu Linh Hồn]*1, Gold Frieza [Huy Hiệu Linh Hồn]*1, Recoome [Huy Hiệu Linh Hồn]*1, &Ocirc;ng Gohan [Huy Hiệu Linh Hồn]*1, Frieza H&igrave;nh Th&aacute;i 3 [Huy Hiệu Linh Hồn]*1, Super Baby [Huy Hiệu Linh Hồn]*1.</p>
-
-<p dir="ltr">- <strong>Hộp Chọn Huy Hiệu 6 Sao-E</strong>: Mở chọn 1 trong c&aacute;c phần thưởng: Huy Hiệu Linh Hồn Mira, Huy Hiệu Linh Hồn Black Goku Rose, Huy Hiệu Linh Hồn Son Goku SS4.</p>
-
-<p dir="ltr">----------</p>
-
-<p dir="ltr">RỒNG THẦN SI&Ecirc;U CẤP &ndash; GAME ĐẤU TƯỚNG DRAGON BALL SI&Ecirc;U CẤP</p>
 
 					</div>
 
@@ -427,10 +295,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: absolute;
       display: block;
       text-indent: -999em;
-      background: url(../../assets/frontend/home/v1/images/logoNew) 0 0 no-repeat;
+      background: url(../../assets/frontend/app/imgs/logo.png) 0 0 no-repeat;
       background-size: contain;
-      width: 110px;
-      height: 55px;
+      width: 500px;
+      height: 80px;
       left: 0;
       top: -10px;
   }

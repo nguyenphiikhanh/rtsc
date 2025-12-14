@@ -82,8 +82,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="full-text f-left">
                       <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Tổng Hợp Về Huy Hiệu Linh Hồn</h2>
-                        <div class="date-open f-right hidden-mobile">17/10</div>
+                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Tổng Hợp Về Trang Bị</h2>
+                        <div class="date-open f-right hidden-mobile">14/12</div>
                       </div>
                       <div class="des-text"></div>
                     </div>
@@ -98,8 +98,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="full-text f-left">
                       <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Đặc Quyền VIP</h2>
-                        <div class="date-open f-right hidden-mobile">28/09</div>
+                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Hỗ Trợ Nhiệm Vụ</h2>
+                        <div class="date-open f-right hidden-mobile">14/12</div>
                       </div>
                       <div class="des-text"></div>
                     </div>
@@ -107,44 +107,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
                 
                 
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="huong-dan" code="huong-dan-nhap-giftcode.php" href="huong-dan/huong-dan-nhap-giftcode_34.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-huong-dan.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Hướng Dẫn Nhập Giftcode</h2>
-                        <div class="date-open f-right hidden-mobile">27/06</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
-                
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="huong-dan" code="huong-dan-cai-lai-chien-binh.php" href="huong-dan/huong-dan-cai-lai-chien-binh_42.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-huong-dan.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Hướng Dẫn Cài Lại Chiến Binh</h2>
-                        <div class="date-open f-right hidden-mobile">12/06</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
-   
-              <div class="pagination">
-                <ul class="d-flex a-center j-center">
-                                                              <li class="active">
-                            <a class="a100" href="../news3ce0.html?category_code=huong-dan&amp;page=1">1</a>
-                        </li>
-                                                      </ul>
               </div>
             </div>
           </div>
@@ -194,10 +156,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position: absolute;
       display: block;
       text-indent: -999em;
-      background: url(../assets/frontend/home/v1/images/logoNew) 0 0 no-repeat;
+      background: url(../assets/frontend/app/imgs/logo.png) 0 0 no-repeat;
       background-size: contain;
-      width: 110px;
-      height: 55px;
+      width: 500px;
+      height: 80px;
       left: 0;
       top: -10px;
   }

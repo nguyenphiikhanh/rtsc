@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
           playsinline="">
-          <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
+          <source src="../../assets/frontend/app/videos/nroghost.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="limit__game">
@@ -182,69 +182,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="limit__game">
 				<ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
 					<li class="current"><a href="../../home.php">Trang chủ</a></li>
-										<li><span>[UPDATE] MỞ ĐẲNG CẤP THẦN THIÊN SỨ: SON GOKU SSGSS&amp;VEGETA</span></li>
+										<li><span>[UPDATE] Thông tin chi tiết sever</span></li>
 				</ul>
 				<div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
 					<div class="title-main-new">
-						<div class="title-left"><span class="f-tahomabold"></span> [UPDATE] MỞ ĐẲNG CẤP THẦN THIÊN SỨ: SON GOKU SSGSS&amp;VEGETA</div>
-						<div class="date-open-right  hidden-mobile">23/06/2025</div>
+						<div class="title-left"><span class="f-tahomabold"></span> [UPDATE] Thông tin chi tiết sever</div>
+						<div class="date-open-right  hidden-mobile">14/12/2025</div>
 					</div>
 
 					<div class="text-detail detail-post">
-						<h3 dir="ltr" style="text-align:center"><strong>TỔNG QUAN VỀ SON GOKU SSGSS&amp;VEGETA</strong></h3>
+						<h3 dir="ltr" style="text-align:center"><strong>Thông tin chi tiết sever</strong></h3>
+						
+						<h3 dir="ltr" style="text-align:center"><strong>Tất cả đệ tử sever đều có thể săn được</strong></h3>
 
-<p dir="ltr"><strong>Loại</strong>: C&ocirc;ng<br />
-<strong>Chiến Hồn</strong>: Bạch Hổ - Cao</p>
 
-<p dir="ltr"><strong>Định Vị</strong>: Si&ecirc;u s&aacute;t thương</p>
+<p><span style="color:#FF0000"><strong>◈ - Đệ tử Mabu : Săn Boss Super Broly nhận trứng Đệ tử Mabu</strong></span>
 
-<p dir="ltr"><strong>Thi&ecirc;n hướng</strong>: Tấn c&ocirc;ng 1 h&agrave;ng dọc, giảm thủ, bỏ qua thủ v&agrave; h&uacute;t nộ của mục ti&ecirc;u.</p>
+<p><span style="color:#FF0000"><strong>◈ - Đệ tử Berus : Giết Boss Whis (Săn Đệ) tại Tương lai nhận Đệ tử Berus</strong></span>
 
-<p dir="ltr">&nbsp;</p>
+<p><span style="color:#FF0000"><strong>◈ - Đệ tử Zeno : Giết Boss Zeno tại Cold nhận Hồn Zeno và đọc Thông tin Hồn Zeno để biết thêm chi tiết</strong></span>
 
-<h3 dir="ltr" style="text-align:center"><strong>BỘ SKILL CỦA SON GOKU SSGSS&amp;VEGETA SAU KHI K&Iacute;CH HOẠT ĐẲNG CẤP THẦN</strong></h3>
+<p><span style="color:#FF0000"><strong>◈ - Đệ tử Ngộ Không : Giết Boss Ngộ Không tại ngũ hành sơn</strong></span>
 
-<p dir="ltr"><strong>MAX.Kamehameha Galick</strong></p>
+<p><span style="color:#FF0000"><strong>◈ - Đệ tử itachi : Giết Boss itachi (Cần rất đông thành viên bang mới ăn được)</strong></span>
 
-<p>Tấn c&ocirc;ng 1 h&agrave;ng dọc, tăng <span style="color:#FF0000"><strong>35% C&ocirc;ng, Thủ v&agrave; Tỷ Lệ Bạo</strong></span> cho bản th&acirc;n; lần tấn c&ocirc;ng n&agrave;y nhận th&ecirc;m <span style="color:#FF0000"><strong>50% H&uacute;t HP</strong></span>; trong 1 lượt, tấn c&ocirc;ng bỏ qua 60% tổng Thủ mục ti&ecirc;u; nhận hiệu quả &ldquo;Ch&iacute; Mạng&rdquo; (g&acirc;y<strong> <span style="color:#FF0000">th&ecirc;m 30% ST l&ecirc;n mục ti&ecirc;u c&oacute; HP tr&ecirc;n 50%</span></strong>); nhận Nộ bằng<strong> </strong>50% lượng Nộ của mục ti&ecirc;u ch&iacute;nh (trong 1 lượt, nếu ph&aacute;t động nhiều lần th&igrave; hiệu quả giảm một nửa); g&acirc;y th&ecirc;m <span style="color:#FF0000"><strong>100% tổng ST kỹ năng lần n&agrave;y l&ecirc;n mục ti&ecirc;u ch&iacute;nh</strong></span>; vĩnh viễn tăng 8% ST Tất S&aacute;t (c&oacute; thể cộng dồn 3 lần). Nếu đang ở trạng th&aacute;i &ldquo;Năng Lượng Bạo Loạn&rdquo;, th&igrave; trong 1 lượt, khi bị đ&aacute;nh v&agrave; đầy Nộ sẽ<strong> <span style="color:#FF0000">ti&ecirc;u hao 700 Nộ để phản k&iacute;ch bằng Tất S&aacute;t (giới hạn 1 lần/lượt)</span></strong></p>
+<p><span style="color:#FF0000"><strong>◈ - Đệ tử Kaido : Giết Boss Kaido (Cần rất đông thành viên bang mới ăn được)</strong></span>
 
-<p style="text-align:center"><img alt="" src="../../uploads/images/no.png" style="height:513px; width:1181px" /></p>
+<p><span style="color:#FF0000"><strong>◈ - Đệ tử Đệ VIP - Tiên Hắc Ám : Giết Boss Tiên Hắc Ám (Cần rất đông thành viên bang mới ăn được)</strong></span>
 
-<p>&nbsp;</p>
 
-<p><strong>MAX.Kh&iacute; Nguy&ecirc;n Trảm &amp;&nbsp;Kamehameha</strong></p>
 
-<p>Tấn c&ocirc;ng kẻ địch đơn, tăng <span style="color:#FF0000"><strong>35% tỷ lệ Đỡ Đ&ograve;n v&agrave; 35% tỷ lệ Miễn ST khi phản k&iacute;ch</strong></span> (kh&ocirc;ng thể x&oacute;a kh&ocirc;ng cộng dồn); nhận 200 Nộ, <span style="color:#0000FF"><strong>h&uacute;t 15% HP mục ti&ecirc;u</strong></span>; vĩnh viễn tăng <span style="color:#FF0000"><strong>10% C&ocirc;ng</strong></span> (tối đa cộng dồn 3 tầng); trong 1 lượt, khi bị tấn c&ocirc;ng sẽ tăng <strong><span style="color:#FF0000">5% Tỷ lệ Miễn ST</span> </strong>v&agrave;<strong> <span style="color:#0000FF">5% Tỷ Lệ Bạo</span></strong> (duy tr&igrave; 2 lượt, cộng dồn tối đa số lượt bằng số kẻ địch l&uacute;c xuất trận), <span style="color:#FF0000"><strong>hồi 10% lượng HP đ&atilde; mất</strong></span> (nếu Miễn ST từ hiệu ứng n&agrave;y đ&atilde; đủ tầng tối đa, hồi HP gấp đ&ocirc;i)</p>
-
-<p style="text-align:center"><img alt="" src="../../uploads/images/miniskill.png" style="height:461px; width:1175px" /></p>
-
-<p><strong>MAX.Tổ Hợp V&ocirc; Địch</strong></p>
-
-<p>Giảm Thủ kẻ địch;<span style="color:#FF0000"> <strong>tăng 35% tỷ lệ ST v&agrave; Miễn ST cho bản th&acirc;n</strong></span>; nếu <span style="color:#FF0000"><strong>Nộ bản th&acirc;n vượt qu&aacute; 700 th&igrave; miễn dịch hiệu quả giảm Nộ</strong></span>; khi ra trận nhận 200 Nộ; lượt đầu ra trận chắc chắn tung kỹ năng; khi bản th&acirc;n tung Tất S&aacute;t (kh&ocirc;ng bao gồm phản k&iacute;ch) sẽ truy k&iacute;ch bằng kỹ năng, giới hạn 1 lần mỗi lượt; mỗi khi Tất S&aacute;t đ&aacute;nh tr&uacute;ng 1 mục ti&ecirc;u sẽ nhận 3 điểm &ldquo;Chiến &Yacute; Li&ecirc;n Kết&rdquo;; khi lượt phe ta bắt đầu, nếu Chiến &Yacute; Li&ecirc;n Kết đạt 16 điểm th&igrave; ti&ecirc;u hao để v&agrave;o trạng th&aacute;i Bạo Loạn Năng Lượng (<strong><span style="color:#0000FF">tăng 25% Tốc Độ Hồi Nộ</span>, <span style="color:#FF0000">40% Cường Độ Bạo K&iacute;ch</span></strong> v&agrave; 40% Tỷ lệ Ph&aacute; K&iacute;ch, k&eacute;o d&agrave;i 1 lượt); khi ra trận nhận &ldquo;Bảo Hộ Hai Người&rdquo; (<strong><span style="color:#FF0000">tăng 80% Kh&aacute;ng ST</span></strong>, mỗi lần bị tấn c&ocirc;ng giảm 20% hiệu quả); khi nhận ST ch&iacute; mạng sẽ kh&ocirc;ng bị ti&ecirc;u diệt, x&oacute;a trạng th&aacute;i xấu cho bản th&acirc;n, hồi 50% HP tối đa v&agrave; 300 Nộ, vĩnh viễn tăng 30% Kh&aacute;ng Tất S&aacute;t v&agrave; Kh&aacute;ng Kỹ Năng, mỗi trận hiệu lực 1 lần</p>
-
-<p style="text-align:center"><img alt="" src="../../uploads/images/noitai.png" /></p>
-
-<p>&nbsp;</p>
-
-<h3 style="text-align:center"><strong>DUY&Ecirc;N ẨN CỦA SON GOKU SSGSS&amp;VEGETA</strong></h3>
-
-<p><strong>Gogeta SSGSS v&agrave; Vegito SSGSS</strong>&nbsp;l&agrave; hai chiến binh c&oacute; duy&ecirc;n ẩn để n&acirc;ng <strong>Đẳng Cấp Thần</strong> của <strong>Son Goku SSGSS&amp;Vegeta</strong>.</p>
-
-<p style="text-align:center"><img alt="" src="../../uploads/images/duyen.png" /></p>
-
-<p>&nbsp;</p>
-
-<h3 dir="ltr" style="text-align:center"><strong>ĐỘI H&Igrave;NH ĐỀ CỬ</strong></h3>
-
-<p dir="ltr"><strong>Đội h&igrave;nh Si&ecirc;u Dame</strong>: Đội h&igrave;nh si&ecirc;u dame th&iacute;ch hợp với team c&oacute; ti&ecirc;n phong cao hơn.</p>
-
-<p dir="ltr" style="text-align:center"><img alt="" src="../../uploads/images/decu.png" /></p>
-
-<p dir="ltr">Tr&ecirc;n đ&acirc;y l&agrave; Ti&ecirc;u Điểm&nbsp;<strong>Đẳng Cấp Thần của Son Goku SSGSS&amp;Vegeta</strong>&nbsp;c&ugrave;ng 1 số gợi &yacute; m&agrave; qu&yacute; Chiến Binh c&oacute; thể tham khảo. Hy vọng b&agrave;i viết n&agrave;y c&oacute; thể gi&uacute;p Chiến Binh hiểu r&otilde; hơn về&nbsp;vị tướng n&agrave;y. Meta v&agrave; đội h&igrave;nh mới xoay quanh&nbsp;<strong>Son Goku SSGSS&amp;Vegeta</strong>&nbsp;đang chờ qu&yacute; Chiến Binh kh&aacute;m ph&aacute;. H&atilde;y c&ugrave;ng Bulma xem đ&acirc;u l&agrave; lối x&acirc;y dựng tối ưu nhất cho si&ecirc;u chiến binh&nbsp;n&agrave;y nh&eacute;!!</p>
-
-<p dir="ltr">----------</p>
-
-<p><strong>RỒNG THẦN SI&Ecirc;U CẤP &ndash; GAME ĐẤU TƯỚNG DRAGON BALL SI&Ecirc;U CẤP</strong></p>
 
 					</div>
 

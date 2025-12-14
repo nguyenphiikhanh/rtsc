@@ -99,7 +99,7 @@ auth();
     <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
                playsinline="">
-            <source src="assets/frontend/teaser/videos/g.mp4" type="video/mp4"/>
+            <source src="assets/frontend/app/videos/nroghost.mp4" type="video/mp4"/>
         </video>
     </div>
     <div class="limit__game">
@@ -267,10 +267,10 @@ auth();
         position: absolute;
         display: block;
         text-indent: -999em;
-        background: url(assets/frontend/home/v1/images/) 0 0 no-repeat;
+        background: url(assets/frontend/app/imgs/logo.png) 0 0 no-repeat;
         background-size: contain;
-        width: 110px;
-        height: 55px;
+        width: 500px;
+        height: 80px;
         left: 0;
         top: -10px;
     }
@@ -312,12 +312,12 @@ auth();
             <img src="assets/frontend/home/v1/images/sibarRight/line.png" alt="" class="line"/>
         </div>
 
-        <a target="_blank" href="https://apps.apple.com/vn/app/id6446673495?l=vi" class="link-dlgame img-hv p-r">
+        <a target="_blank" href="https://drive.google.com/file/d/1Uqt54tsk6kq_NucQsW_-DFsVHnfWVTya/view?usp=sharing" class="link-dlgame img-hv p-r">
             <img src="assets/frontend/home/v1/images/sibarRight/ios.png" alt="" class="img-bt"/>
             <img src="assets/frontend/home/v1/images/sibarRight/ios-hv.png" alt="" class="img-hv p-a in-img-hv"/>
         </a>
 
-        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.rtsc.ultracombo"
+        <a target="_blank" href="https://drive.google.com/file/d/1fcO1qXC1btEZ9tyxE9tSc2_-WReVJwxN/view?usp=sharing"
            class="link-dlgame linkdks-android img-hv p-r">
             <img src="assets/frontend/home/v1/images/sibarRight/android.png" alt="" class="img-bt"/>
             <img src="assets/frontend/home/v1/images/sibarRight/android-hv.png" alt="" class="img-hv p-a in-img-hv"/>

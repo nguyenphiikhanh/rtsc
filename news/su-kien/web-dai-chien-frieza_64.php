@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
           playsinline="">
-          <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
+          <source src="../../assets/frontend/app/videos/nroghost.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="limit__game">

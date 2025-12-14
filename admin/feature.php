@@ -319,7 +319,7 @@ header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: no-referrer');
 
 // ================== PAGE ACTIONS / DATA FEEDS ==================
-$linkadmin = 'admin.php';
+$linkadmin = 'bemy.php';
 
 // ===== Gift: base icon path (đổi cho đúng alias tĩnh của bạn) =====
 $ICON_BASE_URL = define_url("admin/public/public-assets/icon/");

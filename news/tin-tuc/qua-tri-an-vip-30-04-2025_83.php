@@ -50,10 +50,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="navbar">
         <div class="limit__game">
           <a href="#" class="hidden__mobile">
-            <img src="../../assets/frontend/home/v1/images/" alt="" class="logo-top" />
+            <img src="../assets/frontend/app/videos/nroghost.mp4" alt="" class="logo-top" />
           </a>
           <div class="left-header hidden__PC">
-            <div class="icon-name-game dFlex">
+            <div class="icon-name-game dFlex"
               <div class="icon-game">
                 <img src="../../assets/frontend/home/v1/images/bannergame.png" alt="" />
               </div>
@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
           playsinline="">
-          <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
+          <source src="../../assets/frontend/app/videos/nroghost.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="limit__game">
@@ -182,12 +182,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="limit__game">
 				<ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
 					<li class="current"><a href="../../home.php">Trang chủ</a></li>
-										<li><span>Quà Tri Ân VIP Đại Lễ 2025</span></li>
+										<li><span>Thông tin quan trọng nhất</span></li>
 				</ul>
 				<div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
 					<div class="title-main-new">
-						<div class="title-left"><span class="f-tahomabold"></span> Quà Tri Ân VIP Đại Lễ 2025</div>
-						<div class="date-open-right  hidden-mobile">29/04/2025</div>
+						<div class="title-left"><span class="f-tahomabold"></span> Thông tin quan trọng nhất</div>
+						<div class="date-open-right  hidden-mobile">14/12/2025</div>
 					</div>
 
 					<div class="text-detail detail-post">

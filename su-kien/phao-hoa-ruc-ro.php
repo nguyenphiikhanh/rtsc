@@ -1,9 +1,7 @@
 <?php ?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
-
-<!-- Mirrored from rongthansieucap.vn/su-kien/phao-hoa-ruc-ro by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 05:27:32 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -785,5 +783,4 @@
 </script>
 </body>
 
-<!-- Mirrored from rongthansieucap.vn/su-kien/phao-hoa-ruc-ro by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 05:27:38 GMT -->
 </html>

@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="bg_video">
         <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
           playsinline="">
-          <source src="../../assets/frontend/teaser/videos/g.mp4" type="video/mp4" />
+          <source src="../../assets/frontend/app/videos/nroghost.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="limit__game">
@@ -182,80 +182,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="limit__game">
 				<ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
 					<li class="current"><a href="../../home.php">Trang chủ</a></li>
-										<li><span>[UPDATE] MỞ ĐẲNG CẤP THẦN THIÊN SỨ: GOHAN BEAST</span></li>
+										<li><span>[UPDATE] TÍNH NĂNG SEVER</span></li>
 				</ul>
 				<div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
 					<div class="title-main-new">
-						<div class="title-left"><span class="f-tahomabold"></span> [UPDATE] MỞ ĐẲNG CẤP THẦN THIÊN SỨ: GOHAN BEAST</div>
-						<div class="date-open-right  hidden-mobile">23/06/2025</div>
+						<div class="title-left"><span class="f-tahomabold"></span> [UPDATE] TÍNH NĂNG SEVER</div>
+						<div class="date-open-right  hidden-mobile">14/12/2025</div>
 					</div>
 
 					<div class="text-detail detail-post">
-						<h3 dir="ltr" style="text-align:center"><span style="color:#FF8C00"><strong>TỔNG QUAN VỀ GOHAN BEAST</strong></span></h3>
+						<h3 dir="ltr" style="text-align:center"><span style="color:#FF8C00"><strong>TÍNH NĂNG SEVER</strong></span></h3>
+						<h3 dir="ltr" style="text-align:center"><span style="color:#0000FF"><strong>RẤT NHIỀU TÍNH NĂNG CÀY - PHÓ BẢN - BOSS</strong></span></h3>
 
-<p dir="ltr"><strong>Loại</strong>: C&ocirc;ng<br />
-<strong>Chiến Hồn</strong>: Bạch Hổ - Cao</p>
+<p><span style="color:#FF0000"><strong>◈ - Map tiềm năng x3.</strong></span></p>
 
-<p dir="ltr"><strong>Định Vị</strong>: Si&ecirc;u s&aacute;t thương v&agrave; si&ecirc;u phản k&iacute;ch</p>
+<p><span style="color:#FF0000"><strong>◈ - Ngọc rồng sao đen.</strong></span></p>
 
-<p dir="ltr"><strong>Thi&ecirc;n hướng</strong>: Tấn c&ocirc;ng đơn thể, c&ocirc;ng thủ to&agrave;n diện đi k&egrave;m khả năng phản k&iacute;ch cực mạnh.</p>
+<p><span style="color:#FF0000"><strong>◈ - Bản đồ kho báu Trương Mỹ Lan.</strong></span></p>
 
-<p dir="ltr">&nbsp;</p>
+<p><span style="color:#FF0000"><strong>◈ - Con đường rắn độc.</strong></span></p>
 
-<h3 dir="ltr" style="text-align:center"><span style="color:#FF8C00"><strong>BỘ SKILL CỦA GOHAN BEAST SAU KHI K&Iacute;CH HOẠT ĐẲNG CẤP THẦN</strong></span></h3>
+<p><span style="color:#FF0000"><strong>◈ - Doanh trại.</strong></span></p>
 
-<p dir="ltr"><span style="color:#FF8C00"><strong>MAX.Xung K&iacute;ch K&eacute;p</strong></span></p>
+<p><span style="color:#FF0000"><strong>◈ - Shop thu hồi đồ thần linh, ae có thể bán trực tiếp cho NPC để nhận được coin , coin dùng để mua dồ ở shop.</strong></span></p>
 
-<p>Tấn c&ocirc;ng 1 mục ti&ecirc;u địch, mỗi điểm &ldquo;Sức Mạnh Cực Hạn&rdquo; tăng 1% C&ocirc;ng bản th&acirc;n; nhận th&ecirc;m 3 điểm &ldquo;Sức Mạnh Cực Hạn&rdquo;; <span style="color:#FF0000"><strong>tăng 50% tỷ lệ thi triển kỹ năng</strong></span> (2 lượt); <span style="color:#FF0000"><strong>Hồi 250 Nộ v&agrave; h&uacute;t 20% HP tối đa của mục ti&ecirc;u</strong></span>; trong 1 lượt, khi bị giảm Nộ sẽ lập tức hồi 200 Nộ v&agrave; 20% HP; tạo &ldquo;L&aacute; Chắn Kh&iacute;&rdquo; cho đồng đội c&oacute; tỷ lệ HP thấp nhất (duy tr&igrave; 2 lượt, tăng 25% tỷ lệ Miễn ST v&agrave; 15% tỷ lệ Phản ST, kh&ocirc;ng thể cộng dồn tr&ugrave;ng lặp, hiệu quả x&oacute;a th&ocirc;ng thường kh&ocirc;ng c&oacute; hiệu lực)</p>
-
-<p><span style="color:#0000FF"><strong>[Hiệu quả bị động]: Mỗi khi bắt đầu lượt phe ta, nếu phe ta c&oacute; Chiến Binh bị khống chế, lập tức x&oacute;a trạng th&aacute;i xấu bản th&acirc;n, tăng 25% Tốc Độ Hồi Nộ v&agrave; C&ocirc;ng (duy tr&igrave; 1 lượt), hồi 300 Nộ.</strong></span></p>
-
-<p style="text-align:center"><img alt="" src="../../uploads/images/2.jpg" style="height:708px; width:1242px" /></p>
-
-<p>&nbsp;</p>
-
-<p><span style="color:#FF8C00"><strong>MAX.Si&ecirc;u Quang S&aacute;t Ph&aacute;o</strong></span></p>
-
-<p>Tấn c&ocirc;ng kẻ địch đơn, tăng <span style="color:#FF0000"><strong>35% Tỷ lệ ST, Tỷ lệ Miễn ST v&agrave; Tỷ lệ Bạo </strong></span>cho bản th&acirc;n (1 lượt); nhận th&ecirc;m <strong><span style="color:#FF0000">5 điểm Sức Mạnh Cực Hạn</span></strong>; g&acirc;y &ldquo;Ph&aacute; Gi&aacute;p&rdquo; l&ecirc;n mục ti&ecirc;u (2 lượt, giảm 30% Thủ v&agrave; 20% Kh&aacute;ng Tất S&aacute;t, kh&ocirc;ng thể cộng dồn tr&ugrave;ng lặp, hiệu quả x&oacute;a th&ocirc;ng thường kh&ocirc;ng c&oacute; hiệu lực); mỗi điểm Sức Mạnh Cực Hạn tăng 1% H&uacute;t HP v&agrave; 0.5% Tỷ Lệ Bạo; nếu lần Tất S&aacute;t n&agrave;y kh&ocirc;ng phải phản k&iacute;ch, c&oacute; tỷ lệ ti&ecirc;u hao to&agrave;n bộ Sức Mạnh Cực Hạn (mỗi điểm Sức Mạnh Cực Hạn tăng 1% tỷ lệ) để k&iacute;ch hoạt &ldquo;Bạo K&iacute;ch Cực Hạn&rdquo;.<br />
-&lt;Bạo K&iacute;ch Cực Hạn: Tất S&aacute;t n&agrave;y<span style="color:#0000FF"><strong> tăng th&ecirc;m 30% Tỷ Lệ Ph&aacute; K&iacute;ch</strong></span>, <strong><span style="color:#FF0000">to&agrave;n bộ ST tăng l&ecirc;n gấp 3 lần</span></strong> (vẫn c&oacute; thể đồng thời ph&aacute;t động bạo k&iacute;ch thường)&gt;; Nếu kh&ocirc;ng ph&aacute;t động Cực Hạn Bạo K&iacute;ch, giảm 200 Nộ mục ti&ecirc;u, <strong><span style="color:#FF0000">giảm 30% C&ocirc;ng v&agrave; 30% Tỷ Lệ Bạo</span></strong> (1 lượt, kh&ocirc;ng &aacute;p dụng với phản k&iacute;ch), đồng thời nhận <span style="color:#FF0000"><strong>th&ecirc;m 10 điểm Sức Mạnh Cực Hạn</strong></span></p>
-
-<p><span style="color:#0000FF"><strong>[Hiệu quả bị động]: Lần đầu tung Tất S&aacute;t nhận th&ecirc;m 20 điểm Sức Mạnh Cực Hạn, khi ph&aacute;t động Miễn Tử sẽ nhận th&ecirc;m 10 điểm Sức Mạnh Cực Hạn</strong></span></p>
-
-<p style="text-align:center"><span style="color:#0000FF"><strong><img alt="" src="../../uploads/images/1(1).jpg" style="height:793px; width:1276px" /></strong></span></p>
-
-<p><span style="color:#FF8C00"><strong>MAX.Sức Mạnh Cực Hạn</strong></span></p>
-
-<p>Tăng ST Kỹ Năng v&agrave; Tất S&aacute;t cho bản th&acirc;n; <span style="color:#FF0000"><strong>tăng 35% C&ocirc;ng v&agrave; Thủ</strong></span>, 20% Tỷ Lệ Bạo v&agrave; 25% Tỷ Lệ Miễn ST; miễn dịch ST Phản Đ&ograve;n; lượt đầu khi ra trận miễn dịch Giảm Nộ v&agrave; C&acirc;m Lặng, <span style="color:#FF0000"><strong>tăng 50% Kh&aacute;ng ST</strong></span>, chắc chắn tung kỹ năng nhỏ; khi đến lượt phe địch, nếu trong 1 lượt gần nhất chưa tung Tất S&aacute;t th&igrave; khi bị tấn c&ocirc;ng sẽ lập tức phản k&iacute;ch bằng Tất S&aacute;t (phản k&iacute;ch kh&ocirc;ng hồi Nộ mục ti&ecirc;u, chỉ g&acirc;y 50% ST); nếu bản th&acirc;n chịu ST đơn cao hơn 30% HP tối đa, sẽ phản k&iacute;ch bằng kỹ năng (giới hạn 1 lần mỗi lượt); mỗi lần tấn c&ocirc;ng nhận <span style="color:#FF0000"><strong>3 điểm Sức Mạnh Cực Hạn</strong></span>, nếu l&uacute;c ra trận chỉ c&ograve;n 1 người mỗi phe th&igrave; nhận gấp đ&ocirc;i; đồng đội tung Tất S&aacute;t sẽ gi&uacute;p bản th&acirc;n nhận th&ecirc;m <span style="color:#FF0000"><strong>3 điểm Sức Mạnh Cực Hạn (tối đa 12 điểm mỗi lượt)</strong></span>; khi chịu ST ch&iacute; mạng sẽ kh&ocirc;ng bị ti&ecirc;u diệt, kế thừa to&agrave;n bộ Sức Mạnh Cực Hạn, nhận th&ecirc;m 10 điểm Sức Mạnh Cực Hạn, x&oacute;a trạng th&aacute;i xấu cho bản th&acirc;n, hồi 50% HP v&agrave; 300 Nộ, vĩnh viễn tăng 30% Kh&aacute;ng Tất S&aacute;t v&agrave; Kh&aacute;ng Kỹ Năng Nhỏ (mỗi trận chỉ 1 lần)</p>
-
-<p style="text-align:center"><img alt="" src="../../uploads/images/3.jpg" style="height:796px; width:1269px" /></p>
-
-<p style="text-align:center">&nbsp;</p>
-
-<h3 style="text-align:center"><span style="color:#FF8C00"><strong>DUY&Ecirc;N ẨN CỦA GOHAN BEAST</strong></span></h3>
-
-<p><span style="color:#008000"><strong>Son Goku (Ultra) v&agrave; Kefla</strong></span>&nbsp;l&agrave; hai chiến binh c&oacute; duy&ecirc;n ẩn để n&acirc;ng <strong>Đẳng Cấp Thần</strong> của <strong>Gohan Beast</strong>.</p>
-
-<p style="text-align:center"><img alt="" src="../../uploads/images/6.jpg" style="height:718px; width:1280px" /></p>
-
-<p>&nbsp;</p>
-
-<h3 dir="ltr" style="text-align:center"><span style="color:#FF8C00"><strong>ĐỘI H&Igrave;NH ĐỀ CỬ</strong></span></h3>
-
-<p dir="ltr"><strong>Đội h&igrave;nh Si&ecirc;u Phản K&iacute;ch</strong>: Đội h&igrave;nh si&ecirc;u phản k&iacute;ch th&iacute;ch hợp với team c&oacute; ti&ecirc;n phong thấp hơn.</p>
-
-<p dir="ltr" style="text-align:center"><img alt="" src="../../uploads/images/4.jpg" style="height:668px; width:1280px" /></p>
-
-<p dir="ltr" style="text-align:center">&nbsp;</p>
-
-<p dir="ltr"><strong>Đội h&igrave;nh Si&ecirc;u Dame</strong>: Đội h&igrave;nh si&ecirc;u dame th&iacute;ch hợp với team c&oacute; ti&ecirc;n phong cao hơn.</p>
-
-<p dir="ltr" style="text-align:center"><img alt="" src="../../uploads/images/5.jpg" style="height:663px; width:1280px" /></p>
-
-<p dir="ltr">Tr&ecirc;n đ&acirc;y l&agrave; Ti&ecirc;u Điểm&nbsp;<strong>Đẳng Cấp Thần của Gohan Beast</strong>&nbsp;c&ugrave;ng 1 số gợi &yacute; m&agrave; qu&yacute; Chiến Binh c&oacute; thể tham khảo. Hy vọng b&agrave;i viết n&agrave;y c&oacute; thể gi&uacute;p Chiến Binh hiểu r&otilde; hơn về&nbsp;vị tướng n&agrave;y. Meta v&agrave; đội h&igrave;nh mới xoay quanh&nbsp;<strong>Gohan Beast</strong>&nbsp;đang chờ qu&yacute; Chiến Binh kh&aacute;m ph&aacute;. H&atilde;y c&ugrave;ng Bulma xem đ&acirc;u l&agrave; lối x&acirc;y dựng tối ưu nhất cho si&ecirc;u qu&aacute;i th&uacute;&nbsp;n&agrave;y nh&eacute;!!</p>
-
-<p dir="ltr">----------</p>
-
-<p><strong>RỒNG THẦN SI&Ecirc;U CẤP &ndash; GAME ĐẤU TƯỚNG DRAGON BALL SI&Ecirc;U CẤP</strong></p>
+<p><span style="color:#FF0000"><strong>◈ - Đi đánh đại hội võ thuật giải siêu cấp (Mở rương nhận thỏi vàng và đồ quý giá.</strong></span></p>
 
 					</div>
 

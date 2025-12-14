@@ -14,6 +14,11 @@ global $banner_video;
     </div>
     <div class="limit__game">
         <div class="main--game__show">
+            <!-- <div class="logo t-center">
+            <a href="#">
+              <img src="/assets/frontend/home/v1/rtsc.png" alt="">
+            </a>
+          </div> -->
             <div class="text--brand t-center m-auto p-relative" data-aos="fade-down" data-aos-duration="700"
                  data-aos-delay="100">
                 <a href="https://www.youtube.com/" data-fancybox="" style="display: none">
@@ -24,12 +29,17 @@ global $banner_video;
         </div>
 
         <div class="box--download jCenter">
-            <?php require_once __DIR__ . '/../components/download.php'; ?>
+            <!-- <div class="icon-game t-center" data-aos="fade-down" data-aos-duration="700" data-aos-delay="400">
+            <img src="/assets/frontend/home/v1/icon-game.png" alt="">
+          </div> -->
+
+        <?php require_once __DIR__ . '/../components/download.php'; ?>
+
         </div>
 
         <div class="tCenter hidden__PC">
-            <a target="_blank" href="./news/phuc-loi-nap-2025.php">
-                <img src="assets/frontend/home/v1/images/bn__gift_now.png" class="gift__site">
+            <a href="<?= define_url("news/phuc-loi-nap-2025.php") ?>">
+                <img src="<?= define_url("assets/frontend/home/v1/images/bn__gift_now.png") ?>" class="gift__site">
             </a>
         </div>
 

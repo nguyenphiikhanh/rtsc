@@ -81,8 +81,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="full-text f-left">
                       <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Quà Tri Ân VIP Trung Thu 2025</h2>
-                        <div class="date-open f-right hidden-mobile">02/10</div>
+                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> THÔNG TIN QUAN TRỌNG</h2>
+                        <div class="date-open f-right hidden-mobile">14/12</div>
                       </div>
                       <div class="des-text"></div>
                     </div>
@@ -97,8 +97,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="full-text f-left">
                       <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> [UPDATE] MỞ ĐẲNG CẤP THẦN THIÊN SỨ: SON GOKU SSGSS&amp;VEGETA</h2>
-                        <div class="date-open f-right hidden-mobile">23/06</div>
+                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> [UPDATE] THÔNG TIN CHI TIẾT SEVER</h2>
+                        <div class="date-open f-right hidden-mobile">14/12</div>
                       </div>
                       <div class="des-text"></div>
                     </div>
@@ -113,44 +113,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="full-text f-left">
                       <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> [UPDATE] MỞ ĐẲNG CẤP THẦN THIÊN SỨ: GOHAN BEAST</h2>
-                        <div class="date-open f-right hidden-mobile">23/06</div>
+                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> [UPDATE] CÁC TÍNH NĂNG</h2>
+                        <div class="date-open f-right hidden-mobile">14/12</div>
                       </div>
                       <div class="des-text"></div>
                     </div>
                   </a>
                 </div>
                 
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="tin-tuc" code="super-mira-vs-towa.php" href="tin-tuc/super-mira-vs-towa_71.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-tin-tuc.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> [UPDATE] MỞ ĐẲNG CẤP THẦN THIÊN SỨ: SUPER MIRA VÀ TOWA</h2>
-                        <div class="date-open f-right hidden-mobile">30/05</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
-                
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="tin-tuc" code="qua-tri-an-vip-30-04-2025.php" href="tin-tuc/qua-tri-an-vip-30-04-2025_83.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-tin-tuc.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Quà Tri Ân VIP Đại Lễ 2025</h2>
-                        <div class="date-open f-right hidden-mobile">29/04</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
                 </div>
                 </div>
             </div>

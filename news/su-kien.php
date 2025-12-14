@@ -78,110 +78,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="full-text f-left">
                       <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Tích Lũy Nạp 19/11 - 21/11</h2>
-                        <div class="date-open f-right hidden-mobile">18/11</div>
+                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> CHÚC MỪNG NĂM MỚI 2026</h2>
+                        <div class="date-open f-right hidden-mobile">14/12</div>
                       </div>
                       <div class="des-text"></div>
                     </div>
                   </a>
                 </div>
                 
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="su-kien" code="flash-sale.php" href="su-kien/flash-sale_48.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-su-kien.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Event Web - Flash Sale 11/11/2025</h2>
-                        <div class="date-open f-right hidden-mobile">10/11</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
-                
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="su-kien" code="web-dai-chien-frieza.php" href="su-kien/web-dai-chien-frieza_64.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-su-kien.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Web - Đại Chiến Frieza 14</h2>
-                        <div class="date-open f-right hidden-mobile">07/11</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
-                
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="su-kien" code="tich-luy-nap-31-10-02-11-86.php" href="su-kien/tich-luy-nap-31-10-02-11-86_90.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-su-kien.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Tích Lũy Nạp 31/10 - 02/11/2025</h2>
-                        <div class="date-open f-right hidden-mobile">30/10</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
-                
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="su-kien" code="shop-xu-may-man.php" href="su-kien/shop-xu-may-man_88.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-su-kien.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> SHOP XU MAY MẮN</h2>
-                        <div class="date-open f-right hidden-mobile">30/06</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
+         
 
-                
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="su-kien" code="mung-sn-2-tuoi.php" href="su-kien/mung-sn-2-tuoi_84.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-su-kien.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Mừng Sinh Nhật 2 Tuổi</h2>
-                        <div class="date-open f-right hidden-mobile">30/05</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
-                
-                              <div class="item-new clearfix item-tranYTop">
-                 
-                  <a cat="su-kien" code="valentine-ngot-ngao.php" href="su-kien/valentine-ngot-ngao_81.php" class="a100">
-                    <div class="thumb f-left">
-                      <img src="../assets/frontend/home/v1/images/img-su-kien.png" alt="thumb">
-                    </div>
-                    <div class="full-text f-left">
-                      <div class="title-new-date clearfix">
-                        <h2 class="title-new f-left"><span class="f-tahomabold">[Sự kiện]</span> Valentine Trắng 2025</h2>
-                        <div class="date-open f-right hidden-mobile">17/03</div>
-                      </div>
-                      <div class="des-text"></div>
-                    </div>
-                  </a>
-                </div>
                 
               </div>
             </div>
