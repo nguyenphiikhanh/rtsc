@@ -23,6 +23,8 @@
 
     /*CONFIG DÀNH CHO WEBSITE*/
 
+    $gia_mo_thanh_vien = 5000000; // giá mở thành viên
+
     // config nạp
     $link_QR="https://qr.sepay.vn/img?bank=MBBank&acc=6004012002&template=compact&des=assassin12345";
     $bank_img="https://qr.sepay.vn/assets/img/banklogo/MB.png"; // tên ngân hàng

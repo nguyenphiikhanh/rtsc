@@ -35,14 +35,6 @@ global $zalo_box_url;
     <meta property="og:image" content="../assets/frontend/events/phucloinap2025/images/share.jpg" />
     <meta property="og:image:alt" content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..." />
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PRJRSS5');</script>
-    <!-- End Google Tag Manager -->
-
     <link rel="stylesheet" href="<?= define_url("assets/frontend/events/phucloinap2025/css/lib.css")?>"/>
     <link rel="stylesheet" href="<?= define_url("assets/frontend/events/phucloinap2025/css/style.css")?>"/>
     <script src="<?= define_url("module/auth.js")?>"></script>

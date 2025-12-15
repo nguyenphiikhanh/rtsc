@@ -82,6 +82,11 @@ global $logo;
                         <li class="">
                             <a target="_blank" href="<?= $fanpage; ?>" class="">Fanpage</a>
                         </li>
+                        <?php if($is_authenticated){ ?>
+                            <li class="">
+                                <a href="<?= define_url("profile/info.php") ?>" class="">Tài khoản</a>
+                            </li>
+                        <?php } ?>
                         <li class="">
                             <?php if ($is_authenticated) { ?>
                                 <a href="<?php echo $page_logout; ?>" class="">Đăng xuất</a>

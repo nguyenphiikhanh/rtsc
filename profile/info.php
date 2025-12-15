@@ -1,36 +1,38 @@
 <?php
-require_once __DIR__ . '/./middleware/auth.php';
-require_once __DIR__ . '/./helper/helper.php';
-require_once __DIR__ . '/./modules/audit.php';
-if (empty($_SESSION['audit_load'])) {
-    audit_server_load();
-    $_SESSION['audit_load'] = true;
-}
+require_once __DIR__ . '/../auth/auth.php';
+require_once __DIR__ . '/../helper/helper.php';
+require_once __DIR__ . '/../modules/topnap.php';
+auth();
+$data_top_nap = __get_top_nap();
 ?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <?php
-$title_label = 'Trang chủ';
-require_once __DIR__ . '/./layout/head.php';
+$title_label = 'Thông tin người chơi';
+require_once __DIR__ . '/../layout/head.php';
 ?>
 
-<body>
+<body class="body-news">
 
 <!--    header-->
-<?php require_once __DIR__ . '/./layout/header.php'; ?>
+<?php require_once __DIR__ . '/../layout/header.php'; ?>
 <!--end header-->
-<?php require_once __DIR__ . '/./components/banner.php'; ?>
+<?php require_once __DIR__ . '/../components/banner.php'; ?>
 
-<?php require_once __DIR__ . '/./components/box-content.php'; ?>
-
-<?php require_once __DIR__ . '/./components/tinhnang-carousel.php'; ?>
+<?php require_once __DIR__ . '/../components/account-info.php'; ?>
 
 <!--    footer-->
-<?php include_once __DIR__ . '/./layout/footer.php'; ?>
+<?php include_once __DIR__ . '/../layout/footer.php'; ?>
 <!--end footer-->
+<?php require_once __DIR__ . '/../components/sidebar-right.php'; ?>
 
-<?php require_once __DIR__ . '/./components/sidebar-right.php'; ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRJRSS5"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+
 
 <script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.min.js")?>"></script>
 <script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/ScrollMagic.min.js")?>"></script>
@@ -41,7 +43,6 @@ require_once __DIR__ . '/./layout/head.php';
     function goBack() {
         window.history.back();
     }
-
     $('.ctFixRight').click(function () {
         $('.sidebar_right').toggleClass('mo');
         $(this).toggleClass('ctFixRight-mo');
@@ -55,7 +56,7 @@ require_once __DIR__ . '/./layout/head.php';
     var offset = 1080;
     go_top = $(".go-top");
     go_top.click(function () {
-        $("html,body").animate({scrollTop: 0}, 100);
+        $("html,body").animate({ scrollTop: 0 }, 100);
     });
 </script>
 
@@ -103,7 +104,6 @@ require_once __DIR__ . '/./layout/head.php';
                 $(".textgame__game").css("opacity", 1);
             }
         }
-
         $(window).on("resize", function () {
             handlePlay();
         });
@@ -134,27 +134,9 @@ require_once __DIR__ . '/./layout/head.php';
             $("#" + tab_view).addClass("current");
         });
     });
-
-    function validateForm(event) {
-        // Ngăn form gửi đi để demo hiển thị SweetAlert
-        event.preventDefault();
-
-        // Lấy giá trị input
-        const username = $('#username_register').val();
-        // const password = document.querySelector('input[name="password"]').value;
-
-        // Demo logic kiểm tra đơn giản
-        if (!/^[a-zA-Z0-9]+$/.test(username)) {
-            alert('Tên người dùng không hợp lệ! (Chỉ chữ và số)');
-            return false;
-        }
-
-        // gửi form đi
-        event.target.submit();
-    }
-
 </script>
 <?php echo load_script([
     'assets/js/modal-helper.js'
 ]) ?>
+
 </html>

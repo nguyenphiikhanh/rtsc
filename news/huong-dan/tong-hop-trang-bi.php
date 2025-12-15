@@ -84,12 +84,6 @@ require_once __DIR__ . '/../../layout/head.php';
 
 <?php require_once __DIR__ . '/../../components/sidebar-right.php'; ?>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRJRSS5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
 </body>
 
 

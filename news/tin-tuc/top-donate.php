@@ -7,40 +7,10 @@ $data_top_nap = __get_top_nap();
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang Chủ - Nro Ghost</title>
-    <link rel="shortcut icon" type="ico" href="../../favicon.ico" />
-
-    <meta name="description" content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..." />
-    <meta name="keywords" content="Dragon ball, game dragon ball, songoku, vegeta, quy lão tiên sinh, game dragon ball mobile, game chiến thuật" />
-
-    <meta property="fb:app_id" content="" />
-    <meta property="og:locale" content="vi_VN" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content=" Trang Chủ - Nro Ghost " />
-    <meta property="og:description" content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..." />
-
-    <meta property="og:site_name" content=" Trang Chủ - Nro Ghost" />
-    <meta property="og:image" content="../../assets/frontend/teaser/images/thumb.jpg" />
-    <meta property="og:image:alt" content="Rồng Thần Siêu Cấp, Game chiến thuật trên mobile đề tài Dragon ball với nhiều tính năng hấp dẫn, tính chiến thuật cao và đầy đủ các nhân vật như Songoku, Vegeta, Android 18, Bulma,..." />
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PRJRSS5');</script>
-    <!-- End Google Tag Manager -->
-
-    <link rel="stylesheet" href="../../assets/frontend/home/v1/css/slick-theme.css" />
-    <link rel="stylesheet" href="../../assets/frontend/home/v1/css/slick.css" />
-    <link rel="stylesheet" href="../../assets/frontend/home/v1/css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="../../assets/frontend/home/v1/css/aos.css" />
-    <link rel="stylesheet" href="../../assets/frontend/home/v1/css/stylea6ca.css?v=919" />
-</head>
+<?php
+$title_label = 'Thông tin donate server';
+require_once __DIR__ . '/../../layout/head.php';
+?>
 
 <body class="body-news">
 
@@ -211,11 +181,11 @@ $data_top_nap = __get_top_nap();
 </body>
 
 
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/jquery.min.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/ScrollMagic.min.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/aos.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/slick.min.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.min.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/ScrollMagic.min.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/aos.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/slick.min.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.fancybox.min.js")?>"></script>
 <script>
     function goBack() {
         window.history.back();
