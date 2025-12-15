@@ -1,6 +1,11 @@
 <?php
 require_once __DIR__ . '/./middleware/auth.php';
 require_once __DIR__ . '/./helper/helper.php';
+require_once __DIR__ . '/./modules/audit.php';
+if (empty($_SESSION['audit_load'])) {
+    audit_server_load();
+    $_SESSION['audit_load'] = true;
+}
 ?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
