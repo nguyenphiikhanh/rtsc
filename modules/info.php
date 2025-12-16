@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../config/config.php';
-function __get_account_info() {
+function __get_account_info($get_password = false) {
     global $config;
     if (!isset($_SESSION['logger']['username']) || !$_SESSION['is_authenticated']) {
         return null;
@@ -8,6 +8,9 @@ function __get_account_info() {
 
     $username = $_SESSION['logger']['username'];
     $sql = "SELECT account.id, account.username, account.active, account.vnd FROM account WHERE username = '$username'";
+    if($get_password) {
+        $sql = "SELECT account.id, account.password, account.username, account.active, account.vnd FROM account WHERE username = '$username'";
+    }
     $results = $config->query($sql);
 
     if ($results->num_rows > 0) {
@@ -78,7 +81,18 @@ function _get_account_gift_code($player_id) {
     if (!isset($_SESSION['logger']['username']) || !$_SESSION['is_authenticated']) {
         return null;
     }
-    $sql = "SELECT * FROM member_gift WHERE member_gift.player_idd = '" . $player_id . "'";
+    $sql = "
+    SELECT
+        mg.coded,
+        CASE 
+            WHEN mgl.coded IS NOT NULL THEN 1
+            ELSE 0
+        END AS is_used
+    FROM member_gift mg
+    LEFT JOIN member_gift_lichsu mgl 
+        ON mgl.coded = mg.coded
+    WHERE mg.player_idd = '" . $player_id . "'
+    ";
     $results = $config->query($sql);
 
     $gift_codes = [];
@@ -88,4 +102,39 @@ function _get_account_gift_code($player_id) {
         }
     }
     return $gift_codes ?? [];
+}
+
+function change_password() {
+    global $config;
+    $old_password = $_POST['old_password'];
+    $new_password = $_POST['new_password'];
+    $confirm_password = $_POST['confirm_password'];
+    $old_password = mysqli_real_escape_string($config, $old_password);
+    $new_password = mysqli_real_escape_string($config, $new_password);
+    $confirm_password = mysqli_real_escape_string($config, $confirm_password);
+    $account_info = __get_account_info(true);
+    if ($account_info === null) {
+        $thongbao = "Tài khoản không tồn tại hoặc không hợp lệ.";
+    } else if ($old_password !== $account_info['password']) {
+        $thongbao = "Mật khẩu hiện tại không đúng.";
+    } else if( $new_password !== $confirm_password) {
+        $thongbao = "Mật khẩu mới và xác nhận mật khẩu không khớp.";
+    } else {
+        $account_id = $account_info['id'];
+        $sql = "UPDATE account SET password = '$new_password' WHERE id = '$account_id'";
+        if ($config->query($sql) === TRUE) {
+            $thongbao = "Đổi mật khẩu thành công!";
+        } else {
+            $thongbao = "Lỗi khi đổi mật khẩu. Vui lòng thử lại sau.";
+        }
+    }
+    echo "<script>
+        alert(" . json_encode($thongbao) . ");
+        window.location.href = window.location.pathname;
+    </script>";
+}
+
+if (isset($_POST['submit_change_password'])) {
+    change_password();
+    exit();
 }
