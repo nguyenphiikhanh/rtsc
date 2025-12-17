@@ -2,6 +2,9 @@
 require_once __DIR__ . '/../config/config.php';
 global $config;
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header('Content-Type: application/json; charset=utf-8');
 
 $body = file_get_contents("php://input");
