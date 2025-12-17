@@ -37,7 +37,7 @@ global $banner_video;
 
         </div>
 
-        <div class="tCenter hidden__PC">
+        <div class="tCenter d-flex justify-center hidden__PC">
             <a href="<?= define_url("news/phuc-loi-nap-2025.php") ?>">
                 <img src="<?= define_url("assets/frontend/home/v1/images/bn__gift_now.png") ?>" class="gift__site">
             </a>

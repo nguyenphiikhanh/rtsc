@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../auth/auth.php';
 require_once __DIR__ . '/../helper/helper.php';
-require_once __DIR__ . '/../modules/topnap.php';
+require_once __DIR__ . '/../modules/top.php';
 auth();
 $data_top_nap = __get_top_nap();
 ?>

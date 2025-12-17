@@ -51,6 +51,12 @@ auth();
     <link rel="stylesheet" href="assets/frontend/home/v1/css/aos.css"/>
     <link rel="stylesheet" href="assets/frontend/home/v1/css/stylea6ca.css?v=919"/>
 
+    <?php
+    echo load_script([
+        'assets/library/tailwind/tailwind.min.js',
+    ]);
+    ?>
+
     <!-- Add ATM section styles (no bootstrap) -->
     <style>
         /* ATM section styles (keeps home look) */

@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../../helper/helper.php';
-require_once __DIR__ . '/../../modules/top-su-kien.php';
+require_once __DIR__ . '/../../modules/top.php';
 
 $data_top_events = __get_top_event();
 ?>
@@ -93,7 +93,6 @@ require_once __DIR__ . '/../../layout/head.php';
 <!--end footer-->
 <style>
     .bg-top-nap{
-        /*background: url("../../assets/frontend/events/flashsalecuoituan2023/images/full__big.jpg");*/
         background: url("../../assets/frontend/home/v1/images/bigFT.png");
         background-repeat: no-repeat;
         background-position: center center;
@@ -103,18 +102,12 @@ require_once __DIR__ . '/../../layout/head.php';
 
 <?php require_once __DIR__ . '/../../components/sidebar-right.php'; ?>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRJRSS5"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-</body>
 
-
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/jquery.min.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/ScrollMagic.min.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/aos.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/slick.min.js"></script>
-<script type="text/javascript" src="../../assets/frontend/home/v1/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.min.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/ScrollMagic.min.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/aos.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/slick.min.js")?>"></script>
+<script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.fancybox.min.js")?>"></script>
 <script>
     function goBack() {
         window.history.back();
@@ -137,16 +130,6 @@ require_once __DIR__ . '/../../layout/head.php';
 </script>
 
 <script>
-    if ($(".main__news")[0]) {
-        setTimeout(function () {
-            $("html, body").animate(
-                {
-                    scrollTop: $(".main__news").offset().top,
-                },
-                500
-            );
-        }, 500);
-    }
     AOS.init({
         once: true,
     });

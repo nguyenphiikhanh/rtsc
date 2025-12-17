@@ -2,13 +2,13 @@
 require_once __DIR__ . '/../../helper/helper.php';
 require_once __DIR__ . '/../../modules/top.php';
 
-$data_top_nap = __get_top_nap();
+$data_kill = __get_top_kill_boss();
 ?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <?php
-$title_label = 'Thông tin donate server';
+$title_label = 'Top Săn Boss';
 require_once __DIR__ . '/../../layout/head.php';
 ?>
 
@@ -36,30 +36,30 @@ require_once __DIR__ . '/../../layout/head.php';
                         <h2 class="title-inline" aria-level="2" role="heading" style="margin:0;">
                             <div class="clickGet m__inline">
                                 <span class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
-                                    Top Donate
+                                    Top Sức Mạnh
                                 </span>
                             </div>
                         </h2>
                     </div>
 
-                    <?php if(count($data_top_nap)){ ?>
-                        <table align="center">
+                    <?php if(count($data_kill)){ ?>
+                        <table align="center" class="w-full">
                             <tbody>
                             <tr>
                                 <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Top</strong></p>
+                                    <p dir="ltr" style="text-align:center"><strong>TOP</strong></p>
                                 </td>
                                 <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Người chơi</strong></p>
+                                    <p dir="ltr" style="text-align:center"><strong>Tên</strong></p>
                                 </td>
                                 <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Tổng Donate</strong></p>
+                                    <p dir="ltr" style="text-align:center"><strong>Boss đã săn</strong></p>
                                 </td>
                                 <td>
                                     <p dir="ltr" style="text-align:center"><strong>Phúc lợi</strong></p>
                                 </td>
                             </tr>
-                            <?php foreach ($data_top_nap as $index => $data) { ?>
+                            <?php foreach ($data_kill as $index => $data) { ?>
                                 <tr>
                                     <td>
                                         <p dir="ltr" style="text-align:center; color: white"><?= $index + 1 ?></p>
@@ -68,7 +68,7 @@ require_once __DIR__ . '/../../layout/head.php';
                                         <p dir="ltr" style="text-align:center;color: white"><?= htmlspecialchars($data['name']) ?></p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['tongnap'], 0, ',', '.'); ?> vnđ</p>
+                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['kill_boss'] ?? 0). ' boss'?></p>
                                     </td>
                                     <td>
                                         <p dir="ltr" style="text-align:left;color: white">- Mạnh top <?= $index + 1 ?> server, trong thiên hạ không có đối thủ.</p>
@@ -78,7 +78,7 @@ require_once __DIR__ . '/../../layout/head.php';
                             </tbody>
                         </table>
                     <?php } else {
-                        echo "<p>Chưa có dữ liệu Donate.</p>";
+                        echo "<p>Chưa có dữ liệu Săn boss.</p>";
                     } ?>
                 </div>
 
