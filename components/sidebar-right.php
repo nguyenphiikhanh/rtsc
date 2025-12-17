@@ -4,7 +4,9 @@ require_once __DIR__ . '/../helper/helper.php';
 
 <div class="sidebar_right hidden__mobile mo" style="top: 35%;">
     <div class="sidebar_right-content tCenter">
-        <img src="<?= define_url("assets/frontend/home/v1/images/sibarRight/qr.png") ?>" alt="" class="icon-right"/>
+        <div class="d-flex justify-center">
+            <img src="<?= define_url("assets/frontend/home/v1/images/sibarRight/qr.png") ?>" alt="" class="icon-right"/>
+        </div>
 
         <div class="tCenter t-lineok">
             <img src="<?= define_url("assets/frontend/home/v1/images/sibarRight/line.png") ?>" alt="" class="line"/>

@@ -4,7 +4,7 @@ require_once __DIR__ . '/../helper/helper.php';
 
 <div class="box--content">
     <section class="__section box__new __2 clearfix">
-        <div class="tit-frame tCenter">
+        <div class="tit-frame d-flex justify-center tCenter">
             <img src="<?= define_url("assets/frontend/home/v1/images/ttsk.png") ?>" style="width: 60%; max-width: 411px"/>
         </div>
         <div class="limit__game">
@@ -100,9 +100,9 @@ require_once __DIR__ . '/../helper/helper.php';
                     </div>
 
                     <div class="view-more">
-                        <a href="<?= define_url("news/tin-tuc.html")?>" id="viewtin-tuc" class="events a100 link-more current"></a>
-                        <a href="<?= define_url("news/su-kien.html")?>" id="viewsu-kien" class="events a100 link-more "></a>
-                        <a href="<?= define_url("news/huong-dan.html")?>" id="viewhuong-dan" class="events a100 link-more "></a>
+                        <a href="<?= define_url("news/tin-tuc.php")?>" id="viewtin-tuc" class="events a100 link-more current"></a>
+                        <a href="<?= define_url("news/su-kien.php")?>" id="viewsu-kien" class="events a100 link-more "></a>
+                        <a href="<?= define_url("news/huong-dan.php")?>" id="viewhuong-dan" class="events a100 link-more "></a>
                     </div>
 
                     <div class="icon-rau rau-left-bottom"></div>

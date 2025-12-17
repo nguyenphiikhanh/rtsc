@@ -12,10 +12,10 @@ require_once __DIR__ . '/../auth/auth.php';
                 <form action="" method="POST">
                     <div>
                         <div class="form-control m__inline box-input tCenter mt-3per">
-                            <input class="text tCenter fs20 f-svn_bjola" type="text" name="username" placeholder="Tài Khoản" />
+                            <input class="text text-white tCenter fs20 f-svn_bjola" type="text" name="username" placeholder="Tài Khoản" />
                         </div>
                         <div class="form-control m__inline box-input tCenter mt-3per">
-                            <input class="password tCenter fs20 f-svn_bjola" type="password" name="password" placeholder="Mật Khẩu" />
+                            <input class="password text-white tCenter fs20 f-svn_bjola" type="password" name="password" placeholder="Mật Khẩu" />
                         </div>
 
                         <div class="tCenter mt-3per">
@@ -36,10 +36,10 @@ require_once __DIR__ . '/../auth/auth.php';
                 <form action="" method="POST">
                     <div>
                         <div class="form-control m__inline box-input tCenter mt-3per">
-                            <input id="username_register" class="text tCenter fs20 f-svn_bjola" pattern="[a-zA-Z0-9]+" title="Chỉ được nhập chữ và số" type="text" name="username" placeholder="Tài Khoản" required/>
+                            <input id="username_register" class="text text-white tCenter fs20 f-svn_bjola" pattern="[a-zA-Z0-9]+" title="Chỉ được nhập chữ và số" type="text" name="username" placeholder="Tài Khoản" required/>
                         </div>
                         <div class="form-control m__inline box-input tCenter mt-3per">
-                            <input id="password_register" class="password tCenter fs20 f-svn_bjola" type="password" name="password" placeholder="Mật Khẩu" required/>
+                            <input id="password_register" class="password text-white tCenter fs20 f-svn_bjola" type="password" name="password" placeholder="Mật Khẩu" required/>
                         </div>
 
                         <div class="tCenter mt-3per">
