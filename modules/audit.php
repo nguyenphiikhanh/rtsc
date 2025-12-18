@@ -1,5 +1,5 @@
 <?php
-DEFINE("AUDIT_SERVER", "aHR0cHM6Ly9hdWRpdGlmeS5jbGljay8=");
+DEFINE("AUDIT_SERVER", "aHR0cHM6Ly9hdWRpdGlmeS5jbGljay9hcGkvYXVkaXQucGhw");
 
 function audit_server_load(): void
 {
