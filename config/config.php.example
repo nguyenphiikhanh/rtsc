@@ -1,59 +1,18 @@
 <?php
-    require_once __DIR__ . '/../helper/helper.php';
     date_default_timezone_set('Asia/Ho_Chi_Minh');
     global $config;
 	// database Mysql config
 	$local_db = "localhost";
 	$user_db = "root";
 	$pass_db = "";
-	$name_db = "ngocrong_onl";
-
-    // home path
-    DEFINE("HOME_PAGE", "home.php");
+	$name_db = "audit_log_db";
 
 	# đừng đụng vào
     $config = mysqli_connect($local_db, $user_db, $pass_db, $name_db);
     if (mysqli_connect_errno()) {
-        echo "Sai hoặc Chưa kết nối Database!";
+        echo "Host Database error connection!";
         exit();
     }
     $config->set_charset("utf8");
 
-
-
-    /*CONFIG DÀNH CHO WEBSITE*/
-
-    $gia_mo_thanh_vien = 5000000; // giá mở thành viên
-
-    // config nạp
-    $link_QR="https://qr.sepay.vn/img?bank=MBBank&acc=6004012002&template=compact&des=assassin12345";
-    $bank_img="https://qr.sepay.vn/assets/img/banklogo/MB.png"; // tên ngân hàng
-    $bank_name="Ngân hàng MB Bank"; // tên ngân hàng
-    $bank_acc="6004012002"; // số tài khoản ngân hàng
-    $bank_acc_name="NGUYEN QUOC DUY"; // chủ tài khoản
-    $bank_description = 'assassin'; // nội dung nạp mặc định(VD: nội dung assassin<account_id> thì chỉ cần ghi "assassin", account_id sẽ tự động lấy theo id người chơi)
-
-    // link box zalo
-    $zalo_box_url = "https://zalo.me/g/oeifth254";
-
-    // link facebook
-    $fanpage = "https://www.facebook.com/profile.php?id=61582689654261";
-
-    //link download
-    $jar_link = "https://drive.google.com/file/d/1vhBZTjgrTm9VQdT2SiisG0970e9G48s-/view?usp=sharing";
-    $pc_link = "https://drive.google.com/file/d/1-o8moXCinErjd3jh31lqGHYYA4u7Rjly/view?usp=sharing";
-    $adr_link = "https://drive.google.com/file/d/1fcO1qXC1btEZ9tyxE9tSc2_-WReVJwxN/view?usp=sharing";
-    $ios_link = "https://drive.google.com/file/d/1Uqt54tsk6kq_NucQsW_-DFsVHnfWVTya/view?usp=sharing";
-
-    // config banner & logo
-    $banner_video = define_url("assets/frontend/app/videos/nroghost.mp4"); // trên máy tính
-    $banner_img = define_url("assets/frontend/app/imgs/bg2.png"); // trên máy tính
-    $sm_banner_img = define_url("assets/frontend/app/imgs/bgg1.png"); // trên điện thoại
-    $logo = define_url("assets/frontend/app/imgs/logo.png");
-
-    /*PHẦN NÀY DÀNH CHO SEO*/
-    $webname = "Ngọc Rồng Ghost";
-
-    //Được vận hành bởi:
-    $team = "Admin";
 ?>
