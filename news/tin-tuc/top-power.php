@@ -98,7 +98,6 @@ require_once __DIR__ . '/../../layout/head.php';
 <!--end footer-->
 <style>
     .bg-top-nap{
-        /*background: url("../../assets/frontend/events/flashsalecuoituan2023/images/full__big.jpg");*/
         background: url("../../assets/frontend/home/v1/images/bigFT.png");
         background-repeat: no-repeat;
         background-position: center center;
