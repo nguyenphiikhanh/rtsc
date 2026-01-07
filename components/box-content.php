@@ -70,6 +70,36 @@ require_once __DIR__ . '/../helper/helper.php';
                                 <div class="date-open">14/12</div>
                             </a>
 
+                            <div class="block md:hidden">
+                                <a href="<?= define_url("news/tin-tuc/top-donate.php") ?>" class="item-new-box f-Roboto-Regular">
+                                    <div class="cat-des">
+                                        [Tin tức] Top Donate
+                                    </div>
+                                    <div class="date-open">14/12</div>
+                                </a>
+
+                                <a href="<?= define_url("news/tin-tuc/top-su-kien.php") ?>" class="item-new-box f-Roboto-Regular">
+                                    <div class="cat-des">
+                                        [Tin tức] Top Sự Kiện
+                                    </div>
+                                    <div class="date-open">14/12</div>
+                                </a>
+
+                                <a href="<?= define_url("news/tin-tuc/top-power.php") ?>" class="item-new-box f-Roboto-Regular">
+                                    <div class="cat-des">
+                                        [Tin tức] Top Sức mạnh
+                                    </div>
+                                    <div class="date-open">14/12</div>
+                                </a>
+
+                                <a href="<?= define_url("news/tin-tuc/top-boss.php") ?>" class="item-new-box f-Roboto-Regular">
+                                    <div class="cat-des">
+                                        [Tin tức] Top Săn Boss
+                                    </div>
+                                    <div class="date-open">14/12</div>
+                                </a>
+                            </div>
+
 
                         </div>
                         <div class="tab-detail " id="tab-su-kien">

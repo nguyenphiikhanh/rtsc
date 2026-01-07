@@ -32,6 +32,7 @@
     $bank_acc="6004012002"; // số tài khoản ngân hàng
     $bank_acc_name="NGUYEN QUOC DUY"; // chủ tài khoản
     $bank_description = 'assassin'; // nội dung nạp mặc định(VD: nội dung assassin<account_id> thì chỉ cần ghi "assassin", account_id sẽ tự động lấy theo id người chơi)
+    $apiKey="54ACBDD7EF7BB74C13FB6679113C1193" ; // api key thesieutoc.net
 
     // link box zalo
     $zalo_box_url = "https://zalo.me/g/oeifth254";

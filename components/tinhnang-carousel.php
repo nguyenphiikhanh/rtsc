@@ -4,7 +4,7 @@ require_once __DIR__ . '/../helper/helper.php';
 
 <section class="__section box_game ftg__sl __3">
     <div class="limit__game">
-        <div class="tit-frame tCenter">
+        <div class="tit-frame tCenter d-flex justify-center">
             <img src="<?= define_url("assets/frontend/teaser/images/ten_box_game/tit-tinhnang.png") ?>"
                  style="width: 60%; max-width: 411px"/>
         </div>
