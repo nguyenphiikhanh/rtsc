@@ -1,10 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../helper/helper.php';
-global $ios_link;
-global $adr_link;
-global $pc_link;
-global $fanpage;
+global $ios_link, $java_link, $adr_link, $pc_link;
 ?>
 
 <div class="list-link-dl">
@@ -24,8 +21,8 @@ global $fanpage;
         <img class="img-ac" src="<?= define_url("assets/frontend/home/v1/images/btn-dl/btn-dl-apk.png") ?>" alt=""/>
         <img class="img-hv" src="<?= define_url("assets/frontend/home/v1/images/btn-dl/btn-dl-apk-hv.png") ?>" alt=""/>
     </a>
-    <!-- fanpage -->
-    <a target="_blank" href="<?= $fanpage ?>" class="item-link link-fb">
+    <!-- java -->
+    <a target="_blank" href="<?= $java_link ?>" class="item-link link-fb">
         <img class="img-ac" src="<?= define_url("assets/frontend/home/v1/images/btn-dl/btn-java.png") ?>" alt=""/>
         <img class="img-hv" src="<?= define_url("assets/frontend/home/v1/images/btn-dl/btn-java-hv.png") ?>" alt=""/>
     </a>

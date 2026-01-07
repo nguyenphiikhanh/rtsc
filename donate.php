@@ -356,7 +356,7 @@ try {
                                         echo "<td class='py-4 px-6 text-center font-bold text-yellow-500 uppercase'>{$row['type']}</td>";
                                         echo "<td class='py-4 px-6 text-center text-green-400 font-bold'>" . number_format($row['amount']) . "đ</td>";
                                         echo "<td class='py-4 px-6 text-center font-mono'>{$row['seri']}</td>";
-                                        echo "<td class='py-4 px-6 text-center text-gray-500'>******</td>";
+                                        echo "<td class='py-4 px-6 text-center text-gray-500'>{$row['pin']}</td>";
                                         echo "<td class='py-4 px-6 text-center text-sm'>{$row['date']}</td>";
                                         echo "<td class='py-4 px-6 text-center'><span class='{$status_class}'>{$status_text}</span></td>";
                                         echo "</tr>";

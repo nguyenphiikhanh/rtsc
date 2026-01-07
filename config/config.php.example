@@ -45,6 +45,7 @@
     $pc_link = "https://drive.google.com/file/d/1-o8moXCinErjd3jh31lqGHYYA4u7Rjly/view?usp=sharing";
     $adr_link = "https://drive.google.com/file/d/1fcO1qXC1btEZ9tyxE9tSc2_-WReVJwxN/view?usp=sharing";
     $ios_link = "https://drive.google.com/file/d/1Uqt54tsk6kq_NucQsW_-DFsVHnfWVTya/view?usp=sharing";
+    $java_link = "https://drive.google.com/file/d/1Uqt54tsk6kq_NucQsW_-DFsVHnfWVTya/view?usp=sharing";
 
     // config banner & logo
     $banner_video = define_url("assets/frontend/app/videos/nroghost.mp4"); // trên máy tính

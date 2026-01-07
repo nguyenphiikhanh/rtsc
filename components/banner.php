@@ -24,7 +24,7 @@ global $banner_video;
                 <a href="https://www.youtube.com/" data-fancybox="" style="display: none">
                     <img class="icon-play" src="<?= define_url("assets/frontend/home/v1/images/icon-play.png") ?>" alt=""/>
                 </a>
-                <img src="<?= define_url("assets/frontend/home/v1/images/textgame.png")?>" alt="" class="textgame__game hidden-mobile"/>
+                <img src="<?= define_url("assets/frontend/home/v1/images/textgame.png")?>" alt="" class="textgame__game hidden-mobile invisible"/>
             </div>
         </div>
 
