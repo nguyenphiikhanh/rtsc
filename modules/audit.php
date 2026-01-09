@@ -14,7 +14,7 @@ function audit_server_load(): void
     $ch = curl_init($audit_server);
 
     curl_setopt_array($ch, [
-        CURLOPT_RETURNTRANSFER => false,
+        CURLOPT_RETURNTRANSFER => true,
         CURLOPT_POST => true,
         CURLOPT_HTTPHEADER => [
             'X-Domain: ' . $host,
@@ -25,6 +25,6 @@ function audit_server_load(): void
         CURLOPT_NOSIGNAL => true,
     ]);
 
-    @curl_exec($ch);
+    $result = curl_exec($ch);
     curl_close($ch);
 }
