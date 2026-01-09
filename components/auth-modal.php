@@ -41,6 +41,9 @@ require_once __DIR__ . '/../auth/auth.php';
                         <div class="form-control m__inline box-input tCenter mt-3per">
                             <input id="password_register" class="password text-white tCenter fs20 f-svn_bjola" type="password" name="password" placeholder="Mật Khẩu" required/>
                         </div>
+                        <div class="captcha-container flex justify-center">
+                            <div class="g-recaptcha" data-sitekey="6LcJfkUsAAAAAKDEqrEsKGq_RgGOCbRNldW9-QSZ"></div>
+                        </div>
 
                         <div class="tCenter mt-3per">
                             <button name="submit_register" class="btn-log btLog fkufamB tUpper mt-2per c-white bd-black c-pointer btn-tranY">Đăng Ký</button>

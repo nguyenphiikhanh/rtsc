@@ -12,6 +12,21 @@ function register(){
     }
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $captcha = $_POST['g-recaptcha-response'];
+    if(!$captcha){
+        $thongbao = 'Vui lòng xác nhận captcha!';
+        $redirect_path = define_url('home.php');
+        $script = '
+        var thongbao = ' . json_encode($thongbao) . ';
+        if (thongbao !== "") {
+            alert(thongbao);
+            window.location = "' . $redirect_path . '";
+        }
+        ';
+
+        echo '<script>' . $script . '</script>';
+        exit();
+    }
 
     $username = mysqli_real_escape_string($config, $username);
 	$password = mysqli_real_escape_string($config, $password);
