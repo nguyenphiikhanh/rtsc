@@ -7,7 +7,7 @@ global $banner_video;
 
 <section class="__section game--brand__show __1">
     <div class="bg_video">
-        <video id="videoBgPC" class="videobg hidden__mobile" muted="" loop="" preload="none" webkit-playsinline=""
+        <video id="videoBgPC" class="videobg hidden__mobile" autoplay muted="" loop="" preload="none" webkit-playsinline=""
                playsinline="">
             <source src="<?= $banner_video ?>" type="video/mp4"/>
         </video>
