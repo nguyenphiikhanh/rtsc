@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/../auth/auth.php';
+require_once __DIR__ . '/../config/config.php';
+global $recaptchaKey;
 ?>
 
 <div class="modal" id="modal__login2" style="display: none;">
@@ -42,7 +44,7 @@ require_once __DIR__ . '/../auth/auth.php';
                             <input id="password_register" class="password text-white tCenter fs20 f-svn_bjola" type="password" name="password" placeholder="Mật Khẩu" required/>
                         </div>
                         <div class="captcha-container flex justify-center">
-                            <div class="g-recaptcha" data-sitekey="6LcJfkUsAAAAAKDEqrEsKGq_RgGOCbRNldW9-QSZ"></div>
+                            <div class="g-recaptcha" data-sitekey="<?= $recaptchaKey ?>"></div>
                         </div>
 
                         <div class="tCenter mt-3per">
