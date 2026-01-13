@@ -25,11 +25,6 @@ require_once __DIR__ . '/../../layout/head.php';
                 <li><span>Tích Lũy Nạp 19/11 - 21/11</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
-                <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold"></span> Tích Lũy Nạp 19/11 - 21/11</div>
-                    <div class="date-open-right  hidden-mobile">18/11/2025</div>
-                </div>
-
                 <div class="text-detail detail-post">
 
                     <h3 dir="ltr"><strong>SỰ KIỆN THU THẬP BÁNH TẾT:</strong></h3>

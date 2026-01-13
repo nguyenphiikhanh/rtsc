@@ -25,10 +25,6 @@ require_once __DIR__ . '/../../layout/head.php';
                 <li><span>[UPDATE] TÍNH NĂNG SEVER</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
-                <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold"></span> [UPDATE] TÍNH NĂNG SEVER</div>
-                    <div class="date-open-right  hidden-mobile">14/12/2025</div>
-                </div>
 
                 <div class="text-detail detail-post">
                     <h3 dir="ltr" style="text-align:center"><span style="color:#FF8C00"><strong>TÍNH NĂNG SEVER</strong></span></h3>

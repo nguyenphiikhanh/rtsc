@@ -21,15 +21,10 @@ require_once __DIR__ . '/../../layout/head.php';
     <div class="main__news">
         <div class="limit__game">
             <ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
-                <li class="current"><a href="../../home.php">Trang chủ</a></li>
-                <li><span>HỖ TRỢ NHIỆM VỤ</span></li>
+                <li class="current"><a href="<?= define_url('home.php') ?>">Trang chủ</a></li>
+                <li><span class="text-gray-900">HỖ TRỢ NHIỆM VỤ</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
-                <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold"></span>HỖ TRỢ NHIỆM VỤ</div>
-                    <div class="date-open-right  hidden-mobile">14/12/2025</div>
-                </div>
-
                 <div class="text-detail detail-post">
                     <p><strong>◈&nbsp;</strong><strong>HỖ TRỢ NHIỆM VỤ</strong></p>
 

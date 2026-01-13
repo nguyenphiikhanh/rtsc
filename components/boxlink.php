@@ -31,7 +31,7 @@ global $zalo_box_url;
             </a>
 
             <!-- link gc -->
-            <a target="_blank" href="<?= define_url("news/huong-dan-nhap-giftcode_34.php") ?>" class="item-box-link"
+            <a target="_blank" href="<?= define_url("news/huong-dan/gift-code.php") ?>" class="item-box-link"
                data-aos="fade-up"
                data-aos-duration="700" data-aos-delay="800">
                 <img class="img-ac" src="<?= define_url("assets/frontend/home/v1/images/box-link/img-gc.png") ?>"

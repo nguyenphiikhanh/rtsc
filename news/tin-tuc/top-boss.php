@@ -27,9 +27,6 @@ require_once __DIR__ . '/../../layout/head.php';
                 <li><span>Top Donate</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
-                <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold"></span>Top Donate</div>
-                </div>
 
                 <div class="text-detail detail-post min-h-[550px] bg-top-nap">
                     <div class="tCenter" style="margin:0 0 18px;">

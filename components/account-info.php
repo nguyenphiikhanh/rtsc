@@ -11,9 +11,6 @@ $account_info = __get_account_info();
                 <li><span>Thông tin</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
-                <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold"></span>Thông tin người chơi</div>
-                </div>
 
                 <div class="text-detail detail-post bg-top-nap">
                     <div class="tCenter" style="display: flex; justify-content: center;">

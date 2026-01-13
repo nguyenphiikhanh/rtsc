@@ -29,9 +29,6 @@ require_once __DIR__ . '/../layout/head.php';
                 <li class="current"><span>Hướng dẫn</span></li>
             </ul>
             <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
-                <div class="title-main-new">
-                    <div class="title-left"><span class="f-tahomabold">[Tin tức hướng dẫn]</span></div>
-                </div>
 
                 <div class="list-new-page">
 

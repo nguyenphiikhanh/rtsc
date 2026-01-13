@@ -1,14 +1,15 @@
 <?php
+require_once __DIR__ . '/../../auth/auth.php';
 require_once __DIR__ . '/../../helper/helper.php';
 require_once __DIR__ . '/../../modules/top.php';
-
+auth();
 $data_top_nap = __get_top_nap();
 ?>
 <!DOCTYPE html>
 <html lang="vi" class="__roots root__page">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <?php
-$title_label = 'Thông tin donate server';
+$title_label = 'Danh sách Gift Code';
 require_once __DIR__ . '/../../layout/head.php';
 ?>
 
@@ -19,84 +20,15 @@ require_once __DIR__ . '/../../layout/head.php';
 <!--end header-->
 <?php require_once __DIR__ . '/../../components/banner.php'; ?>
 
-<div class="box--content">
-    <div class="main__news">
-        <div class="limit__game">
-            <ul class="breadcrumb p-r" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
-                <li class="current"><a href="<?= define_url("home.php") ?>">Trang chủ</a></li>
-                <li><span>Top Donate</span></li>
-            </ul>
-            <div class="main-content-news" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
-
-                <div class="text-detail detail-post min-h-[550px] bg-top-nap">
-                    <div class="tCenter" style="margin:0 0 18px;">
-                        <h2 class="title-inline" aria-level="2" role="heading" style="margin:0;">
-                            <div class="clickGet m__inline">
-                                <span class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
-                                    Top Donate
-                                </span>
-                            </div>
-                        </h2>
-                    </div>
-
-                    <?php if(count($data_top_nap)){ ?>
-                        <table align="center">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Top</strong></p>
-                                </td>
-                                <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Người chơi</strong></p>
-                                </td>
-                                <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Tổng Donate</strong></p>
-                                </td>
-                                <td>
-                                    <p dir="ltr" style="text-align:center"><strong>Phúc lợi</strong></p>
-                                </td>
-                            </tr>
-                            <?php foreach ($data_top_nap as $index => $data) { ?>
-                                <tr>
-                                    <td>
-                                        <p dir="ltr" style="text-align:center; color: white"><?= $index + 1 ?></p>
-                                    </td>
-                                    <td>
-                                        <p dir="ltr" style="text-align:center;color: white"><?= htmlspecialchars($data['name']) ?></p>
-                                    </td>
-                                    <td>
-                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['tongnap'], 0, ',', '.'); ?> vnđ</p>
-                                    </td>
-                                    <td>
-                                        <p dir="ltr" style="text-align:left;color: white">- Mạnh top <?= $index + 1 ?> server, trong thiên hạ không có đối thủ.</p>
-                                    </td>
-                                </tr>
-                            <?php } ?>
-                            </tbody>
-                        </table>
-                    <?php } else {
-                        echo "<p>Chưa có dữ liệu Donate.</p>";
-                    } ?>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
+<?php require_once __DIR__ . '/../../components/gift_code.php'; ?>
 
 <!--    footer-->
 <?php include_once __DIR__ . '/../../layout/footer.php'; ?>
 <!--end footer-->
-<style>
-    .bg-top-nap{
-        background: url("../../assets/frontend/home/v1/images/bigFT.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-</style>
-
 <?php require_once __DIR__ . '/../../components/sidebar-right.php'; ?>
+
+</body>
+
 
 <script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/jquery.min.js")?>"></script>
 <script type="text/javascript" src="<?= define_url("assets/frontend/home/v1/js/ScrollMagic.min.js")?>"></script>
