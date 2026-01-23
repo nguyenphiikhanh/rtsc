@@ -60,4 +60,8 @@
     $team = "Admin";
 
     $recaptchaKey = "6LdX-0cgAAAAAF2y8bX0nX3Z3F5q3b4H6u5q6Y7E"; // g-recaptcha key
+
+    // Tỉ lệ nạp
+    $card_rate = 120; // % (Ví dụ: 120% thì nạp 100k sẽ nhận được 120k)
+    $atm_rate = 200; // % (Ví dụ: 200% thì nạp 100k sẽ nhận được 200k)
 ?>

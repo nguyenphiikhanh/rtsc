@@ -1,5 +1,7 @@
 <?php
 include(__DIR__ ."/api/config.php");
+require_once __DIR__ . '/./config/config.php';
+global $card_rate;
 	$validate = ValidateCallback($_POST);
 	if($validate != false) { //Nếu xác thực callback đúng thì chạy vào đây.
 		$status = $validate['status']; //Trạng thái thẻ nạp, thẻ thành công = thanhcong , Thẻ sai, thẻ sai mệnh giá = thatbai
@@ -16,6 +18,10 @@ if ($result->num_rows > 0){
 	print_r($result);
 	if($status == 'thanhcong') {
 			//Xử lý nạp thẻ thành công tại đây.
+			$price = $amount;
+			$pricert = $price * ($card_rate/100); // áp dụng tỉ lệ nạp
+			$conn->query("UPDATE `account` SET vnd = vnd + {$pricert} WHERE username = '{$result['name']}'");
+			$conn->query("UPDATE `account` SET tongnap = tongnap + {$pricert} WHERE username = '{$result['name']}'");
 			$conn->query("UPDATE `trans_log` SET `status` = 1 WHERE `id` = {$result['id']}"); // chuyển cho kết quả thành công      
 		} else if($status == 'saimenhgia') {
 			//Xử lý nạp thẻ sai mệnh giá tại đây.

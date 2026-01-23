@@ -11,7 +11,7 @@
  */
 
 require_once __DIR__ . '/./config/config.php';
-global $config;
+global $config, $atm_rate;
 global $bank_description;
 
 header('Content-Type: application/json; charset=utf-8');
@@ -126,6 +126,7 @@ try {
     } else {
         $real_amount = $amount * 1;
     }
+    $real_amount = $real_amount * ($atm_rate / 100); // Áp dụng tỉ lệ nạp
 
     // 6) Cộng tiền vào account (vnd + thưởng, tongnap + số gốc)
     $stmtUpd = $config->prepare("UPDATE account SET vnd = vnd + ?, tongnap = tongnap + ? WHERE id = ?");
