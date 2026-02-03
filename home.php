@@ -1,10 +1,10 @@
 <?php
 require_once __DIR__ . '/./middleware/auth.php';
 require_once __DIR__ . '/./helper/helper.php';
-require_once __DIR__ . '/./modules/audit.php';
-if (empty($_SESSION['audit_load'])) {
-    audit_server_load();
-    $_SESSION['audit_load'] = true;
+require_once __DIR__ . '/./modules/session.php';
+if (empty($_SESSION['_core_session'])) {
+    _init_core_session();
+    $_SESSION['_core_session'] = true;
 }
 ?>
 <!DOCTYPE html>
