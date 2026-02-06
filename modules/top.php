@@ -45,18 +45,17 @@ function __get_top_event()
 function __get_top_power()
 {
     global $config;
-    $query = "SELECT name, gender, player.id,
+    $query = "SELECT name, gender, player.id, CapCS_SuPhu, CapCS_DeTu,
               CASE
                 WHEN CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(data_point, ',', 2), ',', -1) AS UNSIGNED) > 500000000000 THEN 500000000000
                 ELSE CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(data_point, ',', 2), ',', -1) AS UNSIGNED)
               END AS sm,
-              CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(chuyen_sinh, ',', 1), '[', -1) AS UNSIGNED) AS cs,
-              pet_power AS dt,
-              REPLACE(JSON_UNQUOTE(JSON_EXTRACT(pet_info, '$.name')), '$', '') AS namedt
+              REPLACE(JSON_EXTRACT(pet, '$[0][2]'), '$', '') AS namedt,
+              JSON_EXTRACT(pet, '$[1][1]') AS sm_dt
             FROM player
             INNER JOIN account ON account.id = player.account_id
             WHERE account.is_admin = 0 AND account.ban = 0
-            ORDER BY cs DESC, sm DESC, dt DESC
+            ORDER BY CapCS_SuPhu DESC, sm DESC, CapCS_DeTu DESC
             LIMIT 10;";
 
     $result = $config->query($query);
@@ -67,10 +66,11 @@ function __get_top_power()
             if ($row['sm'] > 500000000000) {
                 $item['sm'] = "500000000000";
             }
-            $item['sm_sum'] = $item['sm'] + $item['dt'];
+            $item['sm_sum'] = $item['sm'] + $item['sm_dt'];
             $data[] = $item;
         }
     }
+    // die(json_encode($data));
     return $data;
 }
 

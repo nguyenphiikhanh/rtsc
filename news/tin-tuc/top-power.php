@@ -68,10 +68,10 @@ require_once __DIR__ . '/../../layout/head.php';
                                         <p dir="ltr" style="text-align:center;color: white"><?= htmlspecialchars($data['name']) ?></p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['sm']). '(CS: '.($data['cs'] ?? 0).' lần)' ?></p>
+                                        <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['sm']). '(CS: '.($data['CapCS_SuPhu'] ?? 0).' lần)' ?></p>
                                     </td>
                                     <td>
-                                        <p dir="ltr" style="text-align:left;color: white"><?= number_format($data['dt']).'['.$data['namedt'].']' ?></p>
+                                        <p dir="ltr" style="text-align:left;color: white"><?= $data['namedt'].'['.$data['CapCS_DeTu'].']' ?></p>
                                     </td>
                                     <td>
                                         <p dir="ltr" style="text-align:center;color: white"><?= number_format($data['sm_sum']) ?></p>

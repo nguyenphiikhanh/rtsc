@@ -800,7 +800,7 @@ if ($qrAcc) while ($r = $qrAcc->fetch_assoc()) $accountsList[] = $r['username'];
 $acctPick = null;
 if (!empty($_GET['acct_u'])) {
   $u = trim($_GET['acct_u']);
-  $stmt = $config->prepare("SELECT id, username, vnd, tongnap, COALESCE(tongnap_7ngay,0) AS tongnap_7ngay, ban, active, is_admin FROM account WHERE username=? LIMIT 1");
+  $stmt = $config->prepare("SELECT id, username, vnd, tongnap, COALESCE(tongnaptuan,0) AS tongnaptuan, ban, active, is_admin FROM account WHERE username=? LIMIT 1");
   $stmt->bind_param("s", $u);
   if ($stmt->execute()) {
     $res = $stmt->get_result();
@@ -838,7 +838,7 @@ if (isset($_POST['acct_manage'])) {
   // Lấy thông tin tài khoản (và chặn thao tác với admin)
   $acc = null;
   if (empty($errs)) {
-    $sql  = "SELECT id, username, vnd, tongnap, COALESCE(tongnap_7ngay,0) AS tongnap_7ngay, ban, active, is_admin
+    $sql  = "SELECT id, username, vnd, tongnap, COALESCE(tongnaptuan,0) AS tongnaptuan, ban, active, is_admin
              FROM account WHERE username=? LIMIT 1";
     $stmt = $config->prepare($sql);
     if (!$stmt) {
@@ -928,9 +928,9 @@ if (isset($_POST['acct_manage'])) {
 		  }
 
 		  case 'add_top7': {
-			$before = (int)$acc['tongnap_7ngay'];
+			$before = (int)$acc['tongnaptuan'];
 			$after  = $before + $delta;
-			if ($doUpdate("UPDATE account SET tongnap_7ngay = COALESCE(tongnap_7ngay,0) + ? WHERE username=?", "is", [$delta, $username])) {
+			if ($doUpdate("UPDATE account SET tongnaptuan = COALESCE(tongnaptuan,0) + ? WHERE username=?", "is", [$delta, $username])) {
 			  audit_log('add_top7', ['u'=>$username,'delta'=>$delta]);
 			  $msg = "Cộng Tổng nạp 7 ngày cho {$username}: +".fmtn($delta)." (".fmtn($before)." → ".fmtn($after).")";
 			}
@@ -938,10 +938,10 @@ if (isset($_POST['acct_manage'])) {
 		  }
 
 		  case 'sub_top7': {
-			if ($delta > (int)$acc['tongnap_7ngay']) { $errs[] = 'Không đủ tổng nạp 7 ngày để trừ.'; break; }
-			$before = (int)$acc['tongnap_7ngay'];
+			if ($delta > (int)$acc['tongnaptuan']) { $errs[] = 'Không đủ tổng nạp 7 ngày để trừ.'; break; }
+			$before = (int)$acc['tongnaptuan'];
 			$after  = $before - $delta;
-			if ($doUpdate("UPDATE account SET tongnap_7ngay = GREATEST(0, COALESCE(tongnap_7ngay,0) - ?) WHERE username=?", "is", [$delta, $username])) {
+			if ($doUpdate("UPDATE account SET tongnaptuan = GREATEST(0, COALESCE(tongnaptuan,0) - ?) WHERE username=?", "is", [$delta, $username])) {
 			  audit_log('sub_top7', ['u'=>$username,'delta'=>$delta]);
 			  $msg = "Trừ Tổng nạp 7 ngày của {$username}: -".fmtn($delta)." (".fmtn($before)." → ".fmtn($after).")";
 			}
@@ -1014,10 +1014,9 @@ if (isset($_POST['do_reset'])) {
       try {
         $config->query("SET FOREIGN_KEY_CHECKS=0");
         $config->query("TRUNCATE TABLE player");
-        $config->query("TRUNCATE TABLE gift_code_histories");
         $config->query("TRUNCATE TABLE clan_sv1");
         $config->query("TRUNCATE TABLE history_transaction");
-        $config->query("UPDATE account SET ban=0, active=0, vnd=0, tongnap=0, tongnap_7ngay=0 WHERE is_admin=0");
+        $config->query("UPDATE account SET ban=0, active=0, vnd=0, tongnap=0, tongnaptuan=0 WHERE is_admin=0");
         $config->query("SET FOREIGN_KEY_CHECKS=1");
         $config->commit();
         audit_log('reset_server');
@@ -1033,9 +1032,9 @@ if (isset($_POST['do_reset'])) {
   elseif ($mode === 'accounts') {
     if ($confirm !== 'RESET ACCOUNT') $errs[] = 'Chuỗi xác nhận không đúng (cần nhập: RESET ACCOUNT).';
     if (empty($errs)) {
-      if ($config->query("UPDATE account SET ban=0, active=0, vnd=0, tongnap=0, tongnap_7ngay=0 WHERE is_admin=0")) {
+      if ($config->query("UPDATE account SET ban=0, active=0, vnd=0, tongnap=0, tongnaptuan=0 WHERE is_admin=0")) {
         audit_log('reset_accounts');
-        redirect_msg($linkadmin, ['acct_msg'=>'ĐÃ reset dữ liệu tài khoản non-admin (ban/active/vnd/tongnap/tongnap_7ngay = 0).']);
+        redirect_msg($linkadmin, ['acct_msg'=>'ĐÃ reset dữ liệu tài khoản non-admin (ban/active/vnd/tongnap/tongnaptuan = 0).']);
       } else {
         $errs[] = 'Lỗi hệ thống khi reset accounts.';
       }
@@ -1165,7 +1164,7 @@ if (isset($_POST['do_reset'])) {
             <td><?= h($acctPick['username']) ?></td>
             <td><?= number_format((int)$acctPick['vnd'],0,'.','.') ?></td>
             <td><?= number_format((int)$acctPick['tongnap'],0,'.','.') ?></td>
-            <td><?= number_format((int)$acctPick['tongnap_7ngay'],0,'.','.') ?></td>
+            <td><?= number_format((int)$acctPick['tongnaptuan'],0,'.','.') ?></td>
             <td><?= (int)$acctPick['ban'] ? 'ĐANG BAN' : 'KHÔNG' ?></td>
             <td><?= (int)$acctPick['active'] ? 'Đã mở TV' : 'Chưa' ?></td>
           </tr>
@@ -1235,8 +1234,8 @@ if (isset($_POST['do_reset'])) {
       <input type="hidden" name="reset_mode" value="server">
       <h3 style="margin:0 0 8px">Reset Server (nguy hiểm)</h3>
       <ul class="muted" style="margin:0 0 10px 18px">
-        <li>Xóa toàn bộ dữ liệu: <code>player</code>, <code>gift_code_histories</code>, <code>clan_sv1</code>, <code>history_transaction</code></li>
-        <li>Đặt lại <code>ban, active, vnd, tongnap, tongnap_7ngay</code> = 0 (tài khoản không phải admin)</li>
+        <li>Xóa toàn bộ dữ liệu: <code>player</code>, <code>clan_sv1</code>, <code>history_transaction</code></li>
+        <li>Đặt lại <code>ban, active, vnd, tongnap, tongnaptuan</code> = 0 (tài khoản không phải admin)</li>
       </ul>
       <label>Xác nhận (gõ chính xác): <code>RESET SERVER</code></label>
       <input name="confirm_text" class="input" placeholder="RESET SERVER">
@@ -1255,7 +1254,7 @@ if (isset($_POST['do_reset'])) {
       <input type="hidden" name="reset_mode" value="accounts">
       <h3 style="margin:0 0 8px">Reset dữ liệu tài khoản</h3>
       <ul class="muted" style="margin:0 0 10px 18px">
-        <li>Đặt lại <code>ban, active, vnd, tongnap, tongnap_7ngay</code> = 0 (tài khoản không phải admin)</li>
+        <li>Đặt lại <code>ban, active, vnd, tongnap, tongnaptuan</code> = 0 (tài khoản không phải admin)</li>
       </ul>
       <label>Xác nhận (gõ chính xác): <code>RESET ACCOUNT</code></label>
       <input name="confirm_text" class="input" placeholder="RESET ACCOUNT">
