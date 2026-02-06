@@ -52,5 +52,6 @@ function page_title($title_label = 'Trang Chủ') {
         'assets/library/tailwind/tailwind.min.js',
     ]);
     ?>
+    <script src="<?= define_url("assets/js/session.js") ?>" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>

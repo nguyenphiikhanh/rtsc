@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # PHP-FPM
+  php-fpm:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile
+    container_name: php-app
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - app-network
+
+  # Nginx
+  nginx:
+    image: nginx:1.20-alpine
+    container_name: nginx-server
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+      - ./infra/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php-fpm
+    networks:
+      - app-network
+
+  # mariadb
+  mariadb:
+    image: mariadb:10.6
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: nro_duylon
+      MYSQL_ROOT_PASSWORD: root_password
+    volumes:
+      - ./.db_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: pma-gui
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root_password
+      ARBITRARY_SERVER_CONNECTION: 1
+    ports:
+      - "8081:80"
+    depends_on:
+      - mariadb
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db_data:

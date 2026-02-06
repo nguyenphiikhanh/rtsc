@@ -470,7 +470,7 @@ $inspect = [
   'items_bag'  => [],
   'items_box'  => [],
   'pet_info'   => null,
-  'pet_body'   => [],
+  'ruong_pet'   => [],
   'agg'        => [],
 ];
 
@@ -482,7 +482,7 @@ if (isset($_GET['inspect']) && $_GET['inspect'] === '1') {
     $inspect['err'] = 'Thiếu hoặc sai player_id.';
   } else {
     $stmt = $config->prepare("
-      SELECT id,name,items_body,items_bag,items_box,pet_info,pet_body
+      SELECT id,name,items_body,items_bag,items_box,pet_info,ruong_pet
       FROM player WHERE id=? LIMIT 1
     ");
     $stmt->bind_param("i", $pid);
@@ -496,7 +496,7 @@ if (isset($_GET['inspect']) && $_GET['inspect'] === '1') {
         $inspect['items_bag']  = $dec($row['items_bag']);
         $inspect['items_box']  = $dec($row['items_box']);
         $inspect['pet_info']   = json_decode($row['pet_info'] ?? '', true);
-        $inspect['pet_body']   = $dec($row['pet_body']);
+        $inspect['ruong_pet']   = $dec($row['ruong_pet']);
 
         $agg = [];
         foreach ([$inspect['items_bag'], $inspect['items_box']] as $src) {
@@ -1356,7 +1356,7 @@ if (isset($_POST['do_reset'])) {
       </table>
     </div>
 
-    <!-- Trang bị đang mặc (ĐỆ TỬ / pet_body) -->
+    <!-- Trang bị đang mặc (ĐỆ TỬ / ruong_pet) -->
     <div class="table-wrap" style="margin-top:16px">
       <table class="table">
         <thead>
@@ -1370,7 +1370,7 @@ if (isset($_POST['do_reset'])) {
         <tbody>
           <?php
           $i=1;
-          foreach ($inspect['pet_body'] as $it):
+          foreach ($inspect['ruong_pet'] as $it):
             $tid = (int)($it['temp_id'] ?? -1);
             $qty = (int)($it['quantity'] ?? 0);
             if ($tid <= 0 || $qty <= 0) continue;
