@@ -6,6 +6,20 @@ require_once __DIR__ . '/./config/config.php';
 global $link_QR, $bank_name, $bank_img, $bank_acc, $bank_acc_name, $bank_description, $config, $webname;
 
 $auth_info = get_auth_info();
+if(!check_player_registered()){
+    $thongbao = 'Vui lòng đăng ký nhân vật để tiếp tục!';
+    $redirect_path = define_url('home.php');
+    $script = '
+        var thongbao = ' . json_encode($thongbao) . ';
+        if (thongbao !== "") {
+            alert(thongbao);
+            window.location = "' . $redirect_path . '";
+        }
+        ';
+
+    echo '<script>' . $script . '</script>';
+    exit();
+}
 
 $transfer_content = $bank_description . $auth_info['user_id'];
 $_username = $auth_info['username'];

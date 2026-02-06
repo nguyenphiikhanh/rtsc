@@ -11,6 +11,7 @@
  */
 
 require_once __DIR__ . '/./config/config.php';
+require_once __DIR__ . '/./modules/info.php';
 global $config, $atm_rate;
 global $bank_description;
 
@@ -129,13 +130,16 @@ try {
     $real_amount = $real_amount * ($atm_rate / 100); // Áp dụng tỉ lệ nạp
 
     // 6) Cộng tiền vào account (vnd + thưởng, tongnap + số gốc)
-    $stmtUpd = $config->prepare("UPDATE account SET vnd = vnd + ?, tongnap = tongnap + ? WHERE id = ?");
-    $stmtUpd->bind_param("ddi", $real_amount, $amount, $accountId);
-    $stmtUpd->execute();
-    if ($stmtUpd->affected_rows < 1) {
+//    $stmtUpd = $config->prepare("INSERT xu_ly_nap SET vnd = vnd + ?, tongnap = tongnap + ? WHERE id = ?");
+//    $stmtUpd->bind_param("ddi", $real_amount, $amount, $accountId);
+    $player = _get_figure_info_by_account_id($accountId);
+    $stmtIns = $config->prepare("INSERT INTO xu_ly_nap (name, so_tien) VALUES (?, ?)");
+    $stmtIns->bind_param("si", $player['name'], $real_amount);
+    $stmtIns->execute();
+    if ($stmtIns->affected_rows < 1) {
         throw new Exception('Failed to update account balance');
     }
-    $stmtUpd->close();
+    $stmtIns->close();
 
     // 7) Ghi lịch sử nạp cho UI đọc (ĐỒNG BỘ cột: name, username, total, payment_status)
     $name = "vuinro{$accountId}";

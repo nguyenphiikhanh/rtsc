@@ -36,6 +36,38 @@ function _get_figure_info()
     return null;
 }
 
+function _get_figure_info_by_account_id($acount_id)
+{
+    global $config;
+    $query = "SELECT p.id, p.name,
+    FROM player p
+    LEFT JOIN account a ON p.account_id = a.id
+    WHERE a.id = '$acount_id'";
+
+    $result = $config->query($query);
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        return $row;
+    }
+    return null;
+}
+
+function _get_figure_info_by_username($username)
+{
+    global $config;
+    $query = "SELECT p.id, p.name,
+    FROM player p
+    LEFT JOIN account a ON p.account_id = a.id
+    WHERE a.username = '$username'";
+
+    $result = $config->query($query);
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        return $row;
+    }
+    return null;
+}
+
 function active_account($id) {
     global $config;
     global $gia_mo_thanh_vien;

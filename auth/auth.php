@@ -154,6 +154,15 @@ function auth(){
             ';
 
         echo '<script>' . $script . '</script>';
-//        logout();
     }
+}
+
+function check_player_registered(){
+    global $config;
+    $username = $_SESSION['logger']['username'];
+    $sql = "SELECT name FROM player 
+            LEFT JOIN account ON player.account_id = account.id
+            WHERE username = '$username' AND account.ban = 0";
+    $account = mysqli_query($config, $sql);
+    return mysqli_num_rows($account) > 0;
 }
