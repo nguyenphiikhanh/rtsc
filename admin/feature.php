@@ -338,7 +338,7 @@ if ($qrI = $config->query("SELECT id,type,gender,name,description,icon_id,part,i
     while ($r = $qrI->fetch_assoc()) $itemTemplates[] = $r;
 }
 $optionTemplates = [];
-if ($qrO = $config->query("SELECT id,name,type FROM item_option_template ORDER BY type, id")) {
+if ($qrO = $config->query("SELECT id,name FROM item_option_template ORDER BY id")) {
     while ($r = $qrO->fetch_assoc()) $optionTemplates[] = $r;
 }
 
@@ -1110,7 +1110,7 @@ if (isset($_POST['do_reset'])) {
     <div class="hero-text">
       <form method="POST" style="padding-top:10px;padding-bottom:10px;">
         <?php
-        $row  = mysqli_fetch_array(mysqli_query($config,"SELECT SUM(player.tong_nap) AS total_vnd FROM player INNER JOIN account ON account.id = player.account_id WHERE account.is_admin = 0 AND player.name != 'toansoi'"));
+//        $row  = mysqli_fetch_array(mysqli_query($config,"SELECT SUM(player.tong_nap) AS total_vnd FROM player INNER JOIN account ON account.id = player.account_id WHERE account.is_admin = 0 AND player.name != 'toansoi'"));
         $rowf = mysqli_fetch_array(mysqli_query($config,"SELECT SUM(amount) AS atm FROM mb_bank WHERE status = 1"));
         $rowk = mysqli_fetch_array(mysqli_query($config,"SELECT COUNT(*) as total FROM account WHERE active = 1 AND account.is_admin = 0"));
         $row1 = mysqli_fetch_array(mysqli_query($config,"SELECT SUM(amount) AS total_the FROM trans_log WHERE status = 1"));

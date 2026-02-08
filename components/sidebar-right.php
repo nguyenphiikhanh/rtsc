@@ -19,12 +19,12 @@ require_once __DIR__ . '/../helper/helper.php';
             </a>
         </div>
 
-        <div class="clickGet m__inline">
-            <a href="<?= define_url("news/tin-tuc/top-su-kien.php") ?>"
-               class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
-                Top Sự Kiện
-            </a>
-        </div>
+<!--        <div class="clickGet m__inline">-->
+<!--            <a href="--><?php //= define_url("news/tin-tuc/top-su-kien.php") ?><!--"-->
+<!--               class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">-->
+<!--                Top Sự Kiện-->
+<!--            </a>-->
+<!--        </div>-->
 
         <div class="clickGet m__inline">
             <a href="<?= define_url("news/tin-tuc/top-power.php") ?>"
@@ -33,12 +33,12 @@ require_once __DIR__ . '/../helper/helper.php';
             </a>
         </div>
 
-        <div class="clickGet m__inline">
-            <a href="<?= define_url("news/tin-tuc/top-boss.php") ?>"
-               class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
-                Top Săn Boss
-            </a>
-        </div>
+<!--        <div class="clickGet m__inline">-->
+<!--            <a href="--><?php //= define_url("news/tin-tuc/top-boss.php") ?><!--"-->
+<!--               class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">-->
+<!--                Top Săn Boss-->
+<!--            </a>-->
+<!--        </div>-->
 
         <div class="go-top">
             <img src="<?= define_url("assets/frontend/home/v1/images/sibarRight/top.png") ?>" alt=""/>
@@ -48,9 +48,9 @@ require_once __DIR__ . '/../helper/helper.php';
       <img src="<?= define_url("assets/frontend/home/v1/images/sibarRight/img-arrow.png") ?>" class="imgCtr"/>
     </span>
 
-    <a href="<?= define_url("news/phuc-loi-nap-2025.php") ?>">
-        <img src="<?= define_url("assets/frontend/home/v1/images/bn__gift_now.png") ?>" class="gift__site__pc">
-    </a>
+<!--    <a href="--><?php //= define_url("news/phuc-loi-nap-2025.php") ?><!--">-->
+<!--        <img src="--><?php //= define_url("assets/frontend/home/v1/images/bn__gift_now.png") ?><!--" class="gift__site__pc">-->
+<!--    </a>-->
     <style>
         .gift__site__pc {
             position: absolute;
