@@ -30,8 +30,6 @@ ini_set('display_errors', 0);
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/php-error.log');
 
-session_start();
-
 // ------------------ Helpers cơ bản ------------------
 function is_https(): bool {
     return !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';

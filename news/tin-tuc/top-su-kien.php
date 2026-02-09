@@ -1,13 +1,8 @@
 <?php
+require_once __DIR__ . '/../../layout/html.php';
 require_once __DIR__ . '/../../helper/helper.php';
 require_once __DIR__ . '/../../modules/top.php';
-
 $data_top_events = __get_top_event();
-?>
-<!DOCTYPE html>
-<html lang="vi" class="__roots root__page">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<?php
 $title_label = 'Cao thủ sự kiện';
 require_once __DIR__ . '/../../layout/head.php';
 ?>

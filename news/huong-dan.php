@@ -1,11 +1,7 @@
 <?php
+require_once __DIR__ . '/../layout/html.php';
 require_once __DIR__ . '/../helper/helper.php';
-?>
-<!DOCTYPE html>
-<html lang="vi" class="__roots root__page">
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-<?php
+require_once __DIR__ . '/../middleware/auth.php';
 $title_label = 'Hướng dẫn';
 require_once __DIR__ . '/../layout/head.php';
 ?>
