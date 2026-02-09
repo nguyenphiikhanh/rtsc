@@ -12,7 +12,6 @@ function __get_account_info($get_password = false) {
         $sql = "SELECT account.id, account.password, account.username, account.active, account.vnd FROM account WHERE username = '$username'";
     }
     $results = $config->query($sql);
-
     if ($results->num_rows > 0) {
         return $results->fetch_assoc();
     }

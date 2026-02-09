@@ -133,7 +133,6 @@ if(isset($_POST['submit_register'])){
 }
 
 function logout(){
-    session_start();
     session_destroy();
     $redirect_path = define_url('home.php');
     header('Location: '.$redirect_path);

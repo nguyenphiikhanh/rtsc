@@ -57,8 +57,8 @@ $acc_info = __get_account_info();
         </div>
         <div class="tab-link custom-border" data-tab="tab-doi-mk" data-more="viewhuong-dan"><span>Đổi mật khẩu</span>
         </div>
-        <div class="tab-link custom-border" data-tab="tab-giftcode" data-more="viewhuong-dan">
-            <span>Giftcode riêng</span></div>
+<!--        <div class="tab-link custom-border" data-tab="tab-giftcode" data-more="viewhuong-dan">-->
+<!--            <span>Giftcode riêng</span></div>-->
     </div>
 
     <div class="tab-content">
@@ -211,76 +211,76 @@ $acc_info = __get_account_info();
             </div>
         </div>
         <!--        xem giftcode-->
-        <div class="tab-detail" id="tab-giftcode">
-            <?php if (!$figure_info) { ?>
-            <a href="javascript:void(0);" class="item-new-box f-Roboto-Regular">
-                <div class="cat-des">
-                    <span style="color: red">Bạn chưa tạo nhân vật</span>
-                </div>
-            </a>
-            <?php } else {
-            $gift_codes = _get_account_gift_code($figure_info['id']);
-            if (count($gift_codes)) { ?>
-            <div class="w-full overflow-x-auto">
-                <table class="w-full min-w-full border border-slate-700 rounded-xl overflow-hidden">
-                    <thead class="bg-slate-800">
-                    <tr>
-                        <th class="px-4 py-3 text-center text-2xl font-semibold text-slate-300">
-                            STT
-                        </th>
-                        <th class="px-4 py-3 text-center text-2xl font-semibold text-slate-300">
-                            Giftcode
-                        </th>
-                        <th class="px-4 py-3 text-center text-2xl font-semibold text-slate-300">
-                            Trạng thái
-                        </th>
-                    </tr>
-                    </thead>
-
-                    <tbody class="divide-y divide-slate-700 bg-slate-900">
-                    <?php foreach ($gift_codes as $index => $gift_code) {
-                        if (@$gift_code['is_used']) { ?>
-                            <tr class="hover:bg-slate-800 transition">
-                                <td class="px-4 py-3 text-center text-slate-200"><?=$index+1?></td>
-                                <td class="px-4 py-3 text-center font-mono text-indigo-400">
-                                    <?=htmlspecialchars($gift_code['coded'])?>
-                                </td>
-                                <td class="px-4 py-3 text-center">
-                                    <span class="inline-flex items-center rounded-full
-                                                 bg-red-500/15 text-red-400
-                                                 px-3 py-1 text-lg font-semibold">
-                                        Đã sử dụng
-                                    </span>
-                                </td>
-                            </tr>
-                        <?php } else { ?>
-                            <tr class="hover:bg-slate-800 transition">
-                                <td class="px-4 py-3 text-center text-slate-200"><?=$index+1?></td>
-                                <td class="px-4 py-3 text-center font-mono text-indigo-400">
-                                    <?=$gift_code['coded']?>
-                                </td>
-                                <td class="px-4 py-3 text-center">
-                                    <span class="inline-flex items-center rounded-full
-                                                 bg-emerald-500/15 text-emerald-400
-                                                 px-3 py-1 text-lg font-semibold">
-                                        Chưa sử dụng
-                                    </span>
-                                </td>
-                            </tr>
-                        <?php }
-                    } ?>
-                    </tbody>
-                </table>
-            </div>
-            <?php } else { ?>
-            <a href="javascript:void(0);" class="item-new-box f-Roboto-Regular">
-                <div class="cat-des">
-                    <span style="color: red">Bạn chưa có giftcode riêng.</span>
-                </div>
-            </a>
-            <?php }
-            } ?>
-        </div>
+<!--        <div class="tab-detail" id="tab-giftcode">-->
+<!--            --><?php //if (!$figure_info) { ?>
+<!--            <a href="javascript:void(0);" class="item-new-box f-Roboto-Regular">-->
+<!--                <div class="cat-des">-->
+<!--                    <span style="color: red">Bạn chưa tạo nhân vật</span>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--            --><?php //} else {
+//            $gift_codes = _get_account_gift_code($figure_info['id']);
+//            if (count($gift_codes)) { ?>
+<!--            <div class="w-full overflow-x-auto">-->
+<!--                <table class="w-full min-w-full border border-slate-700 rounded-xl overflow-hidden">-->
+<!--                    <thead class="bg-slate-800">-->
+<!--                    <tr>-->
+<!--                        <th class="px-4 py-3 text-center text-2xl font-semibold text-slate-300">-->
+<!--                            STT-->
+<!--                        </th>-->
+<!--                        <th class="px-4 py-3 text-center text-2xl font-semibold text-slate-300">-->
+<!--                            Giftcode-->
+<!--                        </th>-->
+<!--                        <th class="px-4 py-3 text-center text-2xl font-semibold text-slate-300">-->
+<!--                            Trạng thái-->
+<!--                        </th>-->
+<!--                    </tr>-->
+<!--                    </thead>-->
+<!---->
+<!--                    <tbody class="divide-y divide-slate-700 bg-slate-900">-->
+<!--                    --><?php //foreach ($gift_codes as $index => $gift_code) {
+//                        if (@$gift_code['is_used']) { ?>
+<!--                            <tr class="hover:bg-slate-800 transition">-->
+<!--                                <td class="px-4 py-3 text-center text-slate-200">--><?php //=$index+1?><!--</td>-->
+<!--                                <td class="px-4 py-3 text-center font-mono text-indigo-400">-->
+<!--                                    --><?php //=htmlspecialchars($gift_code['coded'])?>
+<!--                                </td>-->
+<!--                                <td class="px-4 py-3 text-center">-->
+<!--                                    <span class="inline-flex items-center rounded-full-->
+<!--                                                 bg-red-500/15 text-red-400-->
+<!--                                                 px-3 py-1 text-lg font-semibold">-->
+<!--                                        Đã sử dụng-->
+<!--                                    </span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        --><?php //} else { ?>
+<!--                            <tr class="hover:bg-slate-800 transition">-->
+<!--                                <td class="px-4 py-3 text-center text-slate-200">--><?php //=$index+1?><!--</td>-->
+<!--                                <td class="px-4 py-3 text-center font-mono text-indigo-400">-->
+<!--                                    --><?php //=$gift_code['coded']?>
+<!--                                </td>-->
+<!--                                <td class="px-4 py-3 text-center">-->
+<!--                                    <span class="inline-flex items-center rounded-full-->
+<!--                                                 bg-emerald-500/15 text-emerald-400-->
+<!--                                                 px-3 py-1 text-lg font-semibold">-->
+<!--                                        Chưa sử dụng-->
+<!--                                    </span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        --><?php //}
+//                    } ?>
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+<!--            --><?php //} else { ?>
+<!--            <a href="javascript:void(0);" class="item-new-box f-Roboto-Regular">-->
+<!--                <div class="cat-des">-->
+<!--                    <span style="color: red">Bạn chưa có giftcode riêng.</span>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--            --><?php //}
+//            } ?>
+<!--        </div>-->
 
     </div>
 

@@ -3,7 +3,7 @@
  * Webhook nhận giao dịch SePay / BankAPI
  * - Đọc JSON POST
  * - Parse accountId từ description hoặc content theo mẫu: vuinro{ID}
- * - Ghi log vào lichsunap_seapay
+ * - Ghi log vào lichsunap_sepay
  * - Chống cộng trùng theo referenceCode
  * - Cộng tiền + thưởng vào account (vnd, tongnap)
  * - Ghi lịch sử vào lichsu_yeucaunap (name, username, total, payment_status, date)
@@ -67,8 +67,8 @@ $config->begin_transaction();
 
 try {
     // 1) Chống cộng trùng: nếu reference_number đã có thì bỏ qua cộng lại
-    //    (Khuyến nghị: đặt UNIQUE KEY cho lichsunap_seapay.reference_number)
-    $stmtChk = $config->prepare("SELECT id FROM lichsunap_seapay WHERE reference_number = ? LIMIT 1");
+    //    (Khuyến nghị: đặt UNIQUE KEY cho lichsunap_sepay.reference_number)
+    $stmtChk = $config->prepare("SELECT id FROM lichsunap_sepay WHERE reference_number = ? LIMIT 1");
     $stmtChk->bind_param("s", $referenceCode);
     $stmtChk->execute();
     $rsChk = $stmtChk->get_result();
@@ -86,11 +86,11 @@ try {
     $username = $rsAcc->fetch_assoc()['username'];
     $stmtAcc->close();
 
-    // 3) Luôn log lichsunap_seapay nếu chưa có reference_number (idempotent theo ref)
+    // 3) Luôn log lichsunap_sepay nếu chưa có reference_number (idempotent theo ref)
     if (!$alreadyLogged) {
         $txnContent = ($description !== '') ? $description : $content;
         $stmtLog = $config->prepare("
-				INSERT INTO lichsunap_seapay
+				INSERT INTO lichsunap_sepay
 				(gateway, transaction_date, account_number, amount_in, code, transaction_content, reference_number, body)
 				VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 			");
