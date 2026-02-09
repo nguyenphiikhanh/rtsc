@@ -1,9 +1,6 @@
-<?php require_once __DIR__ . '/../helper/helper.php'; ?>
-<!DOCTYPE html>
-<html lang="vi" class="__roots root__page">
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <?php
+require_once __DIR__ . '/../helper/helper.php';
+require_once __DIR__ . '/../layout/html.php';
 $title_label = 'Sự kiện';
 require_once __DIR__ . '/../layout/head.php';
 ?>
