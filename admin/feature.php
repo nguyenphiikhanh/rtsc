@@ -728,23 +728,27 @@ if (isset($_POST['make_server_code'])) {
     $items_str = normalize_items_json($items_json, $errs, 'items');
 
     if (empty($errs)) {
-        $config->query("CREATE TABLE IF NOT EXISTS gift_codes (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            type TINYINT NOT NULL,
-            code VARCHAR(64) NOT NULL UNIQUE,
-            gold INT DEFAULT 0,
-            gem INT DEFAULT 0,
-            ruby INT DEFAULT 0,
-            items TEXT NOT NULL,
-            status TINYINT DEFAULT 0,
-            active TINYINT DEFAULT 0,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
+        $config->query("CREATE TABLE IF NOT EXISTS `giftcode` (
+          `id` int(11) NOT NULL,
+          `code` varchar(200) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '',
+          `type` tinyint(4) NOT NULL DEFAULT 1,
+          `Delete` tinyint(1) NOT NULL DEFAULT 1,
+          `limit` int(11) NOT NULL DEFAULT 0,
+          `listUser` longtext CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '[]',
+          `listItem` varchar(5000) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL DEFAULT '[]',
+          `bagCount` tinyint(1) NOT NULL DEFAULT 1,
+          `itemoption` text NOT NULL,
+          `active` int(11) NOT NULL DEFAULT 0,
+          `server` int(11) NOT NULL DEFAULT -1,
+          `name_player` varchar(50) NOT NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;");
 
-        $stmt = $config->prepare("INSERT INTO gift_codes
-            (type, code, gold, gem, ruby, items, status, active)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("isiiisii", $type, $code, $gold, $gem, $ruby, $items_str, $status, $active);
+        $stmt = $config->prepare("INSERT INTO giftcode
+            (`code`, `limit`, `listItem`, `listUser`, itemoption, name_player)
+            VALUES (?, ?, ?, ?, '', '')");
+        $default_limit = 1000;
+        $default_listUser = '[]';
+        $stmt->bind_param("siss", $code, $default_limit, $items_str, $default_listUser);
 
         if ($stmt->execute()) {
             $stmt->close();
@@ -1567,39 +1571,39 @@ if (isset($_POST['do_reset'])) {
     <input type="hidden" id="g_items_json" name="g_items_json" value="[]">
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
-      <div>
-        <label>Type (0/1/2)</label>
-        <select name="g_type" required class="input">
-          <option value="0">0 - 1 người nhập</option>
-          <option value="1">1 - Nhiều người nhập</option>
-          <option value="2">2 - Khác</option>
-        </select>
-      </div>
+<!--      <div>-->
+<!--        <label>Type (0/1/2)</label>-->
+<!--        <select name="g_type" required class="input">-->
+<!--          <option value="0">0 - 1 người nhập</option>-->
+<!--          <option value="1">1 - Nhiều người nhập</option>-->
+<!--          <option value="2">2 - Khác</option>-->
+<!--        </select>-->
+<!--      </div>-->
 
       <div>
         <label>Tên giftcode</label>
         <input type="text" name="g_code" required placeholder="VD: SERVER2025" class="input">
       </div>
 
-      <div><label>Vàng (gold)</label><input type="number" name="g_gold" min="0" value="0" class="input"></div>
-      <div><label>Ngọc (gem)</label><input type="number" name="g_gem"  min="0" value="0" class="input"></div>
-      <div><label>Hồng ngọc (ruby)</label><input type="number" name="g_ruby" min="0" value="0" class="input"></div>
+<!--      <div><label>Vàng (gold)</label><input type="number" name="g_gold" min="0" value="0" class="input"></div>-->
+<!--      <div><label>Ngọc (gem)</label><input type="number" name="g_gem"  min="0" value="0" class="input"></div>-->
+<!--      <div><label>Hồng ngọc (ruby)</label><input type="number" name="g_ruby" min="0" value="0" class="input"></div>-->
 
-      <div>
-        <label>Trạng thái</label>
-        <select name="g_status" class="input">
-          <option value="1">1 - Đã sử dụng - hoặc khoá</option>
-          <option value="0">0 - Kích hoạt - Cho phép nhận</option>
-        </select>
-      </div>
+<!--      <div>-->
+<!--        <label>Trạng thái</label>-->
+<!--        <select name="g_status" class="input">-->
+<!--          <option value="1">1 - Đã sử dụng - hoặc khoá</option>-->
+<!--          <option value="0">0 - Kích hoạt - Cho phép nhận</option>-->
+<!--        </select>-->
+<!--      </div>-->
 
-      <div>
-        <label>Đối tượng</label>
-        <select name="g_active" class="input" title="1 = chỉ tài khoản MTV, 0 = mọi người">
-          <option value="0">0 - Mọi người chơi</option>
-          <option value="1">1 - Chỉ tài khoản MTV</option>
-        </select>
-      </div>
+<!--      <div>-->
+<!--        <label>Đối tượng</label>-->
+<!--        <select name="g_active" class="input" title="1 = chỉ tài khoản MTV, 0 = mọi người">-->
+<!--          <option value="0">0 - Mọi người chơi</option>-->
+<!--          <option value="1">1 - Chỉ tài khoản MTV</option>-->
+<!--        </select>-->
+<!--      </div>-->
     </div>
 
     <hr style="border-color:#334155;margin:16px 0">
@@ -1762,135 +1766,8 @@ if (isset($_POST['do_reset'])) {
 <br><br>
 
 <!-- ========= Kiểm tra tiền trong server ========= -->
-<div class="card">
-  <?php
-  $moneyType = isset($_GET['money_type']) ? (string)$_GET['money_type'] : 'tv'; // tv | gx | vnd | coin | rb
-  $limit     = isset($_GET['limit']) ? (int)$_GET['limit'] : 10;
-  $limit     = max(1, min(200, $limit));
 
-  $cfg = [
-    'tv'   => ['title' => 'LƯỢNG THỎI VÀNG TRONG SV', 'unit' => 'Thỏi vàng'],
-    'gx'   => ['title' => 'LƯỢNG NGỌC XANH TRONG SV', 'unit' => 'Ngọc Xanh'],
-    'rb'   => ['title' => 'LƯỢNG HỒNG NGỌC TRONG SV', 'unit' => 'Hồng Ngọc'],
-    'vnd'  => ['title' => 'LƯỢNG VNĐ TRONG SV', 'unit' => 'VNĐ'],
-    'coin' => ['title' => 'LƯỢNG COIN TRONG SV', 'unit' => 'Coin'],
-  ];
-  if (!isset($cfg[$moneyType])) $moneyType = 'tv';
-  ?>
-  <h2><?= h($cfg[$moneyType]['title']) ?></h2>
-
-  <form method="get" style="display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin:10px 0 14px">
-    <div>
-      <label>Loại thống kê</label>
-      <select name="money_type" class="input">
-        <option value="tv"   <?= $moneyType==='tv'   ? 'selected' : '' ?>>Thỏi vàng</option>
-        <option value="gx"   <?= $moneyType==='gx'   ? 'selected' : '' ?>>Ngọc Xanh</option>
-        <option value="rb"   <?= $moneyType==='rb'   ? 'selected' : '' ?>>Hồng Ngọc</option>
-        <option value="vnd"  <?= $moneyType==='vnd'  ? 'selected' : '' ?>>VNĐ</option>
-        <option value="coin" <?= $moneyType==='coin' ? 'selected' : '' ?>>Coin</option>
-      </select>
-    </div>
-    <div>
-      <label>Hiển thị Top</label>
-      <input type="number" name="limit" min="1" max="200" value="<?= h($limit) ?>" class="input" style="width:120px">
-    </div>
-    <div>
-      <button class="btn btn-green" type="submit">Xem</button>
-    </div>
-  </form>
-
-  <div class="table-wrap">
-    <table class="table">
-      <thead>
-        <tr>
-          <th style="width:70px">STT</th>
-          <th>Tên</th>
-          <th style="width:220px">Hiện có</th>
-        </tr>
-      </thead>
-      <tbody>
-      <?php
-      $rows = null;
-
-      if ($moneyType === 'tv') {
-        $sql = "
-          SELECT p.name AS name, p.thoi_vang AS val
-          FROM player p
-          INNER JOIN account a ON a.id = p.account_id
-          WHERE a.is_admin = 0 AND a.ban = 0
-          ORDER BY val DESC
-          LIMIT $limit
-        ";
-        $rows = $config->query($sql);
-      }
-      elseif ($moneyType === 'gx') {
-        $sql = "
-          SELECT p.name AS name,
-                 CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(p.data_inventory, ',', 2), ',', -1) AS UNSIGNED) AS val
-          FROM player p
-          INNER JOIN account a ON a.id = p.account_id
-          WHERE a.is_admin = 0 AND a.ban = 0
-          ORDER BY val DESC
-          LIMIT $limit
-        ";
-        $rows = $config->query($sql);
-      }
-      elseif ($moneyType === 'rb') {
-        $sql = "
-          SELECT p.name AS name,
-                 CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(p.data_inventory, ',', 3), ',', -1) AS UNSIGNED) AS val
-          FROM player p
-          INNER JOIN account a ON a.id = p.account_id
-          WHERE a.is_admin = 0 AND a.ban = 0
-          ORDER BY val DESC
-          LIMIT $limit
-        ";
-        $rows = $config->query($sql);
-      }
-      elseif ($moneyType === 'vnd') {
-        $sql = "
-          SELECT a.username AS name, a.vnd AS val
-          FROM account a
-          WHERE a.is_admin = 0 AND a.ban = 0
-          ORDER BY val DESC
-          LIMIT $limit
-        ";
-        $rows = $config->query($sql);
-      }
-      else { // coin = tongnap
-        $sql = "
-          SELECT a.username AS name, a.tongnap AS val
-          FROM account a
-          WHERE a.is_admin = 0 AND a.ban = 0
-          ORDER BY val DESC
-          LIMIT $limit
-        ";
-        $rows = $config->query($sql);
-      }
-
-      $stt = 1;
-      if ($rows === false) {
-        echo '<tr><td colspan="3" style="text-align:center;color:#fecaca">Lỗi truy vấn SQL</td></tr>';
-      } elseif ($rows && $rows->num_rows > 0) {
-        while ($r = $rows->fetch_assoc()) {
-          echo '<tr>
-                  <td>'. $stt .'</td>
-                  <td>'. h($r['name']) .'</td>
-                  <td>'. number_format((int)$r['val'], 0, '.', '.') .' ['. h($cfg[$moneyType]['unit']) .']</td>
-                </tr>';
-          $stt++;
-        }
-      } else {
-        echo '<tr><td colspan="3" style="text-align:center;opacity:.8">&lt;&lt; Không có dữ liệu &gt;&gt;</td></tr>';
-      }
-      ?>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<br><br>
-
+<br>
 <!-- ========= Kiểm tra clone theo IP ========= -->
 <div class="card">
   <h2>Kiểm tra clone theo IP</h2>
