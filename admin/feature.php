@@ -95,6 +95,7 @@ function render_flash(): void {
 }
 
 // Tạo CSRF token nếu chưa có
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 if (empty($_SESSION['secret_csrf'])) {
     $_SESSION['secret_csrf'] = bin2hex(random_bytes(16));
 }
@@ -121,7 +122,7 @@ function csrf_fail_and_reset(string $why = 'CSRF invalid'): void {
 
     // Huỷ session hiện tại
     session_unset();
-    session_destroy();
+    if (session_status() === PHP_SESSION_ACTIVE) session_destroy();
 
     // Đưa người dùng về trang gate với message
     $msg = 'Phiên không hợp lệ hoặc đã hết hạn. Hệ thống đã xoá cookie. Vui lòng nhập khoá truy cập lại.';
@@ -247,7 +248,7 @@ if (isset($_POST['clear_cookies'])) {
     delete_cookie('admin_device');
     session_unset();
     session_destroy();
-    session_start();
+    if (session_status() !== PHP_SESSION_ACTIVE) session_start();
     $_SESSION['secret_csrf'] = bin2hex(random_bytes(16));
     header('Location: ' . current_url() . '?acct_msg=' . rawurlencode('Đã xoá cookie phiên. Vui lòng đăng nhập lại.'));
     exit();
@@ -467,7 +468,7 @@ $inspect = [
   'items_body' => [],
   'items_bag'  => [],
   'items_box'  => [],
-  'pet_info'   => null,
+  'pet'   => null,
   'ruong_pet'   => [],
   'agg'        => [],
 ];
@@ -480,7 +481,7 @@ if (isset($_GET['inspect']) && $_GET['inspect'] === '1') {
     $inspect['err'] = 'Thiếu hoặc sai player_id.';
   } else {
     $stmt = $config->prepare("
-      SELECT id,name,items_body,items_bag,items_box,pet_info,ruong_pet
+      SELECT id,name,items_body,items_bag,items_box,pet,ruong_pet
       FROM player WHERE id=? LIMIT 1
     ");
     $stmt->bind_param("i", $pid);
@@ -493,7 +494,7 @@ if (isset($_GET['inspect']) && $_GET['inspect'] === '1') {
         $inspect['items_body'] = $dec($row['items_body']);
         $inspect['items_bag']  = $dec($row['items_bag']);
         $inspect['items_box']  = $dec($row['items_box']);
-        $inspect['pet_info']   = json_decode($row['pet_info'] ?? '', true);
+        $inspect['pet']   = json_decode($row['pet'] ?? '', true);
         $inspect['ruong_pet']   = $dec($row['ruong_pet']);
 
         $agg = [];
