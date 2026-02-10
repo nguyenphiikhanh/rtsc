@@ -33,12 +33,12 @@ require_once __DIR__ . '/../helper/helper.php';
             </a>
         </div>
 
-<!--        <div class="clickGet m__inline">-->
-<!--            <a href="--><?php //= define_url("news/tin-tuc/top-boss.php") ?><!--"-->
-<!--               class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">-->
-<!--                Top Săn Boss-->
-<!--            </a>-->
-<!--        </div>-->
+        <div class="clickGet m__inline">
+            <a href="<?= define_url("news/tin-tuc/top-boss.php") ?>"
+               class="a100 f-tahomabold tCenter tUpper dFlex aCenter jCenter">
+                Top Săn Boss
+            </a>
+        </div>
 
         <div class="go-top">
             <img src="<?= define_url("assets/frontend/home/v1/images/sibarRight/top.png") ?>" alt=""/>

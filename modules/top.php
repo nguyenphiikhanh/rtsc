@@ -77,7 +77,7 @@ function __get_top_power()
 function __get_top_kill_boss()
 {
     global $config;
-    $query = "SELECT *
+    $query = "SELECT player.name, player.kill_boss
                 FROM player
                 INNER JOIN account ON account.id = player.account_id
                 WHERE account.is_admin = 0 AND account.ban = 0 AND player.kill_boss > 0

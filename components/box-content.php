@@ -92,12 +92,12 @@ require_once __DIR__ . '/../helper/helper.php';
                                     <div class="date-open">14/12</div>
                                 </a>
 
-<!--                                <a href="--><?php //= define_url("news/tin-tuc/top-boss.php") ?><!--" class="item-new-box f-Roboto-Regular">-->
-<!--                                    <div class="cat-des">-->
-<!--                                        [Tin tức] Top Săn Boss-->
-<!--                                    </div>-->
-<!--                                    <div class="date-open">14/12</div>-->
-<!--                                </a>-->
+                                <a href="<?= define_url("news/tin-tuc/top-boss.php") ?>" class="item-new-box f-Roboto-Regular">
+                                    <div class="cat-des">
+                                        [Tin tức] Top Săn Boss
+                                    </div>
+                                    <div class="date-open">14/12</div>
+                                </a>
                             </div>
 
 
